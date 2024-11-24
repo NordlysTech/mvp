@@ -596,4 +596,4 @@ def clear_file_data():
     return jsonify({'message': 'File data cleared'})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True)
