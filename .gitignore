@@ -1,0 +1,4 @@
+.DS_Store
+.env
+faiss_db_opt/index.faiss
+faiss_db_opt/index.pkl

@@ -547,7 +547,7 @@ def generate_pdf():
 
 @app.route('/')
 def index():
-    return render_template('indexios4.html')
+    return render_template('index.html')
 
 @app.route('/query', methods=['POST'])
 def query():
@@ -596,4 +596,4 @@ def clear_file_data():
     return jsonify({'message': 'File data cleared'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
