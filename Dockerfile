@@ -1,5 +1,5 @@
 # Base image
-FROM python:3-slim
+FROM python:3.10-slim
 
 
 # Install build dependencies for numpy
