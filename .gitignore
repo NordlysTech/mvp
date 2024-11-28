@@ -2,3 +2,4 @@
 .env
 faiss_db_opt/index.faiss
 faiss_db_opt/index.pkl
+__pycache__/
