@@ -1,4 +1,5 @@
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_cohere import ChatCohere
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -36,19 +37,16 @@ class S1_PromptLogic:
             self.db = FAISS.from_texts(["placeholder"], self.embedding_function)
             self.db.save_local(self.faiss_path)
             
-        self.planner_model = ChatOpenAI(
+        self.planner_model = ChatCohere(
             temperature=0.7,
-            model="gpt-3.5-turbo-16k",
             max_tokens=800,
         )
-        self.solver_model = ChatOpenAI(
+        self.solver_model = ChatCohere(
             temperature=0.2,
-            model="gpt-3.5-turbo-16k",
             max_tokens=3500,
         )
-        self.express_model = ChatOpenAI(
+        self.express_model = ChatCohere(
             temperature=0.3,
-            model="gpt-3.5-turbo",
             max_tokens=1000,
         )
         self.file_db = None
