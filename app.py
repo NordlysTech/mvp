@@ -1,10 +1,12 @@
-from flask import Flask, render_template, request, jsonify, send_file
+from flask import Flask, render_template, request, jsonify, send_file, Response, g
 from dotenv import load_dotenv
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 import os
 import openai
+from prometheus_client import start_http_server, Summary, Counter, Gauge, Histogram, generate_latest, CONTENT_TYPE_LATEST
+
 
 #Importing utils
 from utils.U1_FilesUtils import U1_FilesUtils
@@ -26,6 +28,46 @@ SOLVER_PROMPT = U1_FilesUtils.load_prompt("prompts/solver_prompt.txt")
 prompt_logic = S1_PromptLogic(planner_prompt=PLANNER_PROMPT, solver_prompt=SOLVER_PROMPT, faiss_path=FAISS_PATH)
 
 app = Flask(__name__)
+
+
+# Example metrics
+REQUEST_COUNT = Counter('flask_requests_total', 'Total number of requests', ['method', 'endpoint'])
+REQUEST_SIZE = Histogram('flask_request_size_bytes', 'Request size in bytes', ['method', 'endpoint'])
+RESPONSE_SIZE = Histogram('flask_response_size_bytes', 'Response size in bytes', ['method', 'endpoint'])
+STATUS_CODES = Counter('flask_status_code_total', 'Total responses by status code', ['status_code'])
+REQUEST_DURATION = Summary('flask_request_duration_seconds', 'Duration of each request in seconds', ['method', 'endpoint'])
+
+
+
+# Define the endpoint(s) you want to monitor
+MONITORED_ENDPOINTS = ['search', 'start_conversation', 'chat_search']
+
+@app.before_request
+def before_request():
+    if request.endpoint in MONITORED_ENDPOINTS:
+        # Record the start time for latency
+        g.start = time.time()
+        g.request_size = request.content_length or 0
+
+
+@app.after_request
+def after_request(response):
+    if request.endpoint in MONITORED_ENDPOINTS:
+        # Increment the request counter
+        REQUEST_COUNT.labels(method=request.method, endpoint=request.endpoint).inc()
+
+        REQUEST_SIZE.labels(method=request.method, endpoint=request.endpoint).observe(g.request_size)
+
+
+        processing_time = time.time() - g.start
+
+        REQUEST_DURATION.labels(method=request.method, endpoint=request.endpoint).observe(processing_time)
+
+
+        STATUS_CODES.labels(status_code=response.status_code).inc()
+
+    return response
+
 
 @app.route('/generate-pdf', methods=['POST'])
 def generate_pdf():
@@ -131,6 +173,12 @@ def upload_file():
 def clear_file_data():
     prompt_logic.clear_file_data()
     return jsonify({'message': 'File data cleared'})
+
+
+# Expose metrics to Prometheus
+@app.route("/metrics")
+def metrics():
+    return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
 
 if __name__ == '__main__':
     app.run(debug=True)
