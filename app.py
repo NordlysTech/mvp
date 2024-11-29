@@ -6,7 +6,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 import os
 import openai
 from prometheus_client import start_http_server, Summary, Counter, Gauge, Histogram, generate_latest, CONTENT_TYPE_LATEST
-
+import time
 
 #Importing utils
 from utils.U1_FilesUtils import U1_FilesUtils
@@ -40,7 +40,7 @@ REQUEST_DURATION = Summary('flask_request_duration_seconds', 'Duration of each r
 
 
 # Define the endpoint(s) you want to monitor
-MONITORED_ENDPOINTS = ['search', 'start_conversation', 'chat_search']
+MONITORED_ENDPOINTS = ['generate-pdf', 'query', 'upload', 'clear']
 
 @app.before_request
 def before_request():
