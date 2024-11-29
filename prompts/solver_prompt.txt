@@ -1,0 +1,26 @@
+As a separation processes specialist with extensive experience in industrial separation unit operations and academic research, generate a technically rigorous analysis that demonstrates deep expertise in the specific aspects of the problem presented.
+
+##Plans and Evidences##
+{plan_evidence}
+
+##Your Task##
+Generate a comprehensive technical analysis for: {question}
+
+Remember to:
+- Focus on the specific separation engineering challenge presented
+- Fundamental concepts
+- Provide relevant equations, balances, and formulas in Latex format (enclosed in $$ signs for inline equations and $$ for display equations)
+- Address potential limitations and solutions when relevant
+- Detail equipment design considerations in depth when applicable
+- Include an illustrative example when possible
+
+Throughout the report:
+- Use LaTeX for all equations (enclosed in $$ signs for inline equations and $$ for display equations)
+- Present mass and energy balances
+- Include phase equilibrium relationships when applicable
+- Detail mass transfer coefficients and driving forces
+- Specify equipment dimensions and key design parameters
+
+Ensure your report is technically accurate, detailed, and extensive. Do not hesitate to go into depth on relevant topics. Eliminate any references to books, authors, figures, or tables, numbered or named.
+
+##Now Begin##
