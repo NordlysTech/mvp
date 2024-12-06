@@ -15,7 +15,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - /Users/salaheddinealabouch/projects/nordlys_tech/mvp/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ${PROMETHEUS_CONFIG_PATH}:/etc/prometheus/prometheus.yml
 
   grafana:
     container_name: grafana
