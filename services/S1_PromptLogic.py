@@ -10,6 +10,9 @@ import re
 import urllib.parse
 import fitz  # PyMuPDF for PDF processing
 
+#Import S2_ClassifierLogic
+from services.S2_ClassifierLogic import Classifier
+
 class S1_PromptLogic:
     def __init__(self, planner_prompt: str, solver_prompt: str, faiss_path: str):
         self.planner_prompt = planner_prompt
@@ -210,7 +213,7 @@ class S1_PromptLogic:
         
         if "not available" in content.lower() and len(content.split()) < 100:
             return "The requested information is not sufficiently covered in the database.", "No Information Available"
-                
+
         return content, title
 
     def prepare_evidence_express(self, query_text: str) -> str:

@@ -21,6 +21,7 @@ class Classifier:
         )
 
     def classify_query(self, user_query: str):
+        print("classify_query is called!!!!")
         """
         Process the user query using the Classifier Agent Prompt with few-shot learning examples.
         """
@@ -197,22 +198,3 @@ class Classifier:
         response = self.model.predict(classifier_agent_prompt)
         return response
 
-
-def main():
-    """
-    Main function to interact with the classifier.
-    """
-    print("Please provide your query:")
-    user_input = input().strip()
-
-    # Initialize the classifier and classify the query
-    classifier_model = Classifier()
-    response = classifier_model.classify_query(user_input)
-
-    # Print the response
-    print("\nResponse:\n")
-    print(response)
-
-
-if __name__ == "__main__":
-    main()

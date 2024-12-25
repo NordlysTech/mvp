@@ -13,6 +13,7 @@ from utils.U1_FilesUtils import U1_FilesUtils
 
 #Importing services
 from services.S1_PromptLogic import S1_PromptLogic
+from services.S2_ClassifierLogic import Classifier
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -133,6 +134,11 @@ def query():
     data = request.json
     query_text = data['query']
     is_detailed = data['isDetailed']
+
+    # Classify query
+    print(query_text)
+    classifier_result = Classifier().classify_query(query_text)
+    print(classifier_result)
     
     if is_detailed:
         response, title = prompt_logic.generate_detailed_report(query_text)
@@ -148,7 +154,7 @@ def query():
     
     return jsonify({
         'error': False,
-        'response': response,
+        'response': classifier_result,
         'title': title
     })
 
