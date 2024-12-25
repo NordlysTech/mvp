@@ -1,5 +1,6 @@
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_cohere import ChatCohere
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -39,7 +40,7 @@ class S1_PromptLogic:
                 os.makedirs(self.faiss_path)
             self.db = FAISS.from_texts(["placeholder"], self.embedding_function)
             self.db.save_local(self.faiss_path)
-            
+        # To use Cohere model uncomment the following :    
         self.planner_model = ChatCohere(
             temperature=0.7,
             max_tokens=800,
@@ -52,6 +53,25 @@ class S1_PromptLogic:
             temperature=0.3,
             max_tokens=1000,
         )
+        
+        ''' 
+        # To use Gemini models uncomment the following
+        self.planner_model = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash-exp"
+            temperature=0.7,
+            max_tokens=800,
+        )
+        self.solver_model = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash-exp"
+            temperature=0.2,
+            max_tokens=3500,
+        )
+        self.express_model = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash-exp"
+            temperature=0.3,
+            max_tokens=1000,
+        )
+        '''
         self.file_db = None
         self.active_db = self.db
         self.text_splitter = RecursiveCharacterTextSplitter(
