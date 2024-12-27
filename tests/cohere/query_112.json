@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum energy required to separate a binary gas-liquid mixture under isothermal conditions. The feed stream contains 60 mol% Component A and 40 mol% Component B, entering at a pressure of 5 bar and a temperature of 298 K. The desired products are a gas stream with 95 mol% Component A and a liquid stream with 90 mol% Component B. Assume ideal gas and liquid behavior, and neglect heat losses or inefficiencies in the separation process.",
+        "expanded_query": "Calculate the theoretical energy efficiency of a binary gas-liquid separation process under isothermal conditions, considering the specified feed composition and desired product purity.",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Analysis",
+        "secondary_domains": [
+            "Separation Technology",
+            "Energy Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy calculation and process analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separation process design and optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic data and process parameters sharing",
+            "collaboration_protocol": "Iterative process design and energy efficiency optimization"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific constraints or additional requirements for the separation process?",
+        "Do you have any initial estimates or assumptions for the energy requirements?"
+    ]
+}

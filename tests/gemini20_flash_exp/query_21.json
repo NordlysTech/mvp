@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "The liquid level in our three-phase separator is fluctuating, causing downstream instability. How can we diagnose and resolve this issue?",
+        "expanded_query": "Investigate the root causes of liquid level fluctuations in a three-phase separator and propose solutions to stabilize the process and prevent downstream instability.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of level fluctuations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system analysis and optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic findings and control strategy recommendations",
+            "collaboration_protocol": "Iterative problem solving and solution validation"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical flow rates and compositions of the three phases entering the separator?",
+        "What type of level control system is currently in place?",
+        "Are there any recent changes in operating conditions or equipment maintenance that might have contributed to the issue?"
+    ]
+}

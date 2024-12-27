@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What are the allowable material stresses for stainless steel separators operating at cryogenic temperatures?",
+        "expanded_query": "Determine the maximum allowable stress levels for stainless steel material used in separators under cryogenic conditions, considering material properties and safety factors.",
+        "complexity_level": "medium",
+        "primary_domain": "Mechanical Design and Stress Analysis",
+        "secondary_domains": [
+            "Cryogenics",
+            "Materials Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mechanical Engineer",
+                "role": "Stress analysis and design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Materials Scientist",
+                "role": "Stainless steel properties and behavior at cryogenic temperatures",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety factor determination",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mechanical Engineer",
+            "information_flow": "Collaborative material stress analysis and design optimization",
+            "collaboration_protocol": "Iterative material property and safety factor integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of stainless steel is used in the separators?",
+        "Are there any additional design constraints or standards that need to be considered?",
+        "Do you have any specific safety factors or regulations that must be adhered to?"
+    ]
+}

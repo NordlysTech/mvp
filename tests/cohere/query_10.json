@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Our liquid-liquid extractor shows oscillations in flow rates between stages. Could this be related to pump controls or system instability?",
+        "expanded_query": "Investigate the root cause of flow rate oscillations in a liquid-liquid extractor, focusing on potential issues with pump controls and system stability.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Pump control system evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Extractor design and stability assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative data analysis and hypothesis testing",
+            "collaboration_protocol": "Iterative problem-solving with real-time data sharing"
+        }
+    },
+    "clarification_questions": [
+        "What is the nature of the oscillations? Are they periodic or random?",
+        "Have you noticed any changes in the system's behavior before the oscillations started?",
+        "Can you provide details about the pump control system and its settings?"
+    ]
+}

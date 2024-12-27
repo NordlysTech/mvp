@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We are designing a venting system for a scrubber that processes acidic gases. What safety factors should we consider in case of an emergency gas release?",
+        "expanded_query": "Identify and detail the critical safety considerations for the design of a venting system for an acidic gas scrubber, specifically focusing on emergency gas release scenarios.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety Engineering",
+        "secondary_domains": [
+            "Process Design",
+            "Environmental Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Primary safety factor identification and analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Scrubber system design and venting process",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety requirements and design specifications",
+            "collaboration_protocol": "Iterative safety review and design integration"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific composition of the acidic gases being processed?",
+        "What is the maximum potential release rate of the acidic gases?",
+        "Are there any specific regulatory requirements or safety standards that must be met?"
+    ]
+}

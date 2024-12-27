@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I am struggling to understand why the injection of water make-up suddenly decreases the desorption tower by a significant percentage ? is it related to the heat loss or more like an error in the DCS ?",
+        "expanded_query": "Investigate the cause of the sudden decrease in desorption tower performance after water make-up injection, considering potential heat loss or DCS errors.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Heat Transfer",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Heat loss assessment",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "DCS error investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Data sharing and hypothesis testing",
+            "collaboration_protocol": "Parallel investigations with coordinated findings"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical performance of the desorption tower before the water make-up injection?",
+        "Have you noticed any other changes or anomalies in the system during this event?",
+        "Can you provide details about the DCS settings and any recent changes made?"
+    ]
+}

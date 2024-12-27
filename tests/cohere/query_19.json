@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re working on a cryogenic separation process and experiencing fluctuations in the column's feed temperature. How can we implement an advanced control strategy to stabilize it?",
+        "expanded_query": "Design an advanced control system for a cryogenic separation column to mitigate feed temperature fluctuations and ensure process stability.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Dynamic Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Cryogenic process expertise",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Process dynamics and control strategy development",
+            "collaboration_protocol": "Iterative process control optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the range of temperature fluctuations observed in the feed?",
+        "Are there any specific process constraints or objectives that the control strategy should consider?",
+        "Have you implemented any preliminary control measures, and if so, what were the results?"
+    ]
+}

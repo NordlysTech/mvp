@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What's the impact of feed composition variability on the performance of our crude distillation column?",
+        "expanded_query": "Conduct a comprehensive analysis to determine how fluctuations in feed composition affect the efficiency and performance of a crude oil distillation column.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Process Optimization",
+        "secondary_domains": [
+            "Process Control",
+            "Feedstock Variability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process dynamics analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation column performance evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identifying potential issues due to feed variability",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Integrated performance assessment and process dynamics modeling",
+            "collaboration_protocol": "Iterative feedback and adjustment based on feed composition variations"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical ranges of feed composition variations?",
+        "Are there specific performance metrics or targets for the distillation column that need to be maintained?",
+        "Have you observed any unusual behavior or performance degradation in the column recently?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I'm investigating the performance limitations of our tubular centrifuge. What computational techniques can help us optimize the separation efficiency for complex liquid-solid systems?",
+        "expanded_query": "Identify and recommend computational methods to enhance the separation performance of a tubular centrifuge for intricate liquid-solid mixtures.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Computational Fluid Dynamics",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separation process analysis and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Complex fluid behavior modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Algorithm development and implementation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Data-driven optimization strategy formulation",
+            "collaboration_protocol": "Iterative model refinement and validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific performance limitations are you observing in the tubular centrifuge?",
+        "Can you provide details about the liquid-solid system's composition and properties?",
+        "Are there any constraints or specific requirements for the computational techniques?"
+    ]
+}

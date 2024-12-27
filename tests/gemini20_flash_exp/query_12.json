@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re troubleshooting an amine system in a gas sweetening process. Our H2S levels in the treated gas are spiking intermittently. What could cause this inconsistency?",
+        "expanded_query": "Investigate the potential causes of intermittent spikes in hydrogen sulfide (H2S) levels in the treated gas from an amine-based gas sweetening system.",
+        "complexity_level": "medium",
+        "primary_domain": "Gas Sweetening Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Chemical Reaction Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of H2S spikes",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analysis of process control system and its impact on H2S levels",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analysis of phase equilibrium and mass transfer in the amine system",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic information sharing and hypothesis testing",
+            "collaboration_protocol": "Iterative problem analysis and solution development"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of H2S levels in the treated gas, and what are the magnitudes of the spikes?",
+        "Have there been any recent changes in the feed gas composition or operating conditions?",
+        "Are there any known issues with the amine solution, such as degradation or contamination?",
+        "What is the current control strategy for the amine system and are there any known issues with the control system?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "A horizontal separator operates under steady-state conditions with a constant flow of gas and liquid phases. Develop a differential equation relating the pressure drop to liquid holdup, assuming frictional losses dominate.",
+        "expanded_query": "Derive a mathematical model to describe the pressure drop across a horizontal separator under steady-state conditions, considering the dominant effect of frictional losses and its relationship with liquid holdup.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Modeling and Simulation",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Differential equation formulation and solution",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamics and frictional loss analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Process Engineer",
+                "role": "Process parameter identification and validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Iterative model development and refinement",
+            "collaboration_protocol": "Continuous data and parameter exchange for model validation"
+        }
+    },
+    "clarification_questions": [
+        "What are the physical dimensions and properties of the horizontal separator?",
+        "Are there any specific operating conditions or constraints that need to be considered in the model?",
+        "Do you have any initial estimates or data for pressure drop and liquid holdup that can be used for model validation?"
+    ]
+}

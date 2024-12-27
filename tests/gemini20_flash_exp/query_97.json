@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Our gas-liquid separator is showing inconsistent liquid levels. Could this indicate a control valve issue or demister malfunction? Explain the likely causes and remedies.",
+        "expanded_query": "Investigate the potential causes of inconsistent liquid levels in a gas-liquid separator, specifically focusing on control valve malfunctions and demister performance issues, and provide corresponding remedies.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Equipment Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis and solution identification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control valve performance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister performance analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic information sharing and solution development",
+            "collaboration_protocol": "Integrated problem-solving approach"
+        }
+    },
+    "clarification_questions": [
+        "What type of gas-liquid separator is being used?",
+        "What is the frequency and magnitude of the liquid level fluctuations?",
+        "Have there been any recent maintenance or changes to the separator or its control system?"
+    ]
+}

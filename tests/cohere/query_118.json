@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "In membrane separations, how do concentration polarization effects impact mass transfer, and what strategies can minimize these effects?",
+        "expanded_query": "Provide a comprehensive analysis of concentration polarization effects in membrane separations, including their impact on mass transfer and propose effective strategies to mitigate these effects.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Membrane Science"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Membrane Technologist",
+                "role": "Analyze concentration polarization phenomena and its effects on mass transfer",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Study the thermodynamic aspects of concentration polarization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model and simulate concentration polarization dynamics",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Membrane Technologist",
+            "information_flow": "Knowledge sharing and integration of concentration polarization effects, mass transfer implications, and mitigation strategies.",
+            "collaboration_protocol": "Sequential analysis and iterative refinement of strategies"
+        }
+    },
+    "clarification_questions": [
+        "What type of membrane separation process are you referring to?",
+        "Are there specific membrane materials or configurations involved?",
+        "Do you have any preliminary data or observations regarding concentration polarization effects in your system?"
+    ]
+}

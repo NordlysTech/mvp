@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical safety protocols when depressurizing gas-liquid separators with high H\u2082S content?",
+        "expanded_query": "Identify and outline the essential safety procedures and guidelines for the depressurization process of gas-liquid separators containing elevated levels of hydrogen sulfide (H\u2082S).",
+        "complexity_level": "medium",
+        "primary_domain": "Safety Engineering",
+        "secondary_domains": [
+            "Process Safety",
+            "Gas-Liquid Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol development and compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Gas-liquid separator depressurization procedure review",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety protocol formulation and separator depressurization process review",
+            "collaboration_protocol": "Iterative safety procedure development and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of gas-liquid separator is being used?",
+        "What are the typical operating pressures and temperatures of the separator?",
+        "Are there any unique challenges or considerations due to the high H\u2082S content?"
+    ]
+}

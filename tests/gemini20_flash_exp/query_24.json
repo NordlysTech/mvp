@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How do we safely handle and dispose of spent adsorbents from a PSA system used for hydrogen purification?",
+        "expanded_query": "Develop a safe and compliant procedure for the handling and disposal of spent adsorbents from a Pressure Swing Adsorption (PSA) system used for hydrogen purification.",
+        "complexity_level": "medium",
+        "primary_domain": "Waste Management",
+        "secondary_domains": [
+            "Safety Engineering",
+            "Adsorption Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Regulatory compliance and safety procedure design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Adsorbent material properties and handling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety procedure development and adsorbent handling",
+            "collaboration_protocol": "Integrated safety and technical parameter alignment"
+        }
+    },
+    "clarification_questions": [
+        "What type of adsorbent is used in the PSA system?",
+        "Are there any specific regulations or guidelines for handling and disposing of this type of adsorbent?",
+        "What is the typical volume of spent adsorbent generated per cycle or per year?"
+    ]
+}

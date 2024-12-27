@@ -1,0 +1,46 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive energy optimization strategy for reducing heat consumption in our multi-stage crude distillation column.",
+        "expanded_query": "Develop a detailed plan to minimize energy usage in a multi-stage crude oil distillation column by optimizing heat integration and process design.",
+        "complexity_level": "high",
+        "primary_domain": "Energy Optimization",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Energy Efficiency Specialist",
+                "role": "Lead the energy optimization strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide expertise on distillation column design and modifications",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze heat integration opportunities and thermodynamic improvements",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Process Engineer",
+                "role": "Evaluate process modifications and their impact on energy consumption",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Energy Efficiency Specialist",
+            "information_flow": "Continuous knowledge sharing and feedback on energy-saving strategies, process modifications, and thermodynamic improvements.",
+            "collaboration_protocol": "Iterative design and optimization process, ensuring a holistic approach to energy reduction."
+        }
+    },
+    "clarification_questions": [
+        "What is the current energy consumption of the multi-stage crude distillation column?",
+        "Are there specific areas of the process where heat loss is more prominent?",
+        "Have you considered any initial ideas for energy-saving measures?"
+    ]
+}

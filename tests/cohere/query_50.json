@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a predictive model for eutectic salt formation in our deep eutectic solvent-based extraction process for rare earth elements. Can you help me characterize the thermodynamic boundaries?",
+        "expanded_query": "Develop a predictive model to understand the thermodynamic behavior of eutectic salt formation during the extraction of rare earth elements using deep eutectic solvents, and provide a comprehensive characterization of the thermodynamic boundaries.",
+        "complexity_level": "high",
+        "primary_domain": "Thermodynamic Modeling",
+        "secondary_domains": [
+            "Rare Earth Element Extraction",
+            "Deep Eutectic Solvents"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Model development and thermodynamic analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Extraction process insights and optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Modeling support and data analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Model development and validation, with continuous feedback on extraction process parameters",
+            "collaboration_protocol": "Iterative model refinement and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific rare earth elements are being extracted?",
+        "What are the compositions of the deep eutectic solvents used?",
+        "Are there any specific thermodynamic properties or phase behaviors you are interested in characterizing?"
+    ]
+}

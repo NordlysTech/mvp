@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "What are the typical mass transfer coefficients for packed columns in gas absorption?",
+        "expanded_query": "Provide a comprehensive analysis of the typical mass transfer coefficients for packed columns used in gas absorption processes, considering various packing materials and gas-liquid combinations.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Operations",
+        "secondary_domains": [
+            "Gas Absorption",
+            "Column Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Column design considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Data-driven mass transfer coefficient estimation and validation",
+            "collaboration_protocol": "Integrated column design and performance assessment"
+        }
+    },
+    "clarification_questions": [
+        "What specific packing materials and gas-liquid combinations are you interested in?",
+        "Are there any particular operating conditions or process constraints that need to be considered?"
+    ]
+}

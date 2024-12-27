@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "The compressor in our refrigeration cycle is showing unexpected surges in discharge pressure. Could it be related to liquid carryover from the separator upstream?",
+        "expanded_query": "Investigate the potential cause of unexpected discharge pressure surges in a refrigeration cycle compressor, specifically examining the possibility of liquid carryover from the upstream separator.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Refrigeration Systems",
+            "Separation Technology",
+            "Compressor Operation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of compressor surges",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluation of separator performance and liquid carryover",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analysis of phase behavior and potential liquid carryover mechanisms",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic information exchange and hypothesis testing",
+            "collaboration_protocol": "Sequential investigation and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "What type of separator is used upstream of the compressor?",
+        "What are the operating conditions (temperature, pressure) of the separator and compressor?",
+        "Have there been any recent changes in the refrigeration system's operation or maintenance?"
+    ]
+}

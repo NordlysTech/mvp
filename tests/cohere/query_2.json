@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Hey team, we're struggling with CO2 capture in our power plant's flue gas system. I've heard about new membrane technologies - can you recommend a material that might bump up our selectivity without killing our flux rate?",
+        "expanded_query": "Identify and evaluate membrane materials for CO2 capture in a power plant's flue gas system, aiming to enhance selectivity while maintaining optimal flux rates.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Gas Separation",
+            "Energy Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane material selection and process design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Molecular transport analysis and performance prediction",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Material selection criteria and process design considerations",
+            "collaboration_protocol": "Iterative material evaluation and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the current membrane technology being used and its performance metrics?",
+        "Are there any specific material constraints or requirements for the new membrane material?",
+        "What are the typical operating conditions (temperature, pressure) of the flue gas system?"
+    ]
+}

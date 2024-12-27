@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're investigating a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas. How can we develop a multi-scale modeling approach to predict separation performance?",
+        "expanded_query": "Develop a comprehensive multi-scale modeling strategy to accurately predict the performance of a hybrid membrane-adsorption system for hydrogen sulfide separation from sour gas.",
+        "complexity_level": "high",
+        "primary_domain": "Hybrid Separation Processes",
+        "secondary_domains": [
+            "Membrane Technology",
+            "Adsorption Science",
+            "Process Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid process design and modeling",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Molecular interaction modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model development and validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Multi-scale model development and integration",
+            "collaboration_protocol": "Iterative model refinement and validation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the sour gas stream, including composition and flow rates?",
+        "Have you identified any potential membrane materials or adsorbents for the process?",
+        "What are the desired performance metrics for the separation process?"
+    ]
+}

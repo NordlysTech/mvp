@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive energy optimization strategy for reducing heat consumption in our multi-stage crude distillation column.",
+        "expanded_query": "Design and implement a detailed energy optimization plan to minimize heat usage in a multi-stage crude oil distillation column.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Optimization",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Heat Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Heat transfer analysis and optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Process integration and economic analysis",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative optimization of heat consumption and process efficiency",
+            "collaboration_protocol": "Integrated process design and heat recovery strategy"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operating conditions of the distillation column?",
+        "What are the specific heat consumption targets?",
+        "Are there any existing heat recovery systems in place?"
+    ]
+}

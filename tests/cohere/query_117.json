@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How does varying the operating pressure influence mass transfer rates in a cryogenic distillation process? Explain the implications on separation efficiency.",
+        "expanded_query": "Provide a comprehensive analysis of the relationship between operating pressure and mass transfer rates in cryogenic distillation, and discuss the resulting impact on separation efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer and pressure relationship analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separation efficiency implications assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Knowledge sharing on pressure-mass transfer relationship and its effect on separation efficiency",
+            "collaboration_protocol": "Sequential analysis and integrated interpretation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific cryogenic distillation process under consideration?",
+        "Are there any constraints on the operating pressure range?",
+        "What are the key performance indicators for separation efficiency in this process?"
+    ]
+}

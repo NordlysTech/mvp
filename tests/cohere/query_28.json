@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the typical mass transfer coefficients for CO2 absorption in a hot potassium carbonate-based system?",
+        "expanded_query": "Provide a comprehensive analysis of the mass transfer coefficients for carbon dioxide absorption in a hot potassium carbonate-based system, considering various operating conditions and process parameters.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Coefficient Estimation",
+        "secondary_domains": [
+            "Absorption Processes",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient calculation and analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process parameter optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Data-driven mass transfer coefficient estimation and process optimization",
+            "collaboration_protocol": "Iterative refinement of process parameters for optimal mass transfer"
+        }
+    },
+    "clarification_questions": [
+        "What is the temperature range of the hot potassium carbonate-based system?",
+        "Are there any specific operating conditions or process constraints that need to be considered?",
+        "Do you have any initial estimates or ranges for the mass transfer coefficients?"
+    ]
+}

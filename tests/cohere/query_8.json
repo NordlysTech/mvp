@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the functions of the caps on trays in distillation columns ? Are they there to optimize mass transfer or to cap vapor travelling upwards the column ?",
+        "expanded_query": "Provide a detailed explanation of the purpose and function of caps on trays in distillation columns, specifically addressing their role in mass transfer optimization and vapor flow control.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Vapor Flow Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Distillation Specialist",
+                "role": "Distillation column design and function",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer and vapor flow analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Distillation Specialist",
+            "information_flow": "Information exchange on distillation column design and caps functionality",
+            "collaboration_protocol": "Integrated analysis of mass transfer and vapor flow dynamics"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of distillation column is being referred to?",
+        "Are there any unique design features or modifications in the column that might impact the function of the caps?",
+        "Do you require information on the design specifications of the caps or the overall column design?"
+    ]
+}

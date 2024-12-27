@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key thermodynamic considerations for designing a multistage hydrocarbon separation process in a refinery setting?",
+        "expanded_query": "Identify and explain the critical thermodynamic principles and factors that must be considered when designing a multistage hydrocarbon separation process within a refinery environment.",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Analysis",
+        "secondary_domains": [
+            "Refinery Processes",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Identify and explain key thermodynamic considerations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide context on multistage separation processes",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic principles and their application to multistage separation",
+            "collaboration_protocol": "Integrated thermodynamic and process design analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific hydrocarbons being separated in the process?",
+        "What are the operating conditions (temperature, pressure) for the separation process?",
+        "Are there any specific performance targets or constraints for the separation process?"
+    ]
+}

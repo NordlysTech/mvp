@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're investigating a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas. How can we develop a multi-scale modeling approach to predict separation performance? ",
+        "expanded_query": "Develop a multi-scale modeling strategy to predict the separation performance of a hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas.",
+        "complexity_level": "medium",
+        "primary_domain": "Hybrid Separation Process Modeling",
+        "secondary_domains": [
+            "Membrane Separation Technology",
+            "Adsorption Technology",
+            "Process Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid process design and performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Multi-scale model development and implementation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer and adsorption mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model development and validation",
+            "collaboration_protocol": "Integrated modeling and simulation approach"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (temperature, pressure, gas composition) for the sour gas?",
+        "What are the characteristics of the membrane and adsorbent materials being considered?",
+        "What level of detail is required for the multi-scale model (e.g., molecular, pore, macroscopic)?"
+    ]
+}

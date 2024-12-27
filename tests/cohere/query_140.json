@@ -1,0 +1,24 @@
+{
+    "query_analysis": {
+        "original_query": "What are the published values of Henry\u2019s constants for CO\u2082 in aqueous ethanol solutions at 25\u00b0C?",
+        "expanded_query": "Retrieve the published data on Henry's constants for carbon dioxide in water-ethanol mixtures at room temperature.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Data Retrieval",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Data retrieval and validation",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data retrieval and reporting",
+            "collaboration_protocol": "None required"
+        }
+    },
+    "clarification_questions": []
+}

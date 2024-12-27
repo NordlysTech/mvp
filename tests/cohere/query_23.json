@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re designing a hybrid separation unit combining distillation and membranes. How do we determine the most energy-efficient split between these two stages?",
+        "expanded_query": "Provide a detailed analysis and guidance on optimizing energy efficiency in a hybrid separation system that integrates distillation and membrane processes, focusing on the optimal distribution of energy consumption between the two stages.",
+        "complexity_level": "medium",
+        "primary_domain": "Hybrid Separation Technology",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid system design and energy distribution strategy",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy consumption analysis for each stage",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process dynamics and control optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Energy efficiency optimization strategies and process integration",
+            "collaboration_protocol": "Iterative process modeling and performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components and configuration of your hybrid separation unit?",
+        "Are there any constraints on the energy sources or distribution within the system?",
+        "Do you have any preliminary data or simulations regarding the energy consumption of each stage?"
+    ]
+}

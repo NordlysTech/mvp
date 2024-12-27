@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What safety precautions should we consider when handling cryogenic fluids in an air separation unit?",
+        "expanded_query": "Identify and detail the necessary safety measures for handling cryogenic fluids within an air separation unit to ensure safe operation and prevent accidents.",
+        "complexity_level": "medium",
+        "primary_domain": "Cryogenic Safety",
+        "secondary_domains": [
+            "Air Separation",
+            "Process Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Primary safety protocol development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process-specific safety considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety protocol development and process integration",
+            "collaboration_protocol": "Iterative safety review and process alignment"
+        }
+    },
+    "clarification_questions": [
+        "What specific cryogenic fluids are being handled in the air separation unit?",
+        "Are there any existing safety protocols in place for handling these fluids?",
+        "What is the scale of operation for the air separation unit?"
+    ]
+}

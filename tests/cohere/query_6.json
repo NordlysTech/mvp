@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I am working with a team of gas processing engineers, we are designing a state of the art unit for carbon capture trying to achieve optimum levels of energy consumption, at this stage we are looking into the regulations regarding our design, could you help us go through the safety standards ?",
+        "expanded_query": "Provide a comprehensive overview of safety standards and regulations relevant to the design of a state-of-the-art carbon capture unit, focusing on energy efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Carbon Capture Safety",
+        "secondary_domains": [
+            "Gas Processing",
+            "Energy Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety standards and regulations analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Carbon capture unit design context",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Energy efficiency considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety standard identification and interpretation",
+            "collaboration_protocol": "Integrated design and safety compliance"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of carbon capture technology are you employing?",
+        "Are there any unique process conditions or constraints that might impact safety considerations?",
+        "Do you have any initial design specifications or performance targets that could influence the safety standards applied?"
+    ]
+}

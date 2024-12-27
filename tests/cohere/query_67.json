@@ -1,0 +1,24 @@
+{
+    "query_analysis": {
+        "original_query": "What's the typical centrifugal force range for a disk centrifuge with a 13-inch bowl?",
+        "expanded_query": "Provide the standard centrifugal force range for a 13-inch disk centrifuge, considering the equipment specifications and typical operating conditions.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifuge force range determination",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct information retrieval",
+            "collaboration_protocol": "N/A"
+        }
+    },
+    "clarification_questions": []
+}

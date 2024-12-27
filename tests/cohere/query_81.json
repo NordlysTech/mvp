@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We need to improve the selectivity of our light naphtha separation. What advanced tray design or packing technologies could enhance our fractionation efficiency?",
+        "expanded_query": "Investigate and recommend advanced tray designs or packing technologies to improve selectivity and fractionation efficiency in light naphtha separation columns.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Distillation",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Tray and packing technology evaluation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase behavior and separation mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process dynamics and control strategy optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Continuous exchange of design, thermodynamic, and process control insights",
+            "collaboration_protocol": "Iterative design refinement and performance optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the current tray design and packing material used in your light naphtha separation column?",
+        "Have you identified any specific issues or bottlenecks in the current separation process?",
+        "What are the desired selectivity and fractionation efficiency targets you aim to achieve?"
+    ]
+}

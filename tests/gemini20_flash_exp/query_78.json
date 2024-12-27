@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the standard vapor pressure correction factors for different crude oil compositions in vacuum distillation processes.",
+        "expanded_query": "Obtain standard vapor pressure correction factors for various crude oil compositions relevant to vacuum distillation processes.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Data Retrieval",
+        "secondary_domains": [
+            "Crude Oil Processing",
+            "Vacuum Distillation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Vapor pressure correction factor retrieval",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data provision",
+            "collaboration_protocol": "Independent data retrieval"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific crude oil compositions for which the correction factors are needed?",
+        "Are there any specific temperature or pressure ranges of interest for the vacuum distillation process?"
+    ]
+}

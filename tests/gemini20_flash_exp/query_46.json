@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How can we fine-tune the PID controller for maintaining steady pressure in a distillation column's reflux drum?",
+        "expanded_query": "Optimize the PID controller parameters to achieve stable pressure control within a distillation column's reflux drum.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Distillation",
+            "Control Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "PID controller tuning and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "System behavior analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative controller parameter adjustment based on system response",
+            "collaboration_protocol": "Feedback loop for performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What are the current PID controller parameters?",
+        "What is the desired pressure setpoint and acceptable pressure variation?",
+        "Can you provide historical data on pressure fluctuations in the reflux drum?"
+    ]
+}

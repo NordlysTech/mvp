@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're exploring advanced techniques to minimize filter medium blinding in our centrifugal filtration process. What innovative surface modification or control strategies could improve separation performance?",
+        "expanded_query": "Investigate and propose innovative surface modifications or control strategies to enhance separation efficiency in a centrifugal filtration process, specifically addressing the issue of filter medium blinding.",
+        "complexity_level": "high",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Surface Chemistry",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Surface Chemistry Specialist",
+                "role": "Surface modification techniques",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated filtration process improvement strategies",
+            "collaboration_protocol": "Iterative surface modification and control system design"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of filter medium is currently being used?",
+        "What are the characteristics of the feed material causing blinding?",
+        "Are there any constraints on the surface modification techniques or control strategies?"
+    ]
+}

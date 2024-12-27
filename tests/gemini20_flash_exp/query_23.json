@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re designing a hybrid separation unit combining distillation and membranes. How do we determine the most energy-efficient split between these two stages?",
+        "expanded_query": "Develop a methodology for optimizing the energy consumption of a hybrid separation process that integrates distillation and membrane separation, focusing on determining the most energy-efficient allocation of separation duties between the two stages.",
+        "complexity_level": "medium",
+        "primary_domain": "Hybrid Separation Process Design",
+        "secondary_domains": [
+            "Distillation",
+            "Membrane Separation Technology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy consumption analysis and optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Process modeling and simulation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative process design and energy analysis",
+            "collaboration_protocol": "Integrated modeling and optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components being separated in the mixture?",
+        "What are the desired purity levels for the separated components?",
+        "What are the operating conditions (temperature, pressure) for each separation stage?",
+        "Are there any specific constraints on the design or operation of the hybrid unit?"
+    ]
+}

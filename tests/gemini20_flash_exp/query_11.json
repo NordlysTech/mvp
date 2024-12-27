@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "Could you provide a checklist to help me draft a industry scale risk assessment for a pressure swing system ?",
+        "expanded_query": "Generate a comprehensive checklist to guide the development of an industry-scale risk assessment for a pressure swing adsorption (PSA) system.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety and Risk Assessment",
+        "secondary_domains": [
+            "Process Safety",
+            "Pressure Swing Adsorption"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment checklist generation",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Direct checklist provision",
+            "collaboration_protocol": "Independent task completion"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of pressure swing system is being assessed?",
+        "Are there any specific industry standards or regulations that need to be considered?",
+        "Are there any known hazards or incidents associated with similar pressure swing systems?"
+    ]
+}

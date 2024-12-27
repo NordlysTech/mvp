@@ -1,0 +1,24 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard droplet size cut-off for mist eliminators in demisters.",
+        "expanded_query": "Provide the industry standard for droplet size cut-off in mist eliminators used in demisters, and explain the significance of this parameter in the context of separation technology.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Standard specification and explanation",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct information retrieval",
+            "collaboration_protocol": "N/A"
+        }
+    },
+    "clarification_questions": []
+}

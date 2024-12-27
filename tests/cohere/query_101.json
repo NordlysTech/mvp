@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Considering the thermodynamics of phase equilibrium, explain why non-ideal liquid mixtures can impact gas-liquid separation efficiency in high-temperature scrubbers.",
+        "expanded_query": "Provide a comprehensive explanation of the thermodynamic principles behind the impact of non-ideal liquid mixtures on gas-liquid separation efficiency in high-temperature scrubbers, focusing on phase equilibrium behavior.",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Analysis",
+        "secondary_domains": [
+            "Separation Technology",
+            "Phase Equilibrium"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic analysis of phase equilibrium",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Gas-liquid separation efficiency assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic insights and separation efficiency correlation",
+            "collaboration_protocol": "Integrated analysis of phase behavior and separation performance"
+        }
+    },
+    "clarification_questions": [
+        "What specific non-ideal liquid mixtures are you referring to?",
+        "Are there any particular high-temperature scrubber designs of interest?",
+        "Do you have any initial hypotheses about the impact on separation efficiency?"
+    ]
+}

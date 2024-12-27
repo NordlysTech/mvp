@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What safety considerations are critical when implementing new tray or packing technologies in existing distillation columns?",
+        "expanded_query": "Identify and evaluate the key safety considerations associated with the implementation of new tray or packing technologies in existing distillation columns.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Safety",
+        "secondary_domains": [
+            "Process Safety",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety assessment and regulatory compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Technology-specific safety implications",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety implications of new technologies",
+            "collaboration_protocol": "Iterative safety review and technology integration"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific types of tray or packing technologies being considered?",
+        "What are the operating conditions of the distillation column (temperature, pressure, flow rates)?",
+        "Are there any specific safety regulations or standards that need to be considered?"
+    ]
+}

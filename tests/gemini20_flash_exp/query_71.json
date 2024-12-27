@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "What's the mathematical relationship between cake resistance and filtration rate in pressure-driven systems?",
+        "expanded_query": "Determine the mathematical equation that describes the relationship between cake resistance and filtration rate in pressure-driven filtration systems.",
+        "complexity_level": "low",
+        "primary_domain": "Filtration Theory",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Fluid Mechanics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Mathematical relationship derivation",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Direct mathematical equation provision",
+            "collaboration_protocol": "Independent analysis"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific assumptions or simplifications that should be considered?",
+        "Is there a specific type of pressure-driven filtration system that this relationship should be focused on?"
+    ]
+}

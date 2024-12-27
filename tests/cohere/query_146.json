@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the minimum energy requirements for mass transfer in a vacuum stripping process for benzene removal from wastewater.",
+        "expanded_query": "Determine the energy efficiency of a vacuum stripping process for benzene extraction from wastewater by calculating the minimum energy input required for mass transfer.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Operations",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Vacuum stripping process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy requirements calculation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Collaborative energy optimization and process refinement",
+            "collaboration_protocol": "Iterative process design and energy analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the initial concentration of benzene in the wastewater?",
+        "Are there any specific constraints or requirements for the vacuum stripping process?",
+        "Do you have any preliminary data or existing process parameters that could aid in the energy requirements calculation?"
+    ]
+}

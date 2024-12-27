@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unpredictable solids discharge in our hydrocyclone. Develop a comprehensive diagnostic framework to identify potential root causes.",
+        "expanded_query": "Create a detailed diagnostic framework to investigate the root causes of inconsistent solids discharge from a hydrocyclone, including potential operational and design factors.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocyclone Troubleshooting",
+        "secondary_domains": [
+            "Solid-Liquid Separation",
+            "Process Diagnostics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation and diagnostic framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone process analysis and performance evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational parameter analysis and control system assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Iterative diagnostic process and performance data analysis",
+            "collaboration_protocol": "Integrated problem-solving and hypothesis testing"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical particle size distribution of the solids being processed?",
+        "What are the current operating parameters of the hydrocyclone (flow rate, pressure, etc.)?",
+        "Have there been any recent changes in the feed material or operating conditions?"
+    ]
+}

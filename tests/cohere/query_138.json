@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve standard operating limits for mass transfer in cryogenic air separation plants.",
+        "expanded_query": "Provide a comprehensive overview of the standard operating limits for mass transfer processes in cryogenic air separation facilities, including any relevant parameters and constraints.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Operations",
+        "secondary_domains": [
+            "Cryogenic Engineering",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer analysis and limit determination",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Cryogenic process expertise",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic insights and process-specific knowledge exchange",
+            "collaboration_protocol": "Iterative refinement of operating limits based on cryogenic process constraints"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific components or processes within the cryogenic air separation plant that require particular attention regarding mass transfer limits?",
+        "Do you have any preliminary data or existing operating conditions that could aid in defining these limits?"
+    ]
+}

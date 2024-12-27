@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Propose modifications to a falling-film evaporator to enhance mass transfer efficiency in high-viscosity solutions.",
+        "expanded_query": "Provide a detailed design modification plan for a falling-film evaporator to improve mass transfer rates in high-viscosity fluids, ensuring optimal performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Engineering",
+            "Heat and Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Falling-film evaporator design modifications",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process optimization and control strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Design modifications and performance targets",
+            "collaboration_protocol": "Integrated process optimization and control"
+        }
+    },
+    "clarification_questions": [
+        "What specific high-viscosity solutions are being processed?",
+        "What are the current mass transfer rates, and what is the desired improvement?",
+        "Are there any constraints on the modification approach or available resources?"
+    ]
+}

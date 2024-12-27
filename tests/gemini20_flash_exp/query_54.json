@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We need to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system. What machine learning approaches could enhance our predictive maintenance? ",
+        "expanded_query": "Develop a fault detection and diagnostic strategy for a continuous countercurrent extraction system using machine learning to improve predictive maintenance capabilities.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Monitoring and Fault Detection",
+        "secondary_domains": [
+            "Machine Learning",
+            "Process Control",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Fault detection strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process data analysis and control system integration",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Machine learning algorithm selection and implementation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Iterative refinement of fault detection and diagnostic strategy",
+            "collaboration_protocol": "Integrated data analysis and model development"
+        }
+    },
+    "clarification_questions": [
+        "What types of faults are most common in your countercurrent extraction system?",
+        "What historical process data is available for training machine learning models?",
+        "What are the key performance indicators (KPIs) for the extraction system?"
+    ]
+}

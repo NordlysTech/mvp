@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "A horizontal separator operates under steady-state conditions with a constant flow of gas and liquid phases. Develop a differential equation relating the pressure drop to liquid holdup, assuming frictional losses dominate.",
+        "expanded_query": "Formulate a differential equation that describes the relationship between pressure drop and liquid holdup in a horizontal separator operating at steady-state with constant gas and liquid flow rates, considering frictional losses as the primary factor influencing pressure drop.",
+        "complexity_level": "medium",
+        "primary_domain": "Fluid Dynamics Modeling",
+        "secondary_domains": [
+            "Separation Technology",
+            "Mathematical Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Differential equation formulation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid flow and frictional loss analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Iterative model development and validation",
+            "collaboration_protocol": "Sequential model refinement"
+        }
+    },
+    "clarification_questions": [
+        "What is the geometry of the horizontal separator?",
+        "What are the fluid properties of the gas and liquid phases?",
+        "Are there any specific assumptions or simplifications that can be made?"
+    ]
+}

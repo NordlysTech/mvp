@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a heat integration strategy to reduce energy consumption in distillation columns without compromising mass transfer efficiency.",
+        "expanded_query": "Design a comprehensive heat integration approach for distillation columns to minimize energy usage while maintaining optimal mass transfer performance.",
+        "complexity_level": "high",
+        "primary_domain": "Distillation Process Optimization",
+        "secondary_domains": [
+            "Heat Integration",
+            "Energy Efficiency",
+            "Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Heat integration strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Mass transfer efficiency monitoring",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Continuous data exchange on heat integration, process optimization, and mass transfer performance.",
+            "collaboration_protocol": "Real-time feedback and adjustment to ensure energy efficiency and mass transfer goals are met."
+        }
+    },
+    "clarification_questions": [
+        "What is the current energy consumption of the distillation columns?",
+        "Are there specific mass transfer targets that must be maintained?",
+        "Have you considered any initial ideas for heat integration strategies?"
+    ]
+}

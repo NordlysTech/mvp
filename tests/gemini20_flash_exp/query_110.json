@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Could you help me design a monitoring system to predict early fouling in demisters for separators handling heavy hydrocarbon condensates. What sensors and control strategies would you recommend?",
+        "expanded_query": "Develop a monitoring system for early detection of fouling in demisters used in heavy hydrocarbon condensate separation, including sensor selection and control strategy recommendations.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Monitoring and Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Sensor Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Monitoring system design and control strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister fouling mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Sensor data analysis and control loop design",
+            "collaboration_protocol": "Iterative feedback on fouling detection and control effectiveness"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical operating conditions (temperature, pressure, flow rate) of the separator?",
+        "What is the composition of the heavy hydrocarbon condensate?",
+        "Are there any existing sensors or monitoring systems in place?"
+    ]
+}

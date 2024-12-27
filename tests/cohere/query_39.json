@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "In a vacuum distillation column, the overhead condenser is struggling to maintain pressure. Could this be due to non-condensables in the system?",
+        "expanded_query": "Investigate the cause of pressure maintenance issues in a vacuum distillation column's overhead condenser, specifically exploring the potential role of non-condensable gases.",
+        "complexity_level": "medium",
+        "primary_domain": "Vacuum Distillation",
+        "secondary_domains": [
+            "Process Troubleshooting",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Non-condensable gas behavior analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process dynamics evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative problem-solving, sharing insights on process anomalies and thermodynamic behavior of non-condensables.",
+            "collaboration_protocol": "Iterative data exchange and hypothesis refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific pressure maintenance issues are being observed in the overhead condenser?",
+        "Have you noticed any changes in the composition of gases entering the condenser?",
+        "Are there any unusual temperature or flow rate patterns associated with the pressure issue?"
+    ]
+}

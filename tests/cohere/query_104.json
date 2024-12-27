@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Solve for the critical droplet size distribution in a vertical gas-liquid separator where the velocity profile is non-uniform and governed by a parabolic function.",
+        "expanded_query": "Determine the critical droplet size distribution in a vertical gas-liquid separator with a non-uniform velocity profile described by a parabolic function, considering the impact of fluid dynamics and phase separation.",
+        "complexity_level": "high",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Phase Equilibrium"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Design and analysis of the gas-liquid separator",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium and fluid behavior analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Modeling the non-uniform velocity profile",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Continuous exchange of separator design, thermodynamic properties, and velocity profile data for iterative refinement.",
+            "collaboration_protocol": "Integrated approach to combine separator design, fluid dynamics, and phase behavior for an accurate solution."
+        }
+    },
+    "clarification_questions": [
+        "What are the specific fluids involved in the gas-liquid separation process?",
+        "Are there any constraints or operating conditions that need to be considered for this separator design?",
+        "Do you have any initial estimates or assumptions regarding the droplet size distribution?"
+    ]
+}

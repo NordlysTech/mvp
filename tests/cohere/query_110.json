@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Could you help me design a monitoring system to predict early fouling in demisters for separators handling heavy hydrocarbon condensates. What sensors and control strategies would you recommend?",
+        "expanded_query": "Develop a comprehensive monitoring system for early detection of fouling in demisters used in separators processing heavy hydrocarbon condensates. Identify suitable sensors and design an effective control strategy to mitigate fouling.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Monitoring and Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Sensor Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister monitoring system design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fouling mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Real-time data analysis and fouling prediction",
+            "collaboration_protocol": "Integrated sensor-control system design"
+        }
+    },
+    "clarification_questions": [
+        "What type of demisters are currently in use and what are their specifications?",
+        "Are there any specific challenges or issues observed with the current demister performance?",
+        "What are the typical operating conditions (temperature, pressure, flow rates) of the separators handling heavy hydrocarbon condensates?"
+    ]
+}

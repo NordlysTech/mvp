@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing challenges with side draw consistency in our crude distillation unit. What control strategies could improve product quality?",
+        "expanded_query": "Investigate and recommend control strategies to enhance product quality by addressing side draw inconsistencies in a crude distillation unit.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation unit process optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Control strategy development and process optimization",
+            "collaboration_protocol": "Iterative process control design and implementation"
+        }
+    },
+    "clarification_questions": [
+        "What specific issues are you encountering with side draw consistency?",
+        "Are there any variations in feed composition or operating conditions?",
+        "What are the desired product quality parameters and specifications?"
+    ]
+}

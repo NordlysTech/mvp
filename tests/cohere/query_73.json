@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We need to optimize the design of a hybrid filtration system combining rotary drum and pressure leaf technologies. What advanced integration strategies could improve overall separation efficiency?",
+        "expanded_query": "Provide a comprehensive analysis of advanced integration techniques to enhance the performance of a hybrid filtration system, focusing on the synergy between rotary drum and pressure leaf technologies for improved separation efficiency.",
+        "complexity_level": "high",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Process Integration",
+            "Separation Efficiency Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid filtration system design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process integration strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Separation efficiency modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Continuous knowledge exchange on filtration technology, process integration, and efficiency modeling",
+            "collaboration_protocol": "Iterative design refinement and performance optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific performance metrics or targets for the hybrid filtration system?",
+        "Are there any constraints or limitations on the integration of rotary drum and pressure leaf technologies?",
+        "Have you considered any initial integration strategies, and if so, what were the outcomes?"
+    ]
+}

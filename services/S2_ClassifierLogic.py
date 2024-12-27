@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_cohere import ChatCohere
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 import json
 import re
@@ -24,6 +25,18 @@ class Classifier:
                 max_tokens=2000,
                 openai_api_key=openai.api_key,
             )
+            """
+            self.model = ChatCohere(
+                temperature=0.2,
+                max_tokens=2000
+            )
+            
+            self.model = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash-exp",
+            temperature=0.2,
+            max_tokens=2000
+            )
+            """
     def classify_query(self, user_query: str):
         """
         Process the user query using the Classifier Agent Prompt with few-shot learning examples.
@@ -375,6 +388,19 @@ class PlannerAgent:
             max_tokens=2500,
             openai_api_key=openai.api_key,
         )
+        """
+        self.model = ChatCohere(
+            temperature=0.2,
+            max_tokens=2500
+        )
+        
+        self.model = ChatGoogleGenerativeAI(
+            model="gemini-2.0-flash-exp",
+            temperature=0.2,
+            max_tokens=2500
+        )
+        """
+        
         self.agent_name = agent_name
         self.agent_expertise = agent_expertise
         self.knowledge_retriever = KnowledgeRetriever()
@@ -770,6 +796,18 @@ class OverviewPlanner:
                 max_tokens=2000,
                 openai_api_key=openai.api_key,
             )
+            """
+            self.model = ChatCohere(
+                temperature=0.2,
+                max_tokens=2000
+            )
+            
+            self.model = ChatGoogleGenerativeAI(
+                model="gemini-2.0-flash-exp",
+                temperature=0.2,
+                max_tokens=2000
+            )
+            """
 
         def coordinate_plans(self, list_of_agent_plans, agent_allocation):
             """Coordinates the plans from all planner agents."""

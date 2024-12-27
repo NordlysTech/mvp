@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Solve for the critical droplet size distribution in a vertical gas-liquid separator where the velocity profile is non-uniform and governed by a parabolic function.",
+        "expanded_query": "Determine the critical droplet size distribution within a vertical gas-liquid separator, considering a non-uniform gas velocity profile described by a parabolic function.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Mathematical Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Droplet separation analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Mathematical modeling and solution",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model development and solution",
+            "collaboration_protocol": "Integrated mathematical analysis and separation process understanding"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific dimensions of the separator?",
+        "What are the properties of the gas and liquid phases (density, viscosity)?",
+        "What is the specific parabolic function describing the velocity profile?"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "query_analysis": {
+        "original_query": "What's the typical efficiency range for crude oil distillation columns in petroleum refineries?",
+        "expanded_query": "Provide a comprehensive overview of the typical efficiency range for crude oil distillation columns, including any relevant factors that influence performance in petroleum refinery settings.",
+        "complexity_level": "low",
+        "primary_domain": "Distillation Technology",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Distillation Specialist",
+                "role": "Distillation process performance analysis",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Distillation Specialist",
+            "information_flow": "Direct knowledge transfer of distillation column efficiency data",
+            "collaboration_protocol": "N/A"
+        }
+    },
+    "clarification_questions": []
+}

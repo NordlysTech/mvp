@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What safety protocols are critical when handling mass transfer equipment in CO\u2082 capture systems using amine-based solvents?",
+        "expanded_query": "Identify and outline the essential safety measures and protocols for operating and maintaining mass transfer equipment in CO\u2082 capture processes that utilize amine-based solvents, ensuring operator safety and environmental integrity.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety Engineering",
+        "secondary_domains": [
+            "Mass Transfer",
+            "CO\u2082 Capture Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol identification and assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Mass transfer equipment handling procedures",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Amine-based solvent properties and hazards analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety protocol development and equipment handling guidelines",
+            "collaboration_protocol": "Integrated safety assessment and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of mass transfer equipment is being used in the CO\u2082 capture system?",
+        "Are there any unique hazards associated with the amine-based solvents used?",
+        "Have you identified any potential safety risks or incidents related to the equipment handling process?"
+    ]
+}

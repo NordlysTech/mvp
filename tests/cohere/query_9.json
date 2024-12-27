@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "During commissioning of a gas-liquid separator, we noticed unexpected pressure surges. Could this indicate a safety hazard?",
+        "expanded_query": "Investigate the root cause of pressure surges in a gas-liquid separator during commissioning and assess potential safety risks.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Process Troubleshooting",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety hazard assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Pressure surge root cause analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Gas-liquid separator design review",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Collaborative safety assessment and troubleshooting",
+            "collaboration_protocol": "Integrated safety and process analysis"
+        }
+    },
+    "clarification_questions": [
+        "Have there been any modifications to the separator design or operating conditions during commissioning?",
+        "Are there any unusual process parameters or sensor readings during the pressure surges?",
+        "What safety measures are currently in place for the gas-liquid separator?"
+    ]
+}

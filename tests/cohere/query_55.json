@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help me develop a comprehensive uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing?",
+        "expanded_query": "Develop a detailed uncertainty analysis framework for a ceramic membrane-based gas separation process operating at high temperatures, considering all relevant variables and sources of uncertainty.",
+        "complexity_level": "high",
+        "primary_domain": "Uncertainty Quantification",
+        "secondary_domains": [
+            "Membrane Separation",
+            "High-Temperature Processes"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Uncertainty model development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane process expertise",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "High-temperature behavior analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Uncertainty model formulation and validation with process-specific insights",
+            "collaboration_protocol": "Iterative model refinement and process-model integration"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific temperature ranges and gas compositions involved in the process?",
+        "Are there any critical performance parameters or constraints that the uncertainty model should account for?",
+        "Do you have any prior data or existing models that can be used as a starting point for uncertainty quantification?"
+    ]
+}

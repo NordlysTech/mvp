@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the allowable material stresses for stainless steel separators operating at cryogenic temperatures?",
+        "expanded_query": "Determine the permissible stress limits for stainless steel materials used in separator equipment functioning under cryogenic conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Material Science",
+        "secondary_domains": [
+            "Cryogenics",
+            "Mechanical Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Material property analysis at cryogenic temperatures",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Stress calculation and analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Material property data and stress limits",
+            "collaboration_protocol": "Iterative stress analysis and material selection"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of stainless steel is being considered?",
+        "What is the exact temperature range of the cryogenic operation?",
+        "Are there any specific safety or regulatory standards that need to be considered?"
+    ]
+}

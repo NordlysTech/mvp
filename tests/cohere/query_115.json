@@ -1,0 +1,24 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard height of a mass transfer unit (HTU) for a random packing system.",
+        "expanded_query": "Provide the standard dimensions and specifications for a mass transfer unit (HTU) using a random packing system, ensuring optimal performance.",
+        "complexity_level": "low",
+        "primary_domain": "Mass Transfer Equipment Design",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Mass transfer unit design and specification",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct provision of HTU design guidelines",
+            "collaboration_protocol": "N/A"
+        }
+    },
+    "clarification_questions": []
+}

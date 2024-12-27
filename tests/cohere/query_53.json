@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a compact intensified separation unit for biorefinery applications. What innovative process intensification strategies could help us achieve higher mass transfer coefficients?",
+        "expanded_query": "Seeking advanced process intensification techniques to enhance mass transfer in a compact separation unit for biorefinery processes.",
+        "complexity_level": "high",
+        "primary_domain": "Process Intensification",
+        "secondary_domains": [
+            "Separation Technology",
+            "Biochemical Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process intensification strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process optimization and control",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Strategy formulation and optimization",
+            "collaboration_protocol": "Iterative process intensification design and validation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific biorefinery processes and feedstocks involved?",
+        "Are there any space or energy constraints for the separation unit?",
+        "What are the current mass transfer coefficients, and what is the desired improvement?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unpredictable solids discharge in our hydrocyclone. Develop a comprehensive diagnostic framework to identify potential root causes.",
+        "expanded_query": "Create a detailed diagnostic plan to investigate and pinpoint the reasons behind the erratic solid discharge behavior in a hydrocyclone system.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Separation Technology",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Diagnostic framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone process analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Fluid dynamics assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative data gathering and analysis",
+            "collaboration_protocol": "Integrated root cause identification"
+        }
+    },
+    "clarification_questions": [
+        "What specific issues are you observing with the solids discharge?",
+        "Are there any variations in the feed composition or flow rate?",
+        "Have you noticed any changes in the hydrocyclone's performance over time?"
+    ]
+}

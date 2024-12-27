@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the mass transfer rate intervals for SOx in gas sweetening using sodium hydroxide ? Please provide accurate intervals.",
+        "expanded_query": "Provide a detailed analysis of the mass transfer rate intervals for sulfur oxides (SOx) in gas sweetening processes utilizing sodium hydroxide, ensuring precise and accurate interval data.",
+        "complexity_level": "medium",
+        "primary_domain": "Gas Sweetening",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Chemical Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer rate analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Gas sweetening process overview",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Data-driven mass transfer rate analysis and process optimization",
+            "collaboration_protocol": "Integrated process understanding and interval refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific sulfur oxides (SOx) are present in the gas stream?",
+        "Are there any other chemicals or impurities in the gas that might affect the mass transfer rate?",
+        "What is the concentration of sodium hydroxide used in the process?"
+    ]
+}

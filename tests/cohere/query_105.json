@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve standard pressure-temperature design guidelines for separators used in offshore gas production.",
+        "expanded_query": "Provide a comprehensive overview of the standard pressure-temperature design guidelines and specifications for separators utilized in offshore natural gas production facilities.",
+        "complexity_level": "medium",
+        "primary_domain": "Offshore Gas Processing",
+        "secondary_domains": [
+            "Process Design",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Pressure-temperature design guidelines for separators",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Offshore gas production process overview",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Sharing of design guidelines and process-specific considerations",
+            "collaboration_protocol": "Iterative refinement of design parameters based on process requirements"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific separator types or configurations you are interested in?",
+        "What are the typical operating conditions (pressure and temperature ranges) for your offshore gas production process?",
+        "Are there any unique challenges or constraints in your offshore environment that might impact separator design?"
+    ]
+}

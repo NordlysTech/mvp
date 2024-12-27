@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum number of stages required for effective kerosene-diesel separation in a petroleum distillation column.",
+        "expanded_query": "Determine the theoretical minimum number of stages needed to achieve efficient kerosene-diesel separation within a petroleum distillation column, considering the unique properties of these hydrocarbons.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Design",
+        "secondary_domains": [
+            "Thermodynamic Analysis",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic modeling and stage calculation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation column design insights",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Knowledge sharing on hydrocarbon properties and distillation principles",
+            "collaboration_protocol": "Iterative design and optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific compositions and properties of the kerosene and diesel streams?",
+        "Are there any constraints or specifications for the distillation column design?"
+    ]
+}

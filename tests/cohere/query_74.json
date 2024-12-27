@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key factors affecting the cut diameter in a hydrocyclone separation process?",
+        "expanded_query": "Provide a comprehensive analysis of the critical factors influencing the cut diameter in a hydrocyclone separation system, considering both design and operational parameters.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Design",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone design and performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Fluid dynamics and flow pattern assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Knowledge sharing on hydrocyclone design and fluid behavior",
+            "collaboration_protocol": "Integrated design and operational parameter optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific design parameters of the hydrocyclone?",
+        "Are there any operational conditions or constraints that might impact the cut diameter?",
+        "Do you have any preliminary data or observations regarding the hydrocyclone's performance?"
+    ]
+}

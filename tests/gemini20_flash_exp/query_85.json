@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a risk assessment framework for potential solvent carryover in our amine-based gas sweetening distillation process.",
+        "expanded_query": "Create a structured risk assessment methodology to evaluate and mitigate the potential for solvent carryover in an amine-based gas sweetening distillation process.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety and Risk Assessment",
+        "secondary_domains": [
+            "Gas Sweetening",
+            "Distillation",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process-specific risk identification",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system vulnerability analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Risk factor identification and mitigation strategy development",
+            "collaboration_protocol": "Iterative risk assessment and control measure refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific amine solvent is being used in the gas sweetening process?",
+        "What are the current operating conditions of the distillation column?",
+        "Are there any existing safety protocols or risk assessments in place for this process?"
+    ]
+}

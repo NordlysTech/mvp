@@ -1,0 +1,27 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the specific viscosity limits for effective hydrocyclone operation from the standard reference guidelines.",
+        "expanded_query": "Locate and extract the precise viscosity thresholds for optimal hydrocyclone performance as outlined in the industry-standard reference guidelines.",
+        "complexity_level": "low",
+        "primary_domain": "Fluid Dynamics",
+        "secondary_domains": [
+            "Process Engineering",
+            "Equipment Specification"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Retrieval of viscosity limits from standard reference guidelines",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "General Process Engineer",
+            "information_flow": "Direct retrieval and communication of viscosity limits",
+            "collaboration_protocol": "None required"
+        }
+    },
+    "clarification_questions": []
+}

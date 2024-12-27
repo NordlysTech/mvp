@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key factors affecting the cut diameter in a hydrocyclone separation process?",
+        "expanded_query": "Identify and explain the primary operational and design parameters that influence the cut size (d50) in a hydrocyclone separation process.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocyclone Separation",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Particle Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamic analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Parameter identification and impact assessment",
+            "collaboration_protocol": "Integrated parameter analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific application or industry for this hydrocyclone?",
+        "Are there any constraints on the hydrocyclone design or operating conditions?",
+        "What is the density and size range of the particles being separated?"
+    ]
+}

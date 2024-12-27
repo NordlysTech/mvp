@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In a distillation column, feed flowrate variations are leading to severe temperature disturbances. What control scheme can mitigate this issue effectively?",
+        "expanded_query": "Develop a control strategy to minimize temperature fluctuations in a distillation column caused by variations in feed flowrate.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Distillation",
+            "Process Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control scheme design and implementation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature profile analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Control strategy development and temperature profile analysis",
+            "collaboration_protocol": "Iterative design and feedback"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of feed flowrate variations?",
+        "What are the specific temperature control requirements for the distillation column?",
+        "Are there any existing control systems in place?"
+    ]
+}

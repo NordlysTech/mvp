@@ -1,0 +1,20 @@
+{
+    "query_analysis": {
+        "original_query": "nan",
+        "expanded_query": "The user has not provided a query. Please provide a query for analysis.",
+        "complexity_level": "low",
+        "primary_domain": "Query Input Error",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [],
+        "communication_strategy": {
+            "primary_communication_agent": null,
+            "information_flow": null,
+            "collaboration_protocol": null
+        }
+    },
+    "clarification_questions": [
+        "Please provide a query for analysis."
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In a solvent recovery system using distillation, how do we ensure compliance with safety standards for handling flammable solvents like ethanol?",
+        "expanded_query": "Determine the necessary safety measures and compliance protocols for a distillation-based solvent recovery system processing flammable solvents, specifically ethanol.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety and Regulatory Compliance",
+        "secondary_domains": [
+            "Distillation Process",
+            "Flammable Material Handling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Regulatory compliance verification and safety protocol design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process safety considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety protocol development and implementation",
+            "collaboration_protocol": "Iterative safety assessment and process integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific safety standards and regulations are applicable to your location and industry?",
+        "What is the scale of the distillation process and the volume of ethanol being handled?",
+        "Are there any existing safety measures in place for the solvent recovery system?"
+    ]
+}

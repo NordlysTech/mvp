@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Explain the thermodynamic basis for the driving force in mass transfer during azeotropic distillation and its limitations.",
+        "expanded_query": "Provide a comprehensive explanation of the thermodynamic principles that underpin the driving force in mass transfer during azeotropic distillation, including the identification of any limitations or constraints.",
+        "complexity_level": "high",
+        "primary_domain": "Thermodynamics of Separation Processes",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Distillation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic basis elucidation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Azeotropic distillation process insights",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic principles and process-specific insights integration",
+            "collaboration_protocol": "Iterative refinement of the thermodynamic basis and its application in azeotropic distillation"
+        }
+    },
+    "clarification_questions": [
+        "Are you specifically interested in the driving force for a particular azeotropic mixture or a general understanding of the concept?",
+        "What are the key limitations you are concerned about in the process of azeotropic distillation?"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re exploring cryogenic distillation for separating oxygen and nitrogen from air. What are the key design considerations to minimize energy consumption?",
+        "expanded_query": "Identify and analyze the critical design parameters for a cryogenic distillation process aimed at separating oxygen and nitrogen from air, with a specific focus on minimizing energy consumption.",
+        "complexity_level": "medium",
+        "primary_domain": "Cryogenic Distillation",
+        "secondary_domains": [
+            "Energy Optimization",
+            "Separation Technology",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Cryogenic distillation process design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy consumption analysis and optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design refinement based on energy analysis",
+            "collaboration_protocol": "Integrated design and optimization strategy"
+        }
+    },
+    "clarification_questions": [
+        "What are the desired purity levels for the separated oxygen and nitrogen?",
+        "Are there any specific constraints on the equipment or materials to be used?",
+        "What is the expected scale of the operation?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unexpected temperature profile variations in our atmospheric distillation unit. Can you help diagnose potential root causes?",
+        "expanded_query": "Investigate and diagnose the root causes of unexpected temperature profile variations in an atmospheric distillation unit.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Thermodynamic Analysis",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature profile analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "System dynamics analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic cross-referencing and hypothesis testing",
+            "collaboration_protocol": "Sequential problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "When did the temperature profile variations first become noticeable?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide detailed temperature profiles from different locations within the distillation unit?"
+    ]
+}

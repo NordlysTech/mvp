@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We need to optimize the design of a hybrid filtration system combining rotary drum and pressure leaf technologies. What advanced integration strategies could improve overall separation efficiency?",
+        "expanded_query": "Develop advanced integration strategies for a hybrid filtration system that combines rotary drum and pressure leaf technologies to maximize overall separation efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration System Design",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid filtration system design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Process integration and efficiency analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design refinement based on performance analysis",
+            "collaboration_protocol": "Integrated system design and performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the feed material being processed?",
+        "What are the current performance metrics of the individual rotary drum and pressure leaf filtration systems?",
+        "Are there any specific constraints on the integration of the two technologies?"
+    ]
+}

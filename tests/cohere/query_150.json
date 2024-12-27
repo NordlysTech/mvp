@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "For pressure-swing adsorption processes, derive the governing equations for mass transfer during adsorption and desorption cycles.",
+        "expanded_query": "Derive the mathematical equations that describe the mass transfer dynamics in pressure-swing adsorption processes, considering both adsorption and desorption stages.",
+        "complexity_level": "high",
+        "primary_domain": "Adsorption Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Process Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Derivation of governing equations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Equation validation and simplification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Equation derivation and refinement",
+            "collaboration_protocol": "Sequential derivation and validation"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific adsorbent materials or adsorbate molecules involved in this process?",
+        "What are the typical operating conditions (pressure, temperature) for the adsorption and desorption cycles?"
+    ]
+}

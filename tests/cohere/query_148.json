@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In reactive distillation, how do reaction kinetics interplay with mass transfer limitations, and how should the column be designed to optimize both?",
+        "expanded_query": "Provide a comprehensive analysis of the interaction between reaction kinetics and mass transfer limitations in reactive distillation, and propose design strategies to optimize the column performance considering both factors.",
+        "complexity_level": "high",
+        "primary_domain": "Reactive Distillation",
+        "secondary_domains": [
+            "Kinetics and Mass Transfer",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Kinetics and mass transfer analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Reactive distillation design optimization",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Two-way knowledge exchange on reaction kinetics, mass transfer, and distillation design considerations.",
+            "collaboration_protocol": "Iterative design refinement based on thermodynamic insights and process engineering principles."
+        }
+    },
+    "clarification_questions": [
+        "What specific reactive distillation system are you working with?",
+        "Are there any particular reaction kinetics or mass transfer limitations you are concerned about?",
+        "Do you have any initial design specifications or performance targets for the column?"
+    ]
+}

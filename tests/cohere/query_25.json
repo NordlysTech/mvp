@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help with tray design in a distillation column to maximize liquid-vapor contact and minimize weeping?",
+        "expanded_query": "Provide detailed design guidelines for distillation column trays to enhance liquid-vapor interaction while preventing weeping, a common issue in distillation processes.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Technology",
+        "secondary_domains": [
+            "Process Design",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Tray design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Weeping prevention strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Distillation tray design refinement and weeping mitigation strategy development",
+            "collaboration_protocol": "Integrated tray design and process control optimization"
+        }
+    },
+    "clarification_questions": [
+        "What type of distillation column is being used and what are its dimensions?",
+        "What are the current tray designs and materials being considered?",
+        "Are there any specific operating conditions or feed compositions that might influence weeping?"
+    ]
+}

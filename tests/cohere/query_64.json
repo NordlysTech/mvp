@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a membrane filtration system for challenging liquid-solid separations. What multi-scale modeling approaches could help us predict performance across different operating conditions?",
+        "expanded_query": "Identify and recommend multi-scale modeling techniques to accurately predict the performance of a membrane filtration system for complex liquid-solid separations under varying operating conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Modeling",
+        "secondary_domains": [
+            "Multi-Scale Modeling",
+            "Process Simulation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane system design and modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Multi-scale modeling strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model implementation and validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Multi-scale model development and integration",
+            "collaboration_protocol": "Iterative model refinement and performance prediction"
+        }
+    },
+    "clarification_questions": [
+        "What specific challenges are associated with the liquid-solid separation process?",
+        "What range of operating conditions need to be considered in the modeling?",
+        "Are there any specific performance criteria or targets that the model should predict?"
+    ]
+}

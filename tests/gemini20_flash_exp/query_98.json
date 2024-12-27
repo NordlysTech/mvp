@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a framework for optimizing the residence time in horizontal separators for maximized liquid dropout efficiency in high-pressure systems.",
+        "expanded_query": "Create a systematic methodology for optimizing residence time in horizontal separators to achieve maximum liquid dropout efficiency under high-pressure conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "High-Pressure Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase separation mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Residence time modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design and performance analysis",
+            "collaboration_protocol": "Integrated modeling and optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific fluid properties (density, viscosity, surface tension) of the liquid and gas phases?",
+        "What is the operating pressure and temperature range of the system?",
+        "What are the desired liquid dropout efficiency targets?"
+    ]
+}

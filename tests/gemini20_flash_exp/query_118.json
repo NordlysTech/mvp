@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In membrane separations, how do concentration polarization effects impact mass transfer, and what strategies can minimize these effects?",
+        "expanded_query": "Analyze the impact of concentration polarization on mass transfer in membrane separation processes and identify effective mitigation strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Analysis of concentration polarization effects and mitigation strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Sequential analysis of concentration polarization and mitigation techniques",
+            "collaboration_protocol": "Integrated analysis of mass transfer and fluid dynamics"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of membrane separation process are you referring to?",
+        "Are there any specific operating conditions or constraints to consider?",
+        "What are the desired performance metrics for the membrane separation?"
+    ]
+}

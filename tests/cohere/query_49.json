@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing persistent fouling in our solvent regeneration system for CO2 capture. What chemical additives or surface modifications could mitigate this long-term performance degradation?",
+        "expanded_query": "Investigate and recommend chemical additives or surface treatments to prevent fouling and improve long-term performance in a solvent regeneration system for CO2 capture.",
+        "complexity_level": "medium",
+        "primary_domain": "Solvent Regeneration",
+        "secondary_domains": [
+            "Chemical Additives",
+            "Surface Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Solvent regeneration process analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fouling mechanism investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Chemical Engineer",
+                "role": "Additive and surface modification selection",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Fouling mitigation strategy development",
+            "collaboration_protocol": "Integrated process and chemical optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific solvent is used in your regeneration system?",
+        "Have you identified the root cause of the fouling?",
+        "Are there any constraints on the type of additives or surface modifications that can be used?"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "query_analysis": {
+        "original_query": "nan",
+        "expanded_query": "Not applicable",
+        "complexity_level": "Not applicable",
+        "primary_domain": "Not applicable",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [],
+        "communication_strategy": {
+            "primary_communication_agent": "Not applicable",
+            "information_flow": "Not applicable",
+            "collaboration_protocol": "Not applicable"
+        }
+    },
+    "clarification_questions": []
+}

@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help me develop a comprehensive uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing?",
+        "expanded_query": "Develop a detailed uncertainty quantification framework for an advanced ceramic membrane separation process operating in high-temperature gas processing, including the identification of key sources of uncertainty and their impact on process performance.",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Process Modeling",
+            "Statistical Analysis",
+            "High-Temperature Processes"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane process expertise and performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Uncertainty quantification methodology and statistical modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "High-temperature process parameter analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model development and validation",
+            "collaboration_protocol": "Integrated uncertainty analysis and performance prediction"
+        }
+    },
+    "clarification_questions": [
+        "What are the key performance indicators (KPIs) for the membrane separation process?",
+        "What are the known sources of uncertainty in the process (e.g., material properties, operating conditions)?",
+        "Do you have any existing data or models for the membrane separation process?"
+    ]
+}

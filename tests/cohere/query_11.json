@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Could you provide a checklist to help me draft an industry-scale risk assessment for a pressure swing system?",
+        "expanded_query": "Provide a comprehensive checklist to guide the development of a risk assessment for a large-scale pressure swing system, ensuring all critical aspects are considered.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Process Engineering",
+            "Risk Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Process-specific risk identification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Checklist creation and process-specific risk identification",
+            "collaboration_protocol": "Iterative refinement of the risk assessment checklist"
+        }
+    },
+    "clarification_questions": [
+        "What specific hazards or risks are associated with the pressure swing system?",
+        "Are there any regulatory standards or industry guidelines that the risk assessment should adhere to?",
+        "What is the scope of the risk assessment? Does it cover the entire process or specific components?"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum energy required to separate a binary gas-liquid mixture under isothermal conditions. The feed stream contains 60 mol% Component A and 40 mol% Component B, entering at a pressure of 5 bar and a temperature of 298 K. The desired products are a gas stream with 95 mol% Component A and a liquid stream with 90 mol% Component B. Assume ideal gas and liquid behavior, and neglect heat losses or inefficiencies in the separation process.",
+        "expanded_query": "Determine the theoretical minimum work required for an isothermal separation of a binary mixture, given a feed of 60 mol% Component A and 40 mol% Component B at 5 bar and 298 K, into a gas stream of 95 mol% Component A and a liquid stream of 90 mol% Component B, assuming ideal gas and liquid behavior and neglecting inefficiencies.",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Analysis",
+        "secondary_domains": [
+            "Separation Technology",
+            "Phase Equilibrium"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Minimum work calculation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Thermodynamic equation solving",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic property and calculation methodology",
+            "collaboration_protocol": "Sequential calculation and validation"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific thermodynamic models that should be used, other than ideal behavior?",
+        "Is there any information available about the vapor pressure of the components at the given temperature?"
+    ]
+}

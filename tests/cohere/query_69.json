@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Can you provide a detailed breakdown of the particle size limitations for different types of centrifugal separators?",
+        "expanded_query": "Provide a comprehensive analysis of the particle size constraints and their impact on the performance of various centrifugal separator designs.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Particle Technology",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifugal separator design and performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Particle Technology Specialist",
+                "role": "Particle size distribution and its effect on separation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Knowledge sharing on separator design and particle size considerations",
+            "collaboration_protocol": "Iterative design refinement based on particle size limitations"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of centrifugal separators are you interested in?",
+        "What is the range of particle sizes you typically encounter in your process?",
+        "Are there any specific performance criteria or challenges related to particle size that you are trying to address?"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard diffusion coefficients for water vapor in air at various temperatures for drying operations.",
+        "expanded_query": "Provide a comprehensive dataset of standard diffusion coefficients for water vapor in air across a range of temperatures relevant to drying processes, ensuring data accuracy and applicability.",
+        "complexity_level": "low",
+        "primary_domain": "Drying Technology",
+        "secondary_domains": [
+            "Thermodynamics",
+            "Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Diffusion coefficient data retrieval",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data provision",
+            "collaboration_protocol": "None required"
+        }
+    },
+    "clarification_questions": []
+}

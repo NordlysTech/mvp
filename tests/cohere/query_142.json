@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a risk assessment framework for entrainment flooding in packed columns during gas-liquid absorption.",
+        "expanded_query": "Create a comprehensive risk assessment methodology to identify and mitigate potential hazards associated with entrainment flooding in packed columns used for gas-liquid absorption processes.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety Engineering",
+        "secondary_domains": [
+            "Separation Technology",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Packed column process design review",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Fluid dynamics analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety-focused knowledge sharing and process optimization",
+            "collaboration_protocol": "Integrated risk assessment and process improvement"
+        }
+    },
+    "clarification_questions": [
+        "What specific hazards or risks are associated with entrainment flooding in this context?",
+        "Are there any unique characteristics of the packed column or the gas-liquid system that could impact the risk assessment?",
+        "What are the current safety protocols and mitigation measures in place for this process?"
+    ]
+}

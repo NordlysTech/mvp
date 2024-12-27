@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We need to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system. What machine learning approaches could enhance our predictive maintenance?",
+        "expanded_query": "Design a comprehensive fault detection and diagnostic system for a continuous countercurrent extraction process, integrating machine learning techniques to optimize predictive maintenance.",
+        "complexity_level": "high",
+        "primary_domain": "Process Control and Monitoring",
+        "secondary_domains": [
+            "Machine Learning",
+            "Extraction Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Fault detection methodology development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Machine Learning Specialist",
+                "role": "ML model selection and training",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Continuous process monitoring and fault detection data exchange",
+            "collaboration_protocol": "Iterative model training and control strategy refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific process parameters and variables that need to be monitored for fault detection?",
+        "Are there any historical data or patterns available for training the machine learning models?",
+        "What are the critical performance indicators for the extraction system that should trigger maintenance actions?"
+    ]
+}

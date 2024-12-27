@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I am struggling to understand why the injection of water make-up suddenly decreases the desorption tower by a significant percentage ? is it related to the heat loss or more like an error in the DCS ?",
+        "expanded_query": "Investigate the cause of a significant decrease in desorption tower performance following the injection of water make-up, specifically determining if the issue stems from heat loss or a DCS error.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Heat Transfer",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of desorption tower performance drop",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Heat loss analysis and impact on desorption",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "DCS error investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic information sharing and hypothesis testing",
+            "collaboration_protocol": "Parallel investigation of heat loss and DCS error"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical operating temperature of the desorption tower?",
+        "What is the temperature of the make-up water being injected?",
+        "Can you provide any data logs from the DCS around the time of the performance drop?",
+        "What is the composition of the feed to the desorption tower?",
+        "What is the percentage decrease in the desorption tower performance?"
+    ]
+}

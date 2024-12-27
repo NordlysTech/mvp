@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Our rotary drum filter is experiencing inconsistent cake formation. How can we develop a robust control strategy to maintain consistent filtration performance across varying slurry characteristics?",
+        "expanded_query": "Develop a robust control strategy for a rotary drum filter to ensure consistent cake formation and filtration performance despite variations in slurry characteristics.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Process Control",
+        "secondary_domains": [
+            "Process Control",
+            "Solid-Liquid Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative control design and performance feedback",
+            "collaboration_protocol": "Integrated control and process parameter optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical ranges of variation in slurry characteristics (e.g., solids concentration, particle size distribution)?",
+        "What are the current control parameters being used for the rotary drum filter?",
+        "What are the desired performance metrics for consistent cake formation and filtration?"
+    ]
+}

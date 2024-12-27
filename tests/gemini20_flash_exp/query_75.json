@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive risk assessment protocol for handling spent adsorbents in high-temperature industrial filtration processes.",
+        "expanded_query": "Create a detailed risk assessment protocol for the safe handling of spent adsorbents from high-temperature industrial filtration processes, addressing potential hazards and mitigation strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Safety and Risk Management",
+        "secondary_domains": [
+            "Filtration Technology",
+            "Hazardous Material Handling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment protocol development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Adsorbent material and process information",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Risk factor identification and mitigation strategy development",
+            "collaboration_protocol": "Iterative risk assessment and safety protocol refinement"
+        }
+    },
+    "clarification_questions": [
+        "What type of adsorbent material is being used?",
+        "What are the specific operating temperatures of the filtration process?",
+        "Are there any known hazards associated with the spent adsorbent?"
+    ]
+}

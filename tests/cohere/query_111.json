@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Outline an advanced process control system to stabilize the liquid discharge rate from a high-capacity separator during fluctuating feed conditions.",
+        "expanded_query": "Design a sophisticated process control strategy to maintain a consistent liquid discharge rate from a large-scale separator, accounting for variable feed conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Dynamic Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control system design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design considerations and specifications",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Continuous exchange of control system design and separator specifications",
+            "collaboration_protocol": "Iterative refinement of control strategy based on separator dynamics"
+        }
+    },
+    "clarification_questions": [
+        "What is the nature of the feed fluctuations? Are there specific patterns or random variations?",
+        "What is the desired range of liquid discharge rates that need to be maintained?",
+        "Are there any constraints on the control system design, such as response time or control mechanism preferences?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Design a comprehensive monitoring strategy for detecting early signs of column internals degradation in our atmospheric distillation unit.",
+        "expanded_query": "Develop a detailed plan for early detection of column internals deterioration in an atmospheric distillation column, including monitoring techniques and indicators.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Monitoring and Diagnostics",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Monitoring strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control and monitoring system design",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Column internals inspection and analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Continuous data analysis and monitoring strategy refinement",
+            "collaboration_protocol": "Integrated column performance and health monitoring"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific column internals of concern and their typical degradation modes?",
+        "Are there any existing monitoring systems in place and what data is currently available?",
+        "What are the desired early warning indicators for column internals degradation?"
+    ]
+}

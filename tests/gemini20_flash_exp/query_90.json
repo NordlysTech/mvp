@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical factors affecting separation efficiency in hydrocarbon fractionation processes?",
+        "expanded_query": "Identify and analyze the key parameters that significantly influence the separation efficiency of hydrocarbon fractionation processes.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocarbon Fractionation",
+        "secondary_domains": [
+            "Separation Technology",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Identification of critical separation factors",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analysis of thermodynamic influences on separation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative analysis of factors and their impact",
+            "collaboration_protocol": "Joint factor analysis and impact assessment"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of hydrocarbon fractionation process are you referring to (e.g., distillation, absorption)?",
+        "Are there any specific performance metrics you are using to measure separation efficiency?",
+        "Are there any specific operational constraints or limitations to consider?"
+    ]
+}

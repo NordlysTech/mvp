@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "During startup of a packed column, we observed severe pressure drops caused by fluid maldistribution. What adjustments to control systems could prevent this during future operations?",
+        "expanded_query": "Identify and recommend control system adjustments to mitigate pressure drops caused by fluid maldistribution during the startup of a packed column.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Packed Column Operation",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system adjustment design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of maldistribution",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Control system design and troubleshooting feedback",
+            "collaboration_protocol": "Iterative control strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What type of packing is used in the column?",
+        "What is the typical startup procedure for the packed column?",
+        "Are there any existing control systems in place for the column startup?"
+    ]
+}

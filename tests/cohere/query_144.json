@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Design an advanced control strategy to maintain optimal mass transfer rates in a batch distillation unit separating ethanol-water mixtures.",
+        "expanded_query": "Develop a sophisticated control system to ensure efficient mass transfer in a batch distillation column for ethanol-water separation, optimizing the process for maximum yield and purity.",
+        "complexity_level": "high",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Mass Transfer Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control strategy design and implementation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer modeling and analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Continuous exchange of control strategy design, distillation process parameters, and mass transfer insights.",
+            "collaboration_protocol": "Iterative feedback loop for process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the current mass transfer rates and desired targets for the ethanol-water separation process?",
+        "Are there any specific constraints or challenges with the existing control system?",
+        "What level of automation and control sophistication is desired for this batch distillation unit?"
+    ]
+}

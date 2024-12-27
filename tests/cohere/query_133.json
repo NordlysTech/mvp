@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Analyze the impact of diffusion coefficients on the separation of CO\u2082 from natural gas in an amine absorption system.",
+        "expanded_query": "Conduct a comprehensive study to quantify the influence of diffusion coefficients on the efficiency and selectivity of CO\u2082 separation from natural gas using an amine absorption process, considering various diffusion coefficient values.",
+        "complexity_level": "medium",
+        "primary_domain": "Gas Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Diffusion mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Modeling and simulation of diffusion processes",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Data-driven process optimization",
+            "collaboration_protocol": "Iterative model refinement and validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the current range of diffusion coefficients in your amine absorption system?",
+        "Are there any specific performance metrics or targets for the CO\u2082 separation process that need to be achieved?",
+        "Do you have any constraints on the amine absorption process or the system design?"
+    ]
+}

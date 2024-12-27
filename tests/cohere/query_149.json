@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the mass transfer considerations for designing a pervaporation system to separate water-ethanol azeotropes?",
+        "expanded_query": "Provide a detailed analysis of the mass transfer phenomena and design considerations for a pervaporation process to effectively separate water-ethanol azeotropes.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Pervaporation process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Mass transfer insights for process design",
+            "collaboration_protocol": "Iterative design refinement based on thermodynamic analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific composition and concentration ranges of the water-ethanol azeotrope mixture?",
+        "Are there any desired separation efficiency targets or constraints for the pervaporation process?",
+        "Do you have any specific membrane materials or configurations in mind for the pervaporation system?"
+    ]
+}

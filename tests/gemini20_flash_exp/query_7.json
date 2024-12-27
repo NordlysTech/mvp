@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "What are the mass transfer rate intervals for SOx in gas sweetening using sodium hydroxide ? Please provide accurate intervals.",
+        "expanded_query": "Determine the typical mass transfer rate ranges for SOx absorption during gas sweetening processes using sodium hydroxide as the absorbent.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Analysis",
+        "secondary_domains": [
+            "Gas Sweetening",
+            "Chemical Absorption"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer rate interval determination",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct provision of mass transfer rate intervals",
+            "collaboration_protocol": "Independent data retrieval"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical operating conditions (temperature, pressure) for the gas sweetening process?",
+        "What is the concentration of sodium hydroxide being used?",
+        "What is the specific composition of the gas stream containing SOx?"
+    ]
+}

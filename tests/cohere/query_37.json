@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What are the risks of thermal runaway in an adsorption process during regeneration at elevated temperatures, and how can we mitigate them?",
+        "expanded_query": "Conduct a comprehensive risk assessment of thermal runaway in an adsorption system during the regeneration phase at high temperatures, and propose effective mitigation strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Adsorption Technology",
+            "Thermal Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment and mitigation strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal analysis of the adsorption process",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Adsorption process optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Thermal runaway risk assessment and process optimization",
+            "collaboration_protocol": "Iterative safety enhancement and process refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific adsorbent and adsorbate are involved in the process?",
+        "What is the temperature range during regeneration and what are the typical operating conditions?",
+        "Are there any existing safety measures in place to prevent thermal runaway?"
+    ]
+}

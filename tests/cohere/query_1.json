@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We've got these massive geothermal brine pools in Nevada, and our management is pushing hard to monetize the lithium. Current extraction methods are a money pit. Any ideas on a novel approach that doesn't require crazy expensive infrastructure?",
+        "expanded_query": "Investigate and propose an innovative, cost-effective lithium extraction process from geothermal brine, focusing on minimizing capital investment while ensuring high lithium recovery rates.",
+        "complexity_level": "high",
+        "primary_domain": "Lithium Extraction",
+        "secondary_domains": [
+            "Geothermal Energy",
+            "Process Economics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Design an efficient lithium extraction process",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze brine composition and lithium solubility",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model process economics and optimize cost-effectiveness",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Share brine characteristics and process design ideas with the team for collaborative optimization.",
+            "collaboration_protocol": "Iterative process design and economic evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What is the current lithium concentration in the geothermal brine?",
+        "Are there any specific constraints on the extraction process, such as environmental regulations or time limitations?",
+        "Do you have any preferences for the type of extraction technology to be used?"
+    ]
+}

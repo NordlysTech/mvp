@@ -1,0 +1,46 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive approach to mitigating corrosion risks in high-temperature, high-pressure distillation environments.",
+        "expanded_query": "Design a holistic strategy to minimize corrosion in extreme distillation conditions, considering material selection, process modifications, and corrosion monitoring techniques.",
+        "complexity_level": "high",
+        "primary_domain": "Corrosion Engineering",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Materials Science"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Corrosion Specialist",
+                "role": "Corrosion mitigation strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Materials Engineer",
+                "role": "Material selection and corrosion resistance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Distillation Technologist",
+                "role": "Process optimization for corrosion control",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Monitoring Systems Expert",
+                "role": "Corrosion monitoring and detection system design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Corrosion Specialist",
+            "information_flow": "Integrated corrosion management plan development",
+            "collaboration_protocol": "Iterative material, process, and monitoring system alignment"
+        }
+    },
+    "clarification_questions": [
+        "What specific materials are currently used in the distillation equipment?",
+        "What are the typical operating temperatures and pressures?",
+        "Are there any existing corrosion issues or patterns observed?"
+    ]
+}

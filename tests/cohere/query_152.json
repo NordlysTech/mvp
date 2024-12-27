@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How do gas-phase and liquid-phase mass transfer resistances interact in determining the overall mass transfer coefficient for ammonia absorption in a water spray column? Provide a detailed analysis.",
+        "expanded_query": "Provide a comprehensive analysis of the interplay between gas-phase and liquid-phase mass transfer resistances in the context of ammonia absorption in a water spray column, and explain their combined effect on the overall mass transfer coefficient.",
+        "complexity_level": "high",
+        "primary_domain": "Mass Transfer Phenomena",
+        "secondary_domains": [
+            "Absorption Processes",
+            "Gas-Liquid Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer resistance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Ammonia absorption process understanding",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Collaborative analysis of mass transfer resistances and their impact on the overall coefficient",
+            "collaboration_protocol": "Integrated approach to understanding the ammonia absorption process"
+        }
+    },
+    "clarification_questions": [
+        "What are the operating conditions (temperature, pressure) of the water spray column?",
+        "Are there any specific design features of the column that might influence the mass transfer process?",
+        "Do you have any preliminary data or observations regarding the mass transfer behavior in the system?"
+    ]
+}

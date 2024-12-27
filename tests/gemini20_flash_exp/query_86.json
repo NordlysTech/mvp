@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What's the impact of feed composition variability on the performance of our crude distillation column?",
+        "expanded_query": "Analyze and determine the effects of variations in feed composition on the operational performance of a crude distillation column.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Analysis",
+        "secondary_domains": [
+            "Process Variability",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Performance impact analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium and separation analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Impact assessment and root cause analysis",
+            "collaboration_protocol": "Integrated performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of variability in the feed composition?",
+        "What specific performance metrics are being affected (e.g., product purity, throughput)?",
+        "Are there any historical data available on feed composition and column performance?"
+    ]
+}

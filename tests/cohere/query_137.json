@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Solve the partial differential equation for transient mass transfer through a membrane with uniform permeability and a constant driving force.",
+        "expanded_query": "Provide a solution to the partial differential equation describing mass transfer dynamics across a membrane with uniform permeability, considering a constant driving force.",
+        "complexity_level": "high",
+        "primary_domain": "Mass Transfer",
+        "secondary_domains": [
+            "Mathematical Modeling",
+            "Membrane Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Solving the partial differential equation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane technology insights and process design considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Equation solution and parameter interpretation",
+            "collaboration_protocol": "Iterative refinement of mathematical model and process design"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific boundary conditions and initial conditions for this mass transfer scenario?",
+        "Are there any constraints or assumptions related to the membrane's properties or the driving force that we should consider?"
+    ]
+}

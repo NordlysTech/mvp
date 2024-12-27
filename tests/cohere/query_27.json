@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What\u2019s the best way to improve the recovery of valuable hydrocarbons in a three-phase separator without significantly increasing operating costs?",
+        "expanded_query": "Identify and recommend process enhancements to maximize hydrocarbon recovery in a three-phase separator while maintaining cost-efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Hydrocarbon Recovery"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Three-phase separator process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Hydrocarbon phase behavior analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Cost-efficiency evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Collaborative optimization of hydrocarbon recovery and cost efficiency",
+            "collaboration_protocol": "Iterative design and analysis"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of three-phase separator is being used?",
+        "Are there any constraints on the modifications that can be made to the separator?",
+        "What is the current hydrocarbon recovery rate, and what is the target improvement?"
+    ]
+}

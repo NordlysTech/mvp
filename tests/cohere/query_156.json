@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "For a hybrid column containing both trays and packings, analyze how mass transfer coefficients and contact areas vary across the column height. What considerations must be made to ensure optimal performance?",
+        "expanded_query": "Conduct a comprehensive study on the variation of mass transfer coefficients and contact areas along the height of a hybrid column with trays and packings. Identify the key factors and design considerations to achieve optimal mass transfer performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Operations",
+        "secondary_domains": [
+            "Column Design",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid column design and mass transfer analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process optimization and control strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Mass transfer data and design specifications",
+            "collaboration_protocol": "Iterative design and optimization refinement"
+        }
+    },
+    "clarification_questions": [
+        "What is the primary purpose of the hybrid column? Is it for distillation, absorption, or another process?",
+        "Are there any specific requirements for the column's performance, such as desired separation efficiency or product purity?",
+        "Do you have any constraints on the column design, such as space limitations or material preferences?"
+    ]
+}

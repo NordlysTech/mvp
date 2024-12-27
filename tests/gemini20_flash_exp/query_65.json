@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Our filter press is experiencing challenges with cake washing and discharge. How can we develop an integrated control strategy to improve operational efficiency and product quality?",
+        "expanded_query": "Develop a comprehensive control strategy for a filter press to optimize cake washing and discharge processes, enhancing operational efficiency and product quality.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Process Optimization",
+        "secondary_domains": [
+            "Process Control",
+            "Solid-Liquid Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filter press operation optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy design and implementation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative process optimization and control strategy development",
+            "collaboration_protocol": "Integrated design and control parameter alignment"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific challenges encountered during cake washing and discharge?",
+        "What are the current control parameters and their ranges?",
+        "What are the desired product quality specifications?"
+    ]
+}

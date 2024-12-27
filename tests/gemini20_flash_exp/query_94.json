@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive approach to mitigating corrosion risks in high-temperature, high-pressure distillation environments.",
+        "expanded_query": "Design a robust corrosion mitigation strategy for distillation processes operating under high-temperature and high-pressure conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Corrosion Mitigation",
+        "secondary_domains": [
+            "High-Temperature Processes",
+            "Distillation Technology",
+            "Materials Science"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process analysis and corrosion risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "High-temperature and high-pressure environment analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Corrosion mitigation safety and regulatory compliance",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative risk assessment and mitigation strategy development",
+            "collaboration_protocol": "Integrated safety and performance optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific materials of construction used in the distillation column?",
+        "What are the typical operating temperatures and pressures in the distillation process?",
+        "Are there any specific corrosive agents present in the distillation feed?",
+        "What is the desired lifespan of the distillation equipment?"
+    ]
+}

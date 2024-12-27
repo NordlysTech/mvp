@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We are looking to develop a more energy-efficient approach to extract ethanol from a 95% azeotropic mixture. Any suggestions on alternative distillation or hybrid methods?",
+        "expanded_query": "Research and propose innovative, energy-efficient techniques for ethanol extraction from a 95% azeotropic mixture, exploring alternative distillation or hybrid separation methods.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Distillation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the exploration of alternative separation methods",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze energy requirements and propose efficient solutions",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Evaluate process feasibility and economic viability",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Continuous exchange of separation method ideas and thermodynamic insights",
+            "collaboration_protocol": "Iterative process design and optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific energy-efficiency targets are you aiming for?",
+        "Are there any constraints on the type of equipment or technology that can be used?",
+        "Have you considered any hybrid methods previously, and if so, what were the outcomes?"
+    ]
+}

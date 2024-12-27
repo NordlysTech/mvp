@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In our solvent recovery system, azeotrope formation is limiting separation efficiency. Would azeotropic distillation or extractive distillation be a better solution?",
+        "expanded_query": "Conduct a comparative analysis of azeotropic and extractive distillation methods to determine the most suitable technique for enhancing separation efficiency in a solvent recovery system hindered by azeotrope formation.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Distillation Techniques",
+            "Solvent Recovery"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Comparative analysis of distillation methods",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Azeotrope behavior and separation mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Distillation method comparison and selection",
+            "collaboration_protocol": "Iterative refinement of separation strategy"
+        }
+    },
+    "clarification_questions": [
+        "What specific solvents are involved in the recovery system?",
+        "Have you attempted any preliminary methods to mitigate azeotrope formation?",
+        "Are there any constraints on the distillation process, such as energy consumption or equipment limitations?"
+    ]
+}

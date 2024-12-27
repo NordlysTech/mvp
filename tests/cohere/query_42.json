@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What is the most effective way to prevent weeping in sieve trays used in crude oil fractionation towers?",
+        "expanded_query": "Provide a comprehensive strategy to mitigate weeping issues in sieve trays, focusing on design improvements and operational adjustments for optimal performance in crude oil fractionation towers.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Design",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Sieve tray design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Fluid dynamics analysis and control strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Design modifications and fluid behavior insights",
+            "collaboration_protocol": "Integrated tray design and process control optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific issues caused by weeping in your sieve trays?",
+        "Are there any unique characteristics of the crude oil being processed that might contribute to weeping?",
+        "Have you considered any initial design changes or operational adjustments to address this problem?"
+    ]
+}

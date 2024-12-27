@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical safety protocols for handling light hydrocarbon fractions during atmospheric distillation shutdown?",
+        "expanded_query": "Identify and outline the essential safety procedures and guidelines for managing light hydrocarbon streams during the shutdown of an atmospheric distillation column.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety Engineering",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Hydrocarbon Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol development and compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Distillation Technologist",
+                "role": "Distillation process insights",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety protocol formulation and distillation process understanding",
+            "collaboration_protocol": "Iterative safety measure development and process-specific adjustments"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific hazards or risks associated with the light hydrocarbon fractions in this context?",
+        "What are the standard operating procedures for the atmospheric distillation column during normal operation and shutdown?",
+        "Have there been any previous incidents or near-misses related to this process that could inform safety protocol improvements?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a comprehensive predictive model for solids discharge in our nozzle discharge solid-bowl centrifuge. What factors should we prioritize to minimize operational instabilities?",
+        "expanded_query": "Develop a predictive model for solids discharge in a nozzle discharge solid-bowl centrifuge, identifying key factors that contribute to operational instabilities and prioritizing those for mitigation.",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation",
+        "secondary_domains": [
+            "Process Modeling",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifuge process modeling and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model development and numerical analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational stability analysis and control strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model development and validation",
+            "collaboration_protocol": "Integrated model refinement and control strategy design"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the solids being separated (particle size distribution, density, etc.)?",
+        "What are the typical operating conditions of the centrifuge (feed rate, rotational speed, nozzle size, etc.)?",
+        "What type of operational instabilities are you currently experiencing?"
+    ]
+}

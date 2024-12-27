@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Identify and assess hazards associated with thermal runaway during mass transfer in reactive distillation processes.",
+        "expanded_query": "Conduct a comprehensive hazard analysis of potential risks and safety concerns related to thermal runaway events during mass transfer operations in reactive distillation systems.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Reactive Distillation",
+            "Mass Transfer Operations"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Hazard identification and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Reactive distillation process analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal runaway mechanism investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety-focused knowledge sharing and distillation process insights",
+            "collaboration_protocol": "Iterative risk assessment and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific reactive distillation processes are you referring to?",
+        "Have there been any previous incidents or near-misses related to thermal runaway?",
+        "What are the typical operating conditions and feed compositions for the mass transfer stage?"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How can we reduce entrainment losses in a liquid-liquid extractor for an acetic acid recovery process?",
+        "expanded_query": "Investigate and propose methods to minimize entrainment losses in a liquid-liquid extraction process used for acetic acid recovery.",
+        "complexity_level": "medium",
+        "primary_domain": "Liquid-Liquid Extraction Optimization",
+        "secondary_domains": [
+            "Separation Technology",
+            "Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Primary process optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase behavior analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative optimization of extraction parameters",
+            "collaboration_protocol": "Integrated process and thermodynamic analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions of the liquid-liquid extractor (e.g., flow rates, temperature, pressure)?",
+        "What are the properties of the solvents used in the extraction process?",
+        "What is the current level of entrainment loss and what are the desired targets?"
+    ]
+}
