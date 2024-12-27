@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What\u2019s the best control approach for optimizing split ratios in a membrane separation system when feed composition fluctuates?",
+        "expanded_query": "Identify the optimal process control strategies for maintaining and optimizing split ratios in a membrane separation system under fluctuating feed compositions.",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Process Control",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design optimal control strategies for fluctuating feed composition",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide insights on membrane separation processes and split ratios",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Develop and solve optimization models",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative control strategy development and process optimization",
+            "collaboration_protocol": "Integrated modeling and simulation for control optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific fluctuations in feed composition are expected?",
+        "What are the performance criteria or constraints for the separation process?",
+        "Are there existing control systems in place, and what limitations do they have?"
+    ]
+}

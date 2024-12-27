@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our pilot plant is struggling with low-temperature hydrocarbon separation using mixed refrigerant cycles. What advanced exergy analysis techniques could help us optimize the energy efficiency? ",
+        "expanded_query": "Identify and recommend advanced exergy analysis techniques to optimize energy efficiency in our pilot plant's low-temperature hydrocarbon separation process using mixed refrigerant cycles, addressing specific inefficiencies.",
+        "complexity_level": "advanced",
+        "primary_domain": "Exergy Analysis in Cryogenic Hydrocarbon Separation",
+        "secondary_domains": [
+            "Thermodynamics",
+            "Process Optimization",
+            "Refrigeration Cycles",
+            "Energy Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Lead exergy analysis and technique recommendation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform exergy calculations and modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process insights and identify optimization opportunities",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Calculated exergy efficiencies inform process optimization recommendations",
+            "collaboration_protocol": "Integrated analysis combining thermodynamic modeling and process expertise"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide specific operational parameters and thermodynamic data of your mixed refrigerant cycle?",
+        "What inefficiencies or issues have you identified in the current separation process?",
+        "Have there been any recent changes to the process or equipment?"
+    ]
+}

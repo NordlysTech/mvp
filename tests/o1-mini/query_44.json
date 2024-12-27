@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We are designing a three-phase separator for oil, water, and gas separation. How can we improve the separation efficiency for high-viscosity oils?",
+        "expanded_query": "Provide recommendations on enhancing the separation efficiency of a three-phase oil, water, and gas separator when processing high-viscosity oils, considering design modifications and operational strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "High-Viscosity Fluid Handling",
+            "Process Optimization",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead optimization of separation efficiency for high-viscosity oils",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze fluid properties and phase behavior",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Model fluid dynamics and separation performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design refinements incorporating thermodynamic analysis and mathematical modeling",
+            "collaboration_protocol": "Continuous feedback loop for integrating insights to enhance efficiency"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific viscosity and density values of the oils being processed?",
+        "Can you provide details on the current separator design and operating conditions?",
+        "Are there any constraints on equipment modifications or operational changes?"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Solve for the critical droplet size distribution in a vertical gas-liquid separator where the velocity profile is non-uniform and governed by a parabolic function.",
+        "expanded_query": "Determine the critical droplet size distribution necessary for effective separation in a vertical gas-liquid separator with a non-uniform, parabolic velocity profile. This involves modeling the droplet settling behavior considering the parabolic velocity profile to calculate the minimum droplet sizes that will settle under the influence of gravity against the upward gas flow.",
+        "complexity_level": "advanced",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Mathematical Modeling",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead in defining separation requirements and interpreting results",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Develop and solve mathematical model for critical droplet size distribution",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Separation Technologist provides process specifications; Mathematical Solver performs calculations; results are reviewed collaboratively",
+            "collaboration_protocol": "Iterative modeling and validation to ensure solutions align with practical separation requirements"
+        }
+    },
+    "clarification_questions": [
+        "What are the physical properties (densities, viscosities) of the gas and liquid phases?",
+        "What are the operating conditions (pressure, temperature, flow rates) of the separator?",
+        "Are there any constraints or specific requirements for droplet sizes due to downstream processing?"
+    ]
+}

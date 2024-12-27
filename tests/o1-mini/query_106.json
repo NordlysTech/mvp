@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What are the allowable material stresses for stainless steel separators operating at cryogenic temperatures?",
+        "expanded_query": "Determine the allowable material stress values for stainless steel separators operating at cryogenic temperatures, considering changes in material properties due to low temperatures and ensuring safe and compliant design.",
+        "complexity_level": "medium",
+        "primary_domain": "Material Stress Analysis",
+        "secondary_domains": [
+            "Cryogenic Material Properties",
+            "Safety Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Lead material stress evaluation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Regulatory compliance verification",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Analytical calculation of allowable stresses",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "General Process Engineer",
+            "information_flow": "Exchange of material data and regulatory standards",
+            "collaboration_protocol": "Iterative assessment and validation of material stresses against safety standards"
+        }
+    },
+    "clarification_questions": [
+        "Which specific grade of stainless steel is being used?",
+        "What are the exact operating temperature and pressure conditions?",
+        "Are there specific codes or standards that need to be followed?"
+    ]
+}

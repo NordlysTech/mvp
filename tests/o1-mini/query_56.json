@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing complex phase behavior in our supercritical fluid extraction process for pharmaceutical compounds. How can we develop more accurate equation of state models?",
+        "expanded_query": "Investigate methods to develop more accurate equation of state models to better predict and understand the complex phase behavior observed in our supercritical fluid extraction process for pharmaceutical compounds, aiming to improve process control and efficiency.",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Modeling",
+        "secondary_domains": [
+            "Supercritical Fluid Extraction",
+            "Phase Behavior Analysis",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equation of state model development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Analytical and numerical solution of models",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process-specific insights and data",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Process data and requirements are provided by Separation Technologist to Thermodynamics Expert, who develops models with support from Mathematical Solver",
+            "collaboration_protocol": "Iterative model development, validation, and refinement"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide detailed information on the specific pharmaceutical compounds involved?",
+        "What are the operating conditions (pressure and temperature) of your supercritical fluid extraction process?",
+        "Which equation of state models have you previously used, and what limitations have you encountered?",
+        "Do you have experimental phase behavior data available for model validation?"
+    ]
+}

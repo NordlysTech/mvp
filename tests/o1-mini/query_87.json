@@ -1,0 +1,33 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the standard thermal stability limits for different hydrocarbon fractions during high-temperature distillation.",
+        "expanded_query": "Provide detailed information on the standard thermal stability limits of various hydrocarbon fractions during high-temperature distillation processes, including the temperatures at which each fraction begins to thermally degrade or decompose.",
+        "complexity_level": "low",
+        "primary_domain": "Hydrocarbon Thermal Stability Data Retrieval",
+        "secondary_domains": [
+            "High-Temperature Distillation",
+            "Thermodynamics",
+            "Hydrocarbon Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Retrieve thermal stability limits of hydrocarbon fractions",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data retrieval and provision",
+            "collaboration_protocol": "Independent data collection and reporting"
+        }
+    },
+    "clarification_questions": [
+        "Which specific hydrocarbon fractions are of interest? (e.g., naphtha, kerosene, diesel, gas oil, residue)",
+        "Are there specific distillation process conditions or temperature ranges to consider?",
+        "Do you require data at atmospheric pressure or under specific pressures?",
+        "Are you interested in thermal stability limits for pure components or mixture fractions?"
+    ]
+}

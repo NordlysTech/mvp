@@ -1,0 +1,32 @@
+{
+    "query_analysis": {
+        "original_query": "Can you provide a detailed breakdown of the particle size limitations for different types of centrifugal separators?",
+        "expanded_query": "Provide a comprehensive analysis detailing the particle size limitations and operational constraints for various types of centrifugal separators used in industrial separation processes.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Particle Technology",
+            "Equipment Specification",
+            "Fluid Mechanics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide detailed analysis of particle size limitations for different types of centrifugal separators",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct data analysis and compilation",
+            "collaboration_protocol": "Independent analysis"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific types of centrifugal separators you're interested in?",
+        "What is the application or industry context for these centrifugal separators?",
+        "Do you require data on both liquid-liquid and liquid-solid separations?"
+    ]
+}

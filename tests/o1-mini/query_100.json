@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Derive the expression for the terminal velocity of a liquid droplet in a gas stream based on Stokes' law. Discuss how it applies to separator design for light hydrocarbons.",
+        "expanded_query": "Provide a detailed derivation of the terminal velocity equation for a liquid droplet moving through a gas stream using Stokes' law, and analyze how this principle can be applied to the design of separators for removing liquid droplets from gas streams in light hydrocarbon processing, considering relevant parameters such as droplet size, fluid properties, and flow conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Mechanics",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Derivation of terminal velocity using Stokes' law",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Application to separator design for light hydrocarbons",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Derivation results guide separator design parameters",
+            "collaboration_protocol": "Sequential derivation and collaborative application to design"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific operating conditions (temperature, pressure) to consider for the separator design?",
+        "What are the physical properties (density, viscosity) of the liquid droplets and gas stream involved?",
+        "Is there a particular size range of liquid droplets that are critical for the separation process?"
+    ]
+}

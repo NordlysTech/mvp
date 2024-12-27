@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our rotary drum filter is experiencing inconsistent cake formation. How can we develop a robust control strategy to maintain consistent filtration performance across varying slurry characteristics?",
+        "expanded_query": "Develop a robust control strategy for our rotary drum filter to maintain consistent filtration performance and cake formation despite varying slurry characteristics by identifying key process variables and implementing appropriate control measures.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Process Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Slurry Rheology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Develop robust control strategy",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Analyze filtration process and slurry characteristics",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify causes of inconsistent cake formation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Exchange data on process variables and slurry characteristics to develop control strategies",
+            "collaboration_protocol": "Iterative analysis and design refinement integrating process control and filtration insights"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the specific variations in slurry characteristics?",
+        "What are the current operating parameters of the rotary drum filter?",
+        "Have any control strategies been previously implemented or tested?"
+    ]
+}

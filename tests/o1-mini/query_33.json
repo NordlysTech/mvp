@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Our centrifuge is showing reduced separation efficiency when processing a slurry with fine solids. Could this be caused by feed rate fluctuations?",
+        "expanded_query": "Investigate and diagnose the causes of reduced separation efficiency in a centrifuge processing a slurry with fine solids, focusing on the potential impact of feed rate fluctuations and identifying any other contributing factors.",
+        "complexity_level": "medium",
+        "primary_domain": "Centrifugal Separation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Mechanical Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analysis of feed rate fluctuations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluation of centrifuge performance with fine solids",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative troubleshooting and data analysis",
+            "collaboration_protocol": "Iterative hypothesis development and validation"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide data on the magnitude and frequency of the feed rate fluctuations?",
+        "Have there been any changes in the slurry composition or particle size distribution?",
+        "Has regular maintenance been performed on the centrifuge recently?"
+    ]
+}

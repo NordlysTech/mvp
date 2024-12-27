@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Outline an advanced process control system to stabilize the liquid discharge rate from a high-capacity separator during fluctuating feed conditions.",
+        "expanded_query": "Develop a detailed design for an advanced process control system to maintain a stable liquid discharge rate from a high-capacity separator despite fluctuating feed conditions. This should include appropriate control strategies, instrumentation, and consideration of process dynamics.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Control Engineering",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Dynamics",
+            "Instrumentation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design and implementation of advanced control strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide insights on separator operation and dynamics",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Develop process models and perform simulations",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative feedback between modeling and control strategy development",
+            "collaboration_protocol": "Integrated design approach with continuous input from all agents"
+        }
+    },
+    "clarification_questions": [
+        "What specific fluctuations are occurring in the feed conditions (e.g., flow rate, composition, temperature)?",
+        "Are there existing control systems or instrumentation already in place?",
+        "What are the acceptable limits for the liquid discharge rate stability (e.g., allowable variance, response time)?"
+    ]
+}

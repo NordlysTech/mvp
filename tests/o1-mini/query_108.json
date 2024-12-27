@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Help me draft a risk assessment framework for foam formation in separators during high surfactant contamination events.",
+        "expanded_query": "Develop a comprehensive risk assessment framework addressing foam formation in separators caused by high surfactant contamination events, focusing on hazard identification, risk evaluation, and mitigation strategies to prevent operational disruptions and safety hazards.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Safety and Risk Assessment",
+        "secondary_domains": [
+            "Separation Technology",
+            "Surfactant Chemistry",
+            "Foam Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead development of risk assessment framework",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide expertise on foam formation mechanisms and mitigation in separators",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze surfactant behavior and foam dynamics",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety Expert integrates technical inputs from Separation Technologist and Thermodynamics Expert to develop the framework",
+            "collaboration_protocol": "Collaborative analysis with iterative feedback to refine risk assessment strategies"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the types and concentrations of surfactants involved during contamination events?",
+        "What are the operating conditions (temperature, pressure, flow rates) of the separators during these events?",
+        "Are there existing risk assessment procedures or safety protocols that need to be considered or integrated?"
+    ]
+}

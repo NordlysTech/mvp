@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "What is the typical selectivity for methane over nitrogen in a polymeric membrane for natural gas upgrading?",
+        "expanded_query": "Determine the typical selectivity values for methane over nitrogen in polymeric membranes utilized in natural gas upgrading processes, considering different membrane materials and operating conditions.",
+        "complexity_level": "low",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Gas Purification",
+            "Polymer Material Science"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide typical selectivity data for methane over nitrogen in polymeric membranes",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct information retrieval and provision",
+            "collaboration_protocol": "Independent analysis"
+        }
+    },
+    "clarification_questions": [
+        "Are you interested in specific types of polymeric membranes or any particular manufacturers?",
+        "Do you require selectivity values under specific operating conditions such as temperature and pressure?",
+        "Is there a specific application or process context for which this selectivity data is needed?"
+    ]
+}

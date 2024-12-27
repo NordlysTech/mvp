@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a compact intensified separation unit for biorefinery applications. What innovative process intensification strategies could help us achieve higher mass transfer coefficients?",
+        "expanded_query": "Identify and recommend innovative process intensification strategies for designing a compact separation unit in biorefinery applications to achieve higher mass transfer coefficients.",
+        "complexity_level": "high",
+        "primary_domain": "Process Intensification in Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer Enhancement",
+            "Biorefinery Engineering",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the development of intensified separation unit design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze mass transfer enhancement techniques",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assess integration with biorefinery processes",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Collaborative development of innovative intensification strategies with thermodynamic insights",
+            "collaboration_protocol": "Integrated approach combining design advancements with mass transfer analysis and process integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific separation techniques are you considering for the unit (e.g., distillation, extraction, membrane separation)?",
+        "Are there any constraints regarding materials, energy consumption, or footprint size?",
+        "What are the key components or compounds involved in the separation process?"
+    ]
+}

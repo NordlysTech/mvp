@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "Our filtration process is struggling with cake resistance. How can we develop an advanced mathematical model to predict filtration rate considering varying cake resistance and medium properties?",
+        "expanded_query": "Develop an advanced mathematical model to predict filtration rates in our filtration process by accounting for varying cake resistance and filtration medium properties to improve operational performance.",
+        "complexity_level": "advanced",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Mathematical Modeling",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Development of advanced mathematical model",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process data and expertise on cake resistance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Mathematical model development guided by filtration process data",
+            "collaboration_protocol": "Iterative collaboration with continuous feedback"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide detailed properties of the filtration medium and cake material?",
+        "What are the specific operating conditions (pressure, temperature) of your process?",
+        "Do you have existing data on how cake resistance varies under different conditions?",
+        "Are there any specific computational constraints or preferred modeling approaches?"
+    ]
+}

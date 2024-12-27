@@ -1,0 +1,27 @@
+{
+    "query_analysis": {
+        "original_query": "What are the mass transfer rate intervals for SOx in gas sweetening using sodium hydroxide ? Please provide accurate intervals.",
+        "expanded_query": "Provide detailed and accurate ranges of mass transfer rates for sulfur oxides (SOx) during gas sweetening processes using sodium hydroxide as the scrubbing agent.",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Data Retrieval",
+        "secondary_domains": [
+            "Gas Sweetening",
+            "Sulfur Oxide Removal",
+            "Chemical Absorption Processes"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer data retrieval",
+                "interaction_type": "lead"
+            }
+        ]
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (temperature, pressure, gas composition) of your gas sweetening process?",
+        "Are you interested in mass transfer rates for a specific form of sulfur oxides (e.g., SO2, SO3)?",
+        "Do you require the data for a specific type of equipment or configuration (e.g., packed bed absorber, spray tower)?"
+    ]
+}

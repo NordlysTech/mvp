@@ -1,0 +1,47 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a risk assessment framework for potential solvent carryover in our amine-based gas sweetening distillation process.",
+        "expanded_query": "Design a comprehensive risk assessment framework to evaluate and mitigate the potential risks associated with solvent (amine) carryover in our amine-based gas sweetening distillation process.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety and Risk Assessment",
+        "secondary_domains": [
+            "Separation Technology",
+            "Amine Gas Sweetening",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead development of the risk assessment framework",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Analyze solvent carryover mechanisms",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Assess process conditions influencing solvent carryover",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Provide overall process insights and integration",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integrate technical analyses into the risk framework",
+            "collaboration_protocol": "Iterative development with continuous feedback"
+        }
+    },
+    "clarification_questions": [
+        "Do you have any existing data or incidents related to solvent carryover?",
+        "Are there specific regulatory standards the framework should comply with?",
+        "What are the operating conditions and parameters of your distillation process?"
+    ]
+}

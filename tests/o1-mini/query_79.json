@@ -1,0 +1,48 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive energy optimization strategy for reducing heat consumption in our multi-stage crude distillation column.",
+        "expanded_query": "Design a detailed plan to optimize energy usage and reduce heat consumption in the multi-stage crude distillation column process, focusing on identifying inefficiencies, improving heat integration, and enhancing operational strategies to minimize energy expenditure.",
+        "complexity_level": "high",
+        "primary_domain": "Process Energy Optimization",
+        "secondary_domains": [
+            "Process Optimization",
+            "Heat Integration",
+            "Thermodynamics",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead optimization of distillation process and energy usage",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze heat integration and thermodynamic efficiencies",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Optimize control strategies for energy efficiency",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform modeling and optimization calculations",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative exchange of process data, thermodynamic analysis, and control parameters to develop an integrated energy optimization strategy",
+            "collaboration_protocol": "Collaborative optimization through iterative modeling, analysis, and process adjustments"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide current operational data for the crude distillation column, including temperature and pressure profiles?",
+        "Are there any constraints or limitations on making modifications to the existing equipment or process?",
+        "What is the current energy consumption baseline, and what are your specific energy reduction targets?"
+    ]
+}

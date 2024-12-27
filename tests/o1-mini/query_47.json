@@ -1,0 +1,32 @@
+{
+    "query_analysis": {
+        "original_query": "Please provide the thermodynamic data related to azeotropes existing in natural gas processing columns.",
+        "expanded_query": "Obtain thermodynamic data on azeotropic mixtures present in natural gas processing columns, including phase equilibria and operational conditions.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Equilibrium Data Retrieval",
+        "secondary_domains": [
+            "Azeotropic Thermodynamics",
+            "Phase Equilibrium",
+            "Natural Gas Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equilibrium data retrieval",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct provision of thermodynamic data",
+            "collaboration_protocol": "Independent data retrieval and compilation"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific components or mixtures in the natural gas stream for which you need azeotropic data?",
+        "What are the operating conditions (temperature and pressure) in your processing columns?",
+        "Do you require data for any specific azeotropic systems or general information on all azeotropes present in natural gas processing?"
+    ]
+}

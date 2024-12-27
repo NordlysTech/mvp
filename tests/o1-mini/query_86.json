@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What's the impact of feed composition variability on the performance of our crude distillation column?",
+        "expanded_query": "Investigate how variations in feed composition influence the operational performance, efficiency, and product yields of our crude distillation column, and provide recommendations to mitigate any negative effects.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Process Analysis",
+        "secondary_domains": [
+            "Feedstock Characterization",
+            "Process Control",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Lead analysis of performance impact due to feed variability",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Assess thermodynamic effects of feed composition changes",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Evaluate control strategies to handle variability",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Integrate thermodynamic and control analyses to assess impacts and solutions",
+            "collaboration_protocol": "Iterative data sharing and joint problem-solving"
+        }
+    },
+    "clarification_questions": [
+        "What specific variations in feed composition are being observed?",
+        "Have there been notable changes in distillation column performance metrics or product specifications?",
+        "Are there existing control systems or strategies in place to manage feed variability?"
+    ]
+}

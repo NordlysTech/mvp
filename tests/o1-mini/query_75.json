@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive risk assessment protocol for handling spent adsorbents in high-temperature industrial filtration processes.",
+        "expanded_query": "Develop a detailed and thorough risk assessment protocol specifically designed for the safe handling and management of spent adsorbents from high-temperature industrial filtration processes, ensuring compliance with all relevant safety and environmental regulations.",
+        "complexity_level": "advanced",
+        "primary_domain": "Safety and Risk Assessment",
+        "secondary_domains": [
+            "Hazardous Materials Handling",
+            "Industrial Filtration Processes",
+            "Regulatory Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead the development of the risk assessment protocol and ensure regulatory compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical details on spent adsorbents and filtration processes",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assist with integrating process considerations into the risk assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Technical data and process information flow from process experts to the Safety Expert for risk analysis",
+            "collaboration_protocol": "Iterative refinement of risk assessment with continuous input from process experts"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of spent adsorbents are involved and what are their physical and chemical properties?",
+        "What are the current handling procedures and known risks associated with the spent adsorbents?",
+        "Are there specific regulations or industry standards that must be followed in the risk assessment protocol?"
+    ]
+}

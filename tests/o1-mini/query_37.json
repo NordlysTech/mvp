@@ -1,0 +1,44 @@
+{
+    "query_analysis": {
+        "original_query": "What are the risks of thermal runaway in an adsorption process during regeneration at elevated temperatures, and how can we mitigate them?",
+        "expanded_query": "Provide a detailed assessment of the risks associated with thermal runaway during the regeneration phase of an adsorption process operating at elevated temperatures, and recommend mitigation strategies to prevent such incidents.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety in Adsorption Systems",
+        "secondary_domains": [
+            "Thermal Runaway Prevention",
+            "Process Control",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment and mitigation strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze thermal behavior during regeneration",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design control strategies to prevent thermal runaway",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Collaborative analysis of thermal risks and development of mitigation strategies",
+            "collaboration_protocol": "Iterative risk assessment and control strategy implementation"
+        }
+    },
+    "clarification_questions": [
+        "What specific adsorbent materials and gases are involved in the adsorption process?",
+        "What are the operating temperatures and pressures during regeneration?",
+        "Are there any existing safety measures or controls currently in place?",
+        "Have there been any previous incidents or near-misses related to thermal runaway?",
+        "What is the scale of the operation (laboratory, pilot plant, or full-scale production)?"
+    ]
+}

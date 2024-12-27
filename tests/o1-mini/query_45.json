@@ -1,0 +1,32 @@
+{
+    "query_analysis": {
+        "original_query": "What safety precautions should we consider when handling cryogenic fluids in an air separation unit?",
+        "expanded_query": "Provide a comprehensive list of safety precautions and best practices for handling cryogenic fluids, such as liquid nitrogen and oxygen, in the operation of an air separation unit to ensure safe and efficient process management.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety in Cryogenic Operations",
+        "secondary_domains": [
+            "Cryogenic Process Engineering",
+            "Regulatory Compliance",
+            "Equipment Handling Procedures"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Provide comprehensive safety precautions for handling cryogenic fluids",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Expert analysis and recommendations on safety protocols",
+            "collaboration_protocol": "Direct reporting and documentation"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific cryogenic fluids (e.g., liquid nitrogen, liquid oxygen) you are most concerned about?",
+        "Do you have existing safety protocols or equipment in place?",
+        "Are there particular regulatory standards or compliance requirements you need to adhere to?"
+    ]
+}

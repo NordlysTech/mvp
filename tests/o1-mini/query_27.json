@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What\u2019s the best way to improve the recovery of valuable hydrocarbons in a three-phase separator without significantly increasing operating costs?",
+        "expanded_query": "Investigate and recommend cost-effective strategies to enhance the recovery of valuable hydrocarbons in a three-phase separator without significantly increasing operating costs.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Cost Management",
+            "Hydrocarbon Recovery"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluate and recommend methods to enhance hydrocarbon recovery in a three-phase separator",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assess overall process implications and cost impact",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Optimize process parameters for improved recovery without increasing costs",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Leading analysis and sharing findings with team for optimization and cost insights",
+            "collaboration_protocol": "Iterative evaluation and refinement of improvement strategies"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operating conditions and separation efficiency of the three-phase separator?",
+        "Can you provide data on the compositions and flow rates of the feed and each phase?",
+        "Are there any constraints or limitations on modifying existing equipment or processes?"
+    ]
+}

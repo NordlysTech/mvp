@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re troubleshooting an amine system in a gas sweetening process. Our H2S levels in the treated gas are spiking intermittently. What could cause this inconsistency?",
+        "expanded_query": "Investigate and identify potential root causes for intermittent spikes in H2S levels in the treated gas of an amine gas sweetening process to aid in troubleshooting the inconsistency.",
+        "complexity_level": "medium",
+        "primary_domain": "Amine System Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Process Operations",
+            "Mass Transfer",
+            "Equipment Maintenance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Lead root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze control system and process dynamics",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluate amine system performance and operational parameters",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Exchange of process data, control system analysis, and operational insights to identify inconsistencies",
+            "collaboration_protocol": "Iterative hypothesis testing and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "Have there been any recent changes in feed gas composition or flow rate?",
+        "Have you observed any patterns or conditions when the H2S spikes occur?",
+        "Have you checked for issues such as foaming, flooding, or solvent degradation in the amine system?"
+    ]
+}

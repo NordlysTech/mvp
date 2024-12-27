@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unexpected temperature profile variations in our atmospheric distillation unit. Can you help diagnose potential root causes?",
+        "expanded_query": "Investigate and diagnose the potential root causes of unexpected temperature profile variations in an atmospheric distillation unit, focusing on process parameters, equipment performance, and operational conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control system analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature profile analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic cross-referencing and hypothesis testing",
+            "collaboration_protocol": "Sequential problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "When did you first notice the unexpected temperature variations in the distillation unit?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide detailed temperature profiles and operating data before and after the variations occurred?",
+        "Are there any alarms or anomalies in the control system?"
+    ]
+}

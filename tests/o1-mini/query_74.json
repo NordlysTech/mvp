@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key factors affecting the cut diameter in a hydrocyclone separation process?",
+        "expanded_query": "Identify and explain the primary factors that influence the cut-off particle size (cut diameter) in a hydrocyclone separation process, considering both design and operational parameters.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Analyze and explain key factors affecting cut diameter",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Provide mathematical relationships and equations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Separation Technologist leads with process explanations while collaborating with Mathematical Solver for analytical support",
+            "collaboration_protocol": "Collaborative interaction to integrate explanations with mathematical relationships"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific operating conditions or design parameters for the hydrocyclone in question?",
+        "Is there an interest in focusing on design factors, operational factors, or both?",
+        "Do you require numerical values or equations, or a qualitative explanation of the factors?"
+    ]
+}

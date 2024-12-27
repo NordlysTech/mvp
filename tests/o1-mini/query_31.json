@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In a distillation column, feed flowrate variations are leading to severe temperature disturbances. What control scheme can mitigate this issue effectively?",
+        "expanded_query": "Identify and recommend an effective control scheme to mitigate severe temperature disturbances in a distillation column caused by feed flowrate variations.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Process Control",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Control Scheme Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Designing effective control schemes to mitigate temperature disturbances",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Assisting in modeling and simulation of proposed control schemes",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative design and simulation feedback between control strategy development and performance analysis",
+            "collaboration_protocol": "Collaborative modeling and validation of control schemes to ensure effectiveness in mitigating temperature disturbances"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the feed flowrate variations (e.g., magnitude, frequency)?",
+        "Is there an existing control system in place? If so, what are its specifications?",
+        "Are there any constraints or limitations on implementing new control schemes (e.g., equipment availability, budget)?"
+    ]
+}

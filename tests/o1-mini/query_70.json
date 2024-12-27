@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unpredictable solids discharge in our hydrocyclone. Develop a comprehensive diagnostic framework to identify potential root causes.",
+        "expanded_query": "Develop a detailed diagnostic framework to systematically identify and evaluate potential root causes leading to the unpredictable solids discharge in our hydrocyclone system. The framework should encompass operational parameters, equipment design and condition, feed properties, and process control aspects that may contribute to the issue.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocyclone Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Equipment Maintenance",
+            "Particle Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Lead in developing diagnostic framework and root cause analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide expertise on hydrocyclone design and operation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze process control parameters affecting hydrocyclone performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Iterative exchange of diagnostic findings and technical insights among agents to identify and validate potential root causes",
+            "collaboration_protocol": "Integrated analysis through systematic approach and cross-functional expertise to develop comprehensive diagnostic framework"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the operating conditions of the hydrocyclone (e.g., pressure, flow rates, temperature)?",
+        "Have there been any recent changes in feed properties such as particle size distribution or solids concentration?",
+        "Have any modifications or maintenance been performed on the hydrocyclone recently?",
+        "Do you have historical performance data or trends related to the solids discharge?"
+    ]
+}

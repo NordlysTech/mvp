@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "What are the typical mass transfer coefficients for CO2 absorption in an hot potassium carbonate-based system?",
+        "expanded_query": "Retrieve typical values or ranges for the mass transfer coefficients for CO2 absorption in hot potassium carbonate solutions, considering standard operating conditions and factors influencing these coefficients.",
+        "complexity_level": "low",
+        "primary_domain": "Mass Transfer Coefficient Retrieval",
+        "secondary_domains": [
+            "CO2 Absorption",
+            "Gas-Liquid Mass Transfer",
+            "Chemical Absorption Processes"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient retrieval and analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Calculation of mass transfer coefficients if required",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Data retrieval and calculation coordination between agents",
+            "collaboration_protocol": "Collaborative data analysis and calculation to provide accurate mass transfer coefficients"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (temperature, pressure, CO2 concentration) for which you need the mass transfer coefficients?",
+        "Is there a specific type of equipment or reactor configuration (e.g., packed column, tray column) you are using?",
+        "Do you require overall mass transfer coefficients or individual gas-side and liquid-side coefficients?"
+    ]
+}

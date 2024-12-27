@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What is the most effective way to prevent weeping in sieve trays used in crude oil fractionation towers?",
+        "expanded_query": "Provide a detailed analysis of the most effective methods to prevent weeping in sieve trays within crude oil fractionation towers, including both design modifications and operational strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Process Optimization",
+            "Separation Equipment Design",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Tray design optimization and operational recommendations to prevent weeping",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze control strategies and operational adjustments",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify root causes of weeping in current operations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrate design improvements and operational adjustments to mitigate weeping",
+            "collaboration_protocol": "Iterative analysis and optimization between tray design and control parameters"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operating conditions (temperatures, pressures, flow rates) of the fractionation tower?",
+        "Have there been any recent changes in feed composition or process parameters?",
+        "Are there any constraints on modifying tray designs or adjusting operational settings?"
+    ]
+}

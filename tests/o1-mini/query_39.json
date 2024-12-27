@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "In a vacuum distillation column, the overhead condenser is struggling to maintain pressure. Could this be due to non-condensables in the system?",
+        "expanded_query": "Investigate and diagnose the causes of difficulty in maintaining pressure in the overhead condenser of a vacuum distillation column, focusing on the potential presence and impact of non-condensable gases in the system.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Vacuum Systems",
+            "Condenser Operation",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Non-condensable gases impact analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Pressure control system evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Integrated analysis of operational data and system performance",
+            "collaboration_protocol": "Sequential diagnostics and system-wide evaluation"
+        }
+    },
+    "clarification_questions": [
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Have you detected any air leaks or ingress points that could introduce non-condensables?",
+        "Can you provide data on the condenser's performance parameters and any recent maintenance?"
+    ]
+}

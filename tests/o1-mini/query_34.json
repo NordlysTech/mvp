@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re exploring cryogenic distillation for separating oxygen and nitrogen from air. What are the key design considerations to minimize energy consumption?",
+        "expanded_query": "Identify and explain the critical design considerations for minimizing energy consumption in a cryogenic distillation process used for separating oxygen and nitrogen from air.",
+        "complexity_level": "advanced",
+        "primary_domain": "Cryogenic Distillation Process Design",
+        "secondary_domains": [
+            "Process Optimization",
+            "Energy Integration",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Optimize cryogenic distillation process design to minimize energy consumption",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze thermodynamic cycles and energy efficiency",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Identify opportunities for energy integration and process optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Exchange design parameters and energy optimization strategies",
+            "collaboration_protocol": "Iterative design refinement through integrated thermodynamic and process analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the expected production capacities and purity requirements for the oxygen and nitrogen products?",
+        "Are there any specific constraints on the plant design, such as space limitations or utility availability?",
+        "Is this for a new installation or a modification of an existing facility?"
+    ]
+}

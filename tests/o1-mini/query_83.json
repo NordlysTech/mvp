@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our vacuum distillation unit is showing signs of fouling. What predictive maintenance strategies can help mitigate long-term performance degradation?",
+        "expanded_query": "Investigate and recommend predictive maintenance strategies to mitigate fouling and prevent long-term performance degradation in a vacuum distillation unit.",
+        "complexity_level": "medium",
+        "primary_domain": "Vacuum Distillation Unit Maintenance",
+        "secondary_domains": [
+            "Fouling Mechanisms",
+            "Predictive Maintenance",
+            "Equipment Reliability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Analyze fouling causes and recommend maintenance strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop predictive maintenance models",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate maintenance strategies into operations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "From root cause analysis to predictive model development and strategy implementation",
+            "collaboration_protocol": "Iterative development and validation of maintenance strategies"
+        }
+    },
+    "clarification_questions": [
+        "What types of fouling are being observed in the vacuum distillation unit?",
+        "Have there been any recent changes in feedstock or operating conditions?",
+        "Do you have historical performance data and maintenance records for the unit?"
+    ]
+}

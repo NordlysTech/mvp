@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I need the maximum safe operating parameters for a horizontal plate filter dealing with corrosive chemical slurries.",
+        "expanded_query": "Determine the maximum safe operating parameters, including pressure, temperature, and flow rate, for a horizontal plate filter processing corrosive chemical slurries, ensuring equipment integrity and operational safety.",
+        "complexity_level": "medium",
+        "primary_domain": "Equipment Safety Parameters",
+        "secondary_domains": [
+            "Filtration Technology",
+            "Corrosion Engineering",
+            "Process Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead assessment of safe operating parameters and safety compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical specifications of the horizontal plate filter",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assess process conditions and slurry properties",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Exchange equipment specifications, material compatibility data, and process conditions to determine safe operating limits",
+            "collaboration_protocol": "Collaborative analysis integrating safety standards and equipment capabilities"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific corrosive chemicals present in the slurry?",
+        "What is the material of construction of the horizontal plate filter?",
+        "What are the current operating conditions (temperature, pressure, flow rate)?",
+        "Are there any manufacturer specifications or limits for the equipment?"
+    ]
+}

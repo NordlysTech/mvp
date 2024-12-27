@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re designing a hybrid separation unit combining distillation and membranes. How do we determine the most energy-efficient split between these two stages?",
+        "expanded_query": "Develop a method to optimize the energy efficiency of a hybrid separation unit by determining the optimal allocation of separation tasks between distillation and membrane processes.",
+        "complexity_level": "advanced",
+        "primary_domain": "Hybrid Separation Process Optimization",
+        "secondary_domains": [
+            "Membrane Technology",
+            "Distillation Technology",
+            "Energy Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid separation process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Optimization modeling and calculations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic analysis of separation processes",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative optimization of separation tasks guided by thermodynamic data and mathematical modeling",
+            "collaboration_protocol": "Integrated analysis and continuous feedback to refine energy efficiency"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components and their concentrations in the feed mixture?",
+        "What are the desired purity levels for the separated products?",
+        "Are there any constraints on operating conditions or equipment available?"
+    ]
+}

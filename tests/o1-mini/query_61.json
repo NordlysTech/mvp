@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I'm investigating the performance limitations of our tubular centrifuge. What computational techniques can help us optimize the separation efficiency for complex liquid-solid systems?",
+        "expanded_query": "Identify computational methods and techniques to optimize the separation efficiency of a tubular centrifuge handling complex liquid-solid systems by analyzing its performance limitations.",
+        "complexity_level": "high",
+        "primary_domain": "Centrifugal Separation Process Optimization",
+        "secondary_domains": [
+            "Computational Fluid Dynamics",
+            "Mathematical Modeling",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the optimization of centrifuge separation efficiency",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop computational models and simulations to analyze performance limitations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze dynamic factors affecting centrifuge performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative computational modeling and performance optimization",
+            "collaboration_protocol": "Integrated computational analysis and process optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific performance limitations are you observing in your tubular centrifuge?",
+        "Can you provide operational parameters and data of your centrifuge system?",
+        "Are there any constraints on computational resources or specific software preferences?",
+        "What are the properties of the complex liquid-solid systems being processed?"
+    ]
+}

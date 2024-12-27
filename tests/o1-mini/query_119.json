@@ -1,0 +1,20 @@
+{
+    "query_analysis": {
+        "original_query": "nan",
+        "expanded_query": "The input query is invalid or incomplete and cannot be processed.",
+        "complexity_level": "low",
+        "primary_domain": "Undefined",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [],
+        "communication_strategy": {
+            "primary_communication_agent": "",
+            "information_flow": "",
+            "collaboration_protocol": ""
+        }
+    },
+    "clarification_questions": [
+        "The provided query is unclear. Could you please provide more details or clarify your request?"
+    ]
+}

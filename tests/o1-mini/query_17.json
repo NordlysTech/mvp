@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our pressure swing adsorption unit experienced a sudden valve failure. How can we assess if this poses a significant safety risk to the surrounding equipment?",
+        "expanded_query": "Assess the safety implications of a sudden valve failure in our pressure swing adsorption unit, specifically evaluating any significant risks posed to the surrounding equipment, and recommend methods for conducting this assessment.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety Assessment",
+        "secondary_domains": [
+            "Equipment Failure Analysis",
+            "Pressure Systems",
+            "Risk Assessment"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead safety risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Investigate root cause of valve failure",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze system dynamics and potential impacts",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integrated analysis of failure impacts and risk assessments",
+            "collaboration_protocol": "Sequential diagnostic assessment and coordinated risk evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What was the operating condition of the PSA unit at the time of the valve failure?",
+        "What specific type of valve failed and what is its function within the unit?",
+        "Were there any immediate effects observed following the valve failure, such as pressure spikes, gas releases, or alarms?",
+        "Are hazardous materials involved that could affect the surrounding equipment upon release?"
+    ]
+}

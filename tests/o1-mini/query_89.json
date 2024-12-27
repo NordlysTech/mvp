@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Design a comprehensive monitoring strategy for detecting early signs of column internals degradation in our atmospheric distillation unit.",
+        "expanded_query": "Develop a detailed and comprehensive monitoring strategy to detect early signs of degradation in the column internals of our atmospheric distillation unit, including identifying key parameters to monitor, selecting appropriate sensing and inspection technologies, and establishing effective data analysis and maintenance protocols to ensure proactive maintenance and prevent operational disruptions.",
+        "complexity_level": "high",
+        "primary_domain": "Asset Integrity Management",
+        "secondary_domains": [
+            "Process Control",
+            "Inspection and Maintenance",
+            "Safety Engineering",
+            "Instrumentation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Designing the monitoring strategy and selecting appropriate technologies and instrumentation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identifying potential degradation mechanisms and determining key parameters to monitor",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Integrating safety considerations and ensuring compliance with safety regulations",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Collaborative development of monitoring approaches with input on degradation mechanisms and safety considerations",
+            "collaboration_protocol": "Iterative strategy refinement and cross-disciplinary integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific degradation mechanisms are of concern in your atmospheric distillation unit?",
+        "Do you have any existing monitoring systems or historical data on the condition of the column internals?",
+        "Are there any constraints regarding sensor installation, budget, or maintenance schedules?"
+    ]
+}

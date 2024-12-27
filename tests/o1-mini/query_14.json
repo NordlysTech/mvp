@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "Our PSA system is showing inefficient cycling due to delays in valve actuation. What control upgrades would you recommend to optimize adsorption/desorption timing?",
+        "expanded_query": "Identify and recommend control system upgrades to mitigate valve actuation delays causing inefficient cycling in our Pressure Swing Adsorption (PSA) system, with the goal of optimizing adsorption and desorption timing.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control and Automation",
+        "secondary_domains": [
+            "Dynamics",
+            "Instrumentation",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system upgrade recommendation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Valve actuation delay diagnosis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Collaborative identification of control upgrades and synchronization of valve actuation",
+            "collaboration_protocol": "Integrated control strategy development and iterative optimization"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the current control system configuration and valve types?",
+        "Have there been recent changes to the PSA system or operating conditions?",
+        "What are the specific timings and delays observed in valve actuation?"
+    ]
+}

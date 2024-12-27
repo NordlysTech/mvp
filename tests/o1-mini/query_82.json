@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum number of stages required for effective kerosene-diesel separation in a petroleum distillation column.",
+        "expanded_query": "Determine the theoretical minimum number of stages in a petroleum distillation column required to achieve effective separation between kerosene and diesel fractions, using appropriate design equations and considering feed composition, operating conditions, and desired product purities.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Design",
+        "secondary_domains": [
+            "Separation Processes",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the calculation of theoretical minimum stages for separation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Provide VLE data and relative volatilities",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform calculations using design equations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Thermodynamic data provided by Thermodynamics Expert is used by Mathematical Solver and Separation Technologist to calculate minimum stages",
+            "collaboration_protocol": "Iterative data sharing and calculation refinement between agents"
+        }
+    },
+    "clarification_questions": [
+        "What are the feed composition and conditions (temperature, pressure)?",
+        "What are the desired product purities or separation specifications for kerosene and diesel?",
+        "Is there any specific operating pressure or reflux ratio for the distillation column?",
+        "Do you have specific relative volatility data for the components involved?"
+    ]
+}

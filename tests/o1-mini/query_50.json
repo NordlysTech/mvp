@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a predictive model for eutectic salt formation in our deep eutectic solvent-based extraction process for rare earth elements. Can you help me characterize the thermodynamic boundaries?",
+        "expanded_query": "Develop a predictive thermodynamic model to characterize and understand eutectic salt formation in our deep eutectic solvent-based extraction process for rare earth elements, aiming to identify thermodynamic boundaries to optimize extraction efficiency.",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamics of Deep Eutectic Solvent Extraction",
+        "secondary_domains": [
+            "Eutectic Salt Formation",
+            "Phase Equilibria",
+            "Predictive Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic boundaries characterization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Predictive model development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process integration and validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic data and models to Mathematical Solver; model predictions shared with Separation Technologist for process integration",
+            "collaboration_protocol": "Iterative model development and validation through collaborative analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components and compositions in your deep eutectic solvent system?",
+        "What operating conditions (temperature, pressure) are you working with?",
+        "Do you have any existing experimental data on eutectic salt formation in your system?"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a comprehensive predictive model for solids discharge in our nozzle discharge solid-bowl centrifuge. What factors should we prioritize to minimize operational instabilities?",
+        "expanded_query": "Develop a detailed and accurate predictive model for solids discharge behavior in a nozzle discharge solid-bowl centrifuge, identifying and prioritizing critical factors to minimize operational instabilities and enhance performance.",
+        "complexity_level": "advanced",
+        "primary_domain": "Centrifugal Separation Process Modeling",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Mathematical Modeling",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead development of the predictive model and identification of critical operational factors",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze operational instabilities and advise on stability enhancement",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop and validate mathematical aspects of the predictive model",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of process knowledge with dynamics analysis and mathematical modeling",
+            "collaboration_protocol": "Iterative development with continuous feedback among agents to refine model accuracy and operational recommendations"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operational parameters and conditions of your centrifuge?",
+        "Do you have existing data on solids discharge and operational instabilities?",
+        "What are the properties of the solids being processed?",
+        "Are there any constraints on modifying operational parameters or equipment design?"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "In membrane separations, how do concentration polarization effects impact mass transfer, and what strategies can minimize these effects?",
+        "expanded_query": "Investigate the influence of concentration polarization phenomena on mass transfer in membrane separation processes and identify effective strategies to mitigate these effects to enhance separation efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Mass Transfer",
+            "Transport Phenomena",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead analysis of concentration polarization impact and develop mitigation strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Provide insights on mass transfer mechanisms affected by concentration polarization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Model concentration polarization effects and quantify impact on mass transfer rates",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrate theoretical insights and modeling results to develop mitigation strategies",
+            "collaboration_protocol": "Iterative collaboration with shared analysis and strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of membrane separation process are you using (e.g., reverse osmosis, ultrafiltration)?",
+        "Can you provide details on operating conditions such as feed concentration, flow rates, and pressures?",
+        "Are there any constraints on implementing changes to the process or system?"
+    ]
+}

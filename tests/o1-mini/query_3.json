@@ -1,0 +1,25 @@
+{
+    "query_analysis": {
+        "original_query": "I am working on designing a separation process for a ternary mixture, I would like the equilibrium data of water-MEA-CO2.",
+        "expanded_query": "Obtain the equilibrium data for the system a ternary mixture of water, MEA, and CO2.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Equilibrium Data Retrieval",
+        "secondary_domains": [
+            "Ternary Mixture Thermodynamics",
+            "Phase Equilibrium"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equilibrium data retrieval",
+                "interaction_type": "lead"
+            }
+        ]
+    },
+    "clarification_questions": [
+        "What are the concentrations of water, MEA, and CO2 in the ternary mixture?",
+        "What are the operating conditions (temperature, pressure) for the separation process?"
+    ]
+}

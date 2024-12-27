@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "A horizontal separator operates under steady-state conditions with a constant flow of gas and liquid phases. Develop a differential equation relating the pressure drop to liquid holdup, assuming frictional losses dominate.",
+        "expanded_query": "Develop a differential equation that relates the pressure drop to the liquid holdup in a horizontal separator operating under steady-state conditions with constant gas and liquid flows, assuming that frictional losses are the primary cause of pressure drop.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Mechanics",
+            "Mathematical Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Develop the differential equation relating pressure drop to liquid holdup",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process parameters and operational insights",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver (Analytical/Numerical)",
+            "information_flow": "Mathematical derivation incorporating separation process characteristics",
+            "collaboration_protocol": "Collaborative modeling and parameter validation"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide the specific dimensions and characteristics of the horizontal separator?",
+        "What are the physical properties of the gas and liquid phases, such as densities and viscosities?",
+        "Should any additional factors be considered negligible, such as changes in kinetic or potential energy?"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "How can we implement model predictive control (MPC) for energy optimization in a multi-column distillation train?",
+        "expanded_query": "Provide detailed guidance on implementing model predictive control (MPC) for optimizing energy consumption in a multi-column distillation train, including aspects of process modeling, control strategy development, and integration challenges.",
+        "complexity_level": "advanced",
+        "primary_domain": "Advanced Process Control",
+        "secondary_domains": [
+            "Energy Optimization",
+            "Distillation Process Modeling",
+            "Process Integration"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design and implementation of the MPC strategy",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop mathematical models of the distillation train",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process insights and validate models",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Mathematical models and process data are collaboratively utilized to develop the MPC strategy",
+            "collaboration_protocol": "Iterative model development and control strategy refinement through continuous feedback among agents"
+        }
+    },
+    "clarification_questions": [
+        "Do you have existing dynamic models or data for your distillation columns?",
+        "What specific energy optimization targets are you aiming to achieve with MPC?",
+        "Are there any operational constraints or limitations in your current control systems?"
+    ]
+}

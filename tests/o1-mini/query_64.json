@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a membrane filtration system for challenging liquid-solid separations. What multi-scale modeling approaches could help us predict performance across different operating conditions?",
+        "expanded_query": "Determine suitable multi-scale modeling approaches to predict the performance of a membrane filtration system designed for challenging liquid-solid separations under different operating conditions, to enhance system design and optimization.",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Computational Modeling",
+            "Process Simulation",
+            "Transport Phenomena"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead membrane filtration system design and process understanding",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop multi-scale models for performance prediction",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of modeling results into system design and performance prediction",
+            "collaboration_protocol": "Iterative modeling and design optimization through collaborative feedback"
+        }
+    },
+    "clarification_questions": [
+        "What is the composition and particle size distribution of the solids in the feed stream?",
+        "What specific operating conditions (pressure, temperature, flow rates) are being considered?",
+        "Are there specific scales (microscopic, mesoscopic, macroscopic) you wish the modeling to focus on?"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing persistent fouling in our solvent regeneration system for CO2 capture. What chemical additives or surface modifications could mitigate this long-term performance degradation?",
+        "expanded_query": "Investigate and recommend chemical additives or surface modification strategies to mitigate persistent fouling in the solvent regeneration system used for CO2 capture, to improve long-term performance and efficiency.",
+        "complexity_level": "medium",
+        "primary_domain": "Fouling Mitigation in CO2 Capture Systems",
+        "secondary_domains": [
+            "Chemical Additives",
+            "Surface Engineering",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead expert on fouling mitigation strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify and analyze root causes of persistent fouling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze chemical interactions affecting fouling and assess effectiveness of additives",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Root cause analysis and mitigation strategy development",
+            "collaboration_protocol": "Iterative solution development and validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific fouling mechanisms have been identified in your system?",
+        "Can you provide details on the solvent composition and operating conditions?",
+        "Have any fouling mitigation strategies been previously implemented, and what were the results?"
+    ]
+}

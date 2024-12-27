@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help me develop a comprehensive uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing?",
+        "expanded_query": "Develop a detailed uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing, including identification of uncertainty sources, modeling and simulation, statistical analysis, and recommendations to mitigate uncertainties impacting process performance.",
+        "complexity_level": "advanced",
+        "primary_domain": "Uncertainty Quantification",
+        "secondary_domains": [
+            "Separation Technology",
+            "Statistical Modeling",
+            "Materials Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Lead development of the uncertainty quantification framework",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide process expertise and identify sources of uncertainty",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Assess impact of high-temperature conditions on uncertainties",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver (Analytical/Numerical)",
+            "information_flow": "Process details and uncertainty sources are provided to the Mathematical Solver for modeling",
+            "collaboration_protocol": "Iterative framework development with continuous integration of domain expertise"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific uncertainty sources in your membrane separation process?",
+        "Do you have existing data on process performance under various operating conditions?",
+        "Are there particular performance metrics or regulatory requirements to consider in the analysis?"
+    ]
+}

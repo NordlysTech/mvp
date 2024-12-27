@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing challenges with particle separation in our hydrocyclone. Can you help me optimize the cut diameter by analyzing the impact of inlet velocity and density differentials?",
+        "expanded_query": "Provide a detailed analysis and optimization strategy to improve particle separation efficiency in our hydrocyclone by optimizing the cut diameter. Specifically, analyze how variations in inlet velocity and the density differentials between particles and fluid affect the cut diameter, and recommend operational adjustments or design modifications to enhance performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocyclone Operation",
+        "secondary_domains": [
+            "Particle Separation",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead optimization of hydrocyclone cut diameter and separation efficiency",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform quantitative analysis of inlet velocity and density differentials impact on cut diameter",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Exchange of performance calculations and optimization parameters",
+            "collaboration_protocol": "Iterative modeling and analysis to refine operational recommendations"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operating conditions of the hydrocyclone (inlet velocity, feed density, pressure)?",
+        "What is the particle size distribution in your feed, and what is the desired cut diameter?",
+        "Are there any constraints on modifying the inlet velocity or feed composition?"
+    ]
+}

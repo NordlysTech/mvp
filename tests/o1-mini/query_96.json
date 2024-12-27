@@ -1,0 +1,26 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key design parameters for vertical gas-liquid knockout drums?",
+        "expanded_query": "Provide a detailed explanation of the key design parameters involved in designing vertical gas-liquid knockout drums.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Design",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide key design parameters for vertical gas-liquid knockout drums",
+                "interaction_type": "independent"
+            }
+        ]
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (pressure, temperature, flow rates) of the gas stream?",
+        "Are there any particular design codes or standards that need to be followed?",
+        "Are there any space or size constraints for the knockout drum installation?"
+    ]
+}

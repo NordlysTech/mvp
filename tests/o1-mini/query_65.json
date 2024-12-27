@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our filter press is experiencing challenges with cake washing and discharge. How can we develop an integrated control strategy to improve operational efficiency and product quality?",
+        "expanded_query": "Investigate and address the challenges with cake washing and discharge in our filter press by developing an integrated control strategy to enhance operational efficiency and product quality.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Process Control",
+        "secondary_domains": [
+            "Process Optimization",
+            "Troubleshooting"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead analysis of filtration challenges and implement process solutions",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Develop integrated control strategy to improve efficiency and quality",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify root causes of cake washing and discharge issues",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of troubleshooting insights into control strategy and process adjustments",
+            "collaboration_protocol": "Iterative feedback and solution refinement"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the specific challenges encountered during cake washing and discharge?",
+        "What are the current operational parameters of the filter press?",
+        "Have there been any recent changes in the feed material or process conditions?",
+        "What control systems are currently in place for the filter press?"
+    ]
+}

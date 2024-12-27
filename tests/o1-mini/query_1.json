@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We've got these massive geothermal brine pools in Nevada, and our management is pushing hard to monetize the lithium. Current extraction methods are a money pit. Any ideas on a novel approach that doesn't require crazy expensive infrastructure?",
+        "expanded_query": "Investigate and propose a novel, cost-effective method for extracting lithium from large geothermal brine pools in Nevada that minimizes capital expenditure and avoids the need for expensive infrastructure.",
+        "complexity_level": "advanced",
+        "primary_domain": "Critical Metal Recovery",
+        "secondary_domains": [
+            "Resource Extraction",
+            "Economic Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead development of innovative extraction process",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze ionic interactions and thermodynamic properties",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform economic feasibility analysis",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Collaboration on extraction method development and cost analysis",
+            "collaboration_protocol": "Integrated strategy refinement with iterative feedback loops"
+        }
+    },
+    "clarification_questions": [
+        "What is the current lithium concentration in your brine pools?",
+        "Which extraction methods have you already tried?",
+        "Are there any specific constraints or preferences regarding the process design or technology?"
+    ]
+}

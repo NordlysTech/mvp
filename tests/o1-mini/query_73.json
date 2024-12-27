@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We need to optimize the design of a hybrid filtration system combining rotary drum and pressure leaf technologies. What advanced integration strategies could improve overall separation efficiency?",
+        "expanded_query": "Identify advanced integration strategies to optimize the design and improve overall separation efficiency of a hybrid filtration system that combines rotary drum and pressure leaf technologies.",
+        "complexity_level": "advanced",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Separation Efficiency Enhancement",
+            "Equipment Integration"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead optimization of hybrid filtration system design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Assist with modeling and simulation of filtration processes",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Evaluate integration strategies within the overall process",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Collaborative optimization of separation efficiency through advanced integration strategies",
+            "collaboration_protocol": "Integrated design and simulation for enhanced system performance"
+        }
+    },
+    "clarification_questions": [
+        "What are the current performance metrics of the existing filtration systems?",
+        "Are there any specific constraints such as space, budget, or materials?",
+        "What are the properties of the feed material, including particle size distribution and composition?",
+        "What are your target separation efficiency and throughput rates?"
+    ]
+}

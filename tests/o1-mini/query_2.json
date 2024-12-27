@@ -1,0 +1,38 @@
+{
+    "query_analysis": {
+        "original_query": "Hey team, we're struggling with CO2 capture in our power plant's flue gas system. I've heard about new membrane technologies - can you recommend a material that might bump up our selectivity without killing our flux rate?",
+        "expanded_query": "Identify and recommend high-performance membrane materials for enhanced CO2 capture from flue gas in a power plant, focusing on materials that increase selectivity without significantly reducing flux rate.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Gas Purification",
+            "Materials Science",
+            "Energy Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane material identification and recommendation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Validation of molecular transport mechanisms affecting selectivity and flux",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Separation Technologist leads material selection; collaborates with Thermodynamics Expert for performance validation",
+            "collaboration_protocol": "Collaborative analysis and direct material recommendation"
+        }
+    },
+    "clarification_questions": [
+        "What is the detailed composition of your flue gas, including any impurities?",
+        "What are the operating temperature and pressure conditions of your flue gas stream?",
+        "Do you have any constraints regarding membrane material cost or availability?",
+        "Can you provide performance data of current CO2 capture methods being used?"
+    ]
+}

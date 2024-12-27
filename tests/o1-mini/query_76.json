@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "What's the typical efficiency range for crude oil distillation columns in petroleum refineries?",
+        "expanded_query": "Provide information on the typical efficiency ranges of crude oil distillation columns used in petroleum refineries, including factors that may affect these efficiencies.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Engineering",
+            "Separation Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide typical efficiency ranges and factors influencing efficiency",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct provision of efficiency data and explanations",
+            "collaboration_protocol": "Independent task execution"
+        }
+    },
+    "clarification_questions": [
+        "Are you interested in a specific type of efficiency, such as tray efficiency, overall column efficiency, or energy efficiency?",
+        "Do you require information on a specific type or design of distillation column?"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "query_analysis": {
+        "original_query": "We are looking to develop a more energy-efficient approach to extract ethanol from a 95% azeotropic mixture. Any suggestions on alternative distillation or hybrid methods?",
+        "expanded_query": "Design an energy-efficient method to separate ethanol from its 95% ethanol-water azeotrope mixture, considering alternative distillation techniques or hybrid separation methods that can overcome azeotropic limitations.",
+        "complexity_level": "high",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Energy Optimization",
+            "Azeotropic Mixture Separation",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Design alternative separation methods to overcome azeotrope limitations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze phase equilibria and thermodynamic properties of the ethanol-water system",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Perform process modeling and energy optimization calculations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate separation methods into overall process design considering economic feasibility",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design and optimization incorporating thermodynamic analysis and energy modeling",
+            "collaboration_protocol": "Collaborative development with continuous feedback among agents"
+        }
+    },
+    "clarification_questions": [
+        "What is the scale of your operation and desired ethanol purity?",
+        "Do you have any constraints on equipment, capital investment, or energy consumption?",
+        "Have you previously tried any alternative separation methods?"
+    ]
+}

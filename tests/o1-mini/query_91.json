@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What safety considerations are critical when implementing new tray or packing technologies in existing distillation columns?",
+        "expanded_query": "Identify and analyze the critical safety considerations involved in implementing new tray or packing technologies in existing distillation columns, including potential risks, necessary safety measures, and compliance with industry regulations.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Design",
+            "Regulatory Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead analysis of safety considerations and compliance requirements",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical insights on tray or packing technology implementation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate safety considerations with process design and operation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety requirements inform technology implementation and process design adjustments",
+            "collaboration_protocol": "Interdisciplinary collaboration to ensure safe and effective technology integration"
+        }
+    },
+    "clarification_questions": [
+        "Which specific tray or packing technologies are being considered for implementation?",
+        "What are the current operating conditions and specifications of the distillation columns?",
+        "Are there any known hazards or incident history associated with the existing equipment?"
+    ]
+}

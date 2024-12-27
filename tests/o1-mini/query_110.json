@@ -1,0 +1,44 @@
+{
+    "query_analysis": {
+        "original_query": "Could you help me design a monitoring system to predict early fouling in demisters for separators handling heavy hydrocarbon condensates. What sensors and control strategies would you recommend?",
+        "expanded_query": "Assist in designing a monitoring system to predict and prevent early fouling in demisters within separators processing heavy hydrocarbon condensates, including recommendations on suitable sensors and control strategies to effectively detect and mitigate fouling issues.",
+        "complexity_level": "high",
+        "primary_domain": "Process Monitoring and Control",
+        "secondary_domains": [
+            "Separation Technology",
+            "Instrumentation and Sensors",
+            "Fouling Mechanisms"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design of monitoring and control strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Expertise on demisters and fouling mechanisms",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Fouling prediction modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Development of monitoring system integrating predictive models and sensor data",
+            "collaboration_protocol": "Iterative collaboration combining process insights and modeling analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (temperature, pressure, flow rates) of the separators?",
+        "What types of fouling mechanisms are known to affect the demisters?",
+        "Are there existing monitoring systems or sensors currently in use?",
+        "Do you have any preferences or constraints regarding sensor technologies?",
+        "What are the acceptable fouling levels before maintenance or intervention is required?"
+    ]
+}

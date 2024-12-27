@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical safety protocols when depressurizing gas-liquid separators with high H\u2082S content?",
+        "expanded_query": "Identify and explain the essential safety procedures and protocols necessary to safely depressurize gas-liquid separators containing high concentrations of hydrogen sulfide (H\u2082S), addressing potential risks and adhering to industry best practices.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety in High H\u2082S Operations",
+        "secondary_domains": [
+            "Equipment Depressurization",
+            "H\u2082S Hazard Management",
+            "Regulatory Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead the identification of critical safety protocols and compliance requirements",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical insights on gas-liquid separator operations with high H\u2082S content",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate safety protocols with operational procedures",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety Expert consolidates inputs from Separation Technologist and General Process Engineer to develop comprehensive safety protocols",
+            "collaboration_protocol": "Iterative review and alignment to ensure safety measures meet operational needs and regulatory standards"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific concentration of H\u2082S in your gas-liquid separators?",
+        "Are there particular regulatory guidelines or industry standards that need to be followed?",
+        "Do you have existing safety equipment or protocols that should be incorporated?"
+    ]
+}

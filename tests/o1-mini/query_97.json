@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our gas-liquid separator is showing inconsistent liquid levels. Could this indicate a control valve issue or demister malfunction? Explain the likely causes and remedies.",
+        "expanded_query": "Investigate and diagnose the potential causes of inconsistent liquid levels in a gas-liquid separator, considering possible control valve issues and demister malfunctions. Provide explanations of the likely causes and recommend appropriate remedies.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Separation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Equipment Maintenance",
+            "Dynamics & Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Lead root cause investigation of inconsistent liquid levels in the gas-liquid separator",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze control valve issues and control system behavior",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluate potential demister malfunction and separation process performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "The Troubleshooter coordinates the investigation, integrating inputs from the Dynamics & Control Expert and the Separation Technologist to diagnose the issue",
+            "collaboration_protocol": "Collaborative analysis and information sharing to systematically identify likely causes and recommend remedies"
+        }
+    },
+    "clarification_questions": [
+        "When did the inconsistent liquid levels first occur?",
+        "Have there been any recent changes to operating conditions or control setpoints?",
+        "Are there any alarms or unusual readings in the control system?",
+        "Has maintenance been performed on the control valves and demister recently?"
+    ]
+}

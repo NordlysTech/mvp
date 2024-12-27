@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "I have an issue with a membrane separation system for desalination. The fouling rate of our membranes has drastically increased. What operational factors should we check?",
+        "expanded_query": "Investigate the operational parameters contributing to the increased fouling rate in our desalination membrane separation system, and recommend which operational factors should be checked to mitigate the fouling issue.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Fouling Troubleshooting",
+        "secondary_domains": [
+            "Process Operations",
+            "Water Chemistry",
+            "Membrane Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Lead investigation into membrane fouling issue",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide expertise on membrane fouling mechanisms",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assess operational parameters affecting membrane performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative analysis of operational and process factors influencing membrane fouling",
+            "collaboration_protocol": "Iterative problem-solving and cross-disciplinary verification"
+        }
+    },
+    "clarification_questions": [
+        "Have there been any recent changes in feed water quality or characteristics?",
+        "What are the current operating conditions and have they changed recently?",
+        "Are the pretreatment and cleaning procedures being performed as per schedule?"
+    ]
+}

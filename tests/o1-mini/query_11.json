@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Could you provide a checklist to help me draft a industry scale risk assessment for a pressure swing system ?",
+        "expanded_query": "Provide a comprehensive checklist to assist in drafting an industry-scale risk assessment for a pressure swing adsorption system, ensuring all safety, regulatory, and operational risks are identified and addressed.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety and Risk Assessment",
+        "secondary_domains": [
+            "Pressure Swing Adsorption Technology",
+            "Regulatory Compliance",
+            "Operational Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead the development of the risk assessment checklist, ensuring thorough coverage of safety and regulatory compliance aspects.",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Contribute process insights and operational considerations for the pressure swing system.",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide expertise on pressure swing adsorption technology to identify potential process hazards and technical risks.",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integrated development of the risk assessment checklist with contributions from technology and process perspectives.",
+            "collaboration_protocol": "Collaborative synthesis of safety, process, and technology insights to ensure a comprehensive risk assessment."
+        }
+    },
+    "clarification_questions": [
+        "What specific industry standards or regulatory frameworks should the risk assessment adhere to?",
+        "Can you provide details on the operating conditions and configurations of the pressure swing system?",
+        "Are there any historical data on incidents or specific concerns that should be considered in the risk assessment?"
+    ]
+}

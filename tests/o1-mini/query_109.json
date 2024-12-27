@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Identify and assess the potential hazards of operating a liquid-gas separator near its flooding limit.",
+        "expanded_query": "Provide a detailed analysis of the potential hazards, including safety risks and operational issues, associated with operating a liquid-gas separator near its flooding limit.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Operations"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead hazard identification and assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical insights on separator operation near flooding limit",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Evaluate control system factors influencing flooding risk",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety Expert integrates technical inputs from other agents for comprehensive hazard assessment",
+            "collaboration_protocol": "Collaborative risk analysis and mitigation strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of liquid-gas separator is in use?",
+        "Can you provide details on the operating conditions (pressure, temperature, flow rates)?",
+        "Are there existing safety measures or control systems to prevent flooding?"
+    ]
+}

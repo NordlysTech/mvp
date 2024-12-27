@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "How do we design a cascade control loop for managing pressure and level in a flash drum?",
+        "expanded_query": "Provide a detailed methodology for designing a cascade control loop that effectively manages both pressure and level in a flash drum, including considerations for controller selection, tuning, and interaction between the control loops.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Dynamics & Control",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Designing the cascade control loop for pressure and level management",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Providing insights on flash drum operation and process dynamics",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Exchange of process characteristics and control requirements to integrate control system design with flash drum operation",
+            "collaboration_protocol": "Collaborative development of control strategies considering process dynamics and separation objectives"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific pressure and level control objectives for the flash drum?",
+        "Are there any known disturbances or process variations that need to be considered in the control strategy?",
+        "Do you have any constraints on the control system hardware, such as availability of sensors and actuators?"
+    ]
+}

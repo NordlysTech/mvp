@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing challenges with side draw consistency in our crude distillation unit. What control strategies could improve product quality?",
+        "expanded_query": "Identify and recommend effective control strategies to improve side draw consistency and enhance product quality in a crude distillation unit experiencing challenges with side draw consistency.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control in Distillation",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Develop control strategies to improve side draw consistency",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify potential causes for side draw inconsistency",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide insights on separation process impacting side draw",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Collect diagnostic information from Troubleshooter and process insights from Separation Technologist to design effective control strategies",
+            "collaboration_protocol": "Iterative feedback and integrated analysis to refine control solutions"
+        }
+    },
+    "clarification_questions": [
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide details on the current control system and its performance?",
+        "Which specific products or side draws are most affected by the inconsistency?"
+    ]
+}

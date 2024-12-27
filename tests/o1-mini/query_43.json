@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "In our solvent recovery system, azeotrope formation is limiting separation efficiency. Would azeotropic distillation or extractive distillation be a better solution?",
+        "expanded_query": "Evaluate and recommend whether azeotropic distillation or extractive distillation would be more effective in overcoming azeotrope formation limiting separation efficiency in our solvent recovery system, aiming to enhance separation performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Thermodynamics",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluate separation methods and recommend optimal solution",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze azeotrope formation and phase behavior",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Sharing of phase equilibrium data and separation process analyses",
+            "collaboration_protocol": "Collaborative evaluation and selection of optimal distillation method"
+        }
+    },
+    "clarification_questions": [
+        "What specific solvents are present in your recovery system, and which components are forming the azeotrope?",
+        "What are the operating conditions (temperature, pressure) of your current solvent recovery system?",
+        "Are there any constraints or preferences regarding the use of additional entrainers or solvents in your process?"
+    ]
+}

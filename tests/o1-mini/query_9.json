@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "During commissioning of a gas-liquid separator, we noticed unexpected pressure surges. Could this indicate a safety hazard?",
+        "expanded_query": "Determine the potential causes of unexpected pressure surges observed during the commissioning of a gas-liquid separator, assess the associated safety risks, and recommend actions to mitigate any identified hazards.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Equipment Troubleshooting",
+            "Process Dynamics",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead assessment of safety hazards associated with pressure surges",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Investigate root causes of unexpected pressure surges",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze pressure dynamics and recommend control strategies to mitigate surges",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Troubleshooter and Dynamics & Control Expert provide findings to Safety Expert, who integrates information to assess safety risks and recommend mitigation actions",
+            "collaboration_protocol": "Iterative analysis and collaborative problem-solving to diagnose causes and evaluate safety implications"
+        }
+    },
+    "clarification_questions": [
+        "Have the pressure surges occurred repeatedly or only under specific operating conditions?",
+        "What are the magnitudes and frequencies of the observed pressure surges?",
+        "Are there any existing safety systems or alarms responding to these pressure surges?"
+    ]
+}

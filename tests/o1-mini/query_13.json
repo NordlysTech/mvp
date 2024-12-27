@@ -1,0 +1,44 @@
+{
+    "query_analysis": {
+        "original_query": "The compressor in our refrigeration cycle is showing unexpected surges in discharge pressure. Could it be related to liquid carryover from the separator upstream?",
+        "expanded_query": "Perform a detailed investigation into the causes of unexpected surges in discharge pressure in our refrigeration cycle compressor, specifically evaluating if liquid carryover from the upstream separator is causing this issue.",
+        "complexity_level": "medium",
+        "primary_domain": "Compressor Performance Troubleshooting",
+        "secondary_domains": [
+            "Separation Technology",
+            "Dynamics & Control",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of compressor pressure surges",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Analysis of upstream separator performance and liquid carryover",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Assessment of compressor control systems and pressure regulation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Exchange of diagnostic data and collaborative analysis between agents",
+            "collaboration_protocol": "Integrated troubleshooting with cross-disciplinary evaluation"
+        }
+    },
+    "clarification_questions": [
+        "When did the unexpected pressure surges in the compressor discharge begin?",
+        "Have there been any recent changes to the refrigeration cycle operating conditions or maintenance performed on the system?",
+        "Can you provide data on the separator performance and any indications of liquid carryover?",
+        "Are there any signs of liquid presence at the compressor inlet?",
+        "Have you observed any anomalies in the compressor control system or pressure regulation mechanisms?"
+    ]
+}

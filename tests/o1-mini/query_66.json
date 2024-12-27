@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're exploring advanced techniques to minimize filter medium blinding in our centrifugal filtration process. What innovative surface modification or control strategies could improve separation performance?",
+        "expanded_query": "Investigate and recommend innovative surface modification and control strategies to minimize filter medium blinding in centrifugal filtration processes, aiming to enhance separation performance.",
+        "complexity_level": "advanced",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Surface Engineering",
+            "Process Control",
+            "Materials Science"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the development of innovative filtration techniques and surface modification strategies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Develop control strategies to minimize filter medium blinding",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze fouling mechanisms and advise on the impact of surface modifications on thermodynamic properties",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of surface modification and control strategies based on analysis of fouling mechanisms to enhance filtration performance",
+            "collaboration_protocol": "Iterative development with cross-functional feedback and refined optimization"
+        }
+    },
+    "clarification_questions": [
+        "Can you provide details on the current filter medium material and its surface properties?",
+        "What types of particles or contaminants are causing the blinding?",
+        "Are there operational constraints or limitations in modifying the filtration equipment?",
+        "Do you have current data on blinding rates or filtration performance metrics?"
+    ]
+}

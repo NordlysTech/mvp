@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "What guidelines should be followed for designing pressure relief systems for a flash separator handling high-pressure CO2?",
+        "expanded_query": "Provide detailed guidelines and best practices for designing pressure relief systems specifically for a flash separator operating with high-pressure carbon dioxide, considering safety standards and regulatory compliance.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Engineering",
+        "secondary_domains": [
+            "Separation Technology",
+            "Regulatory Compliance",
+            "High-Pressure Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead in pressure relief system design and ensure regulatory compliance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide operational parameters and specifications of the flash separator",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety requirements and standards are integrated with the separator's operation data to design an effective relief system",
+            "collaboration_protocol": "Iterative design process with continuous feedback between safety considerations and operational parameters"
+        }
+    },
+    "clarification_questions": [
+        "What are the operating pressure and temperature conditions of the flash separator?",
+        "Are there specific regulatory guidelines or industry standards that must be adhered to?",
+        "Do you have data on potential overpressure scenarios or expected relief loads?"
+    ]
+}

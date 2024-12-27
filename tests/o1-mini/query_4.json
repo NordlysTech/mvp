@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "In our distillation column, there\u2019s concern over potential leakage of corrosive materials. What safety protocols should we implement during shutdown maintenance?",
+        "expanded_query": "Identify and develop appropriate safety protocols to prevent and manage potential leakage of corrosive materials during shutdown maintenance of a distillation column, ensuring the protection of personnel and compliance with regulatory standards.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety",
+        "secondary_domains": [
+            "Distillation Operations",
+            "Corrosion Control",
+            "Regulatory Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Design and recommend safety protocols for shutdown maintenance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assess maintenance procedures and integrate safety protocols into operations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical insight on distillation column components and potential leakage points",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integration of safety protocols with maintenance procedures and technical specifications",
+            "collaboration_protocol": "Collaborative development and validation of safety measures"
+        }
+    },
+    "clarification_questions": [
+        "What specific corrosive materials are present in your distillation column?",
+        "Are there existing safety protocols currently in place during shutdown maintenance?",
+        "Can you provide details on known leakage points or areas of concern within the distillation column?"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "query_analysis": {
+        "original_query": "We're investigating a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas. How can we develop a multi-scale modeling approach to predict separation performance?",
+        "expanded_query": "Develop a comprehensive multi-scale modeling framework to predict and optimize the separation performance of a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas, integrating molecular-level simulations with process-scale models.",
+        "complexity_level": "advanced",
+        "primary_domain": "Multi-Scale Process Modeling",
+        "secondary_domains": [
+            "Membrane Separation Technology",
+            "Adsorption Processes",
+            "Computational Simulation",
+            "Gas Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead development of separation process modeling",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Develop multi-scale modeling framework",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of process knowledge with modeling techniques",
+            "collaboration_protocol": "Iterative development and validation of the multi-scale modeling framework"
+        }
+    },
+    "clarification_questions": [
+        "What specific scales (molecular, pore-level, process-scale) are of interest for the modeling?",
+        "Do you have existing data or models for the membrane and adsorption components separately?",
+        "Are there specific performance metrics or operating conditions to consider?"
+    ]
+}

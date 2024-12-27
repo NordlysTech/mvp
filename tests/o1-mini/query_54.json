@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We need to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system. What machine learning approaches could enhance our predictive maintenance? ",
+        "expanded_query": "Investigate and recommend appropriate machine learning techniques to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system, aiming to improve predictive maintenance and reduce downtime.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Fault Detection and Diagnostics",
+        "secondary_domains": [
+            "Machine Learning",
+            "Predictive Maintenance",
+            "Process Control",
+            "Data Analytics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Develop fault detection and diagnostic strategy",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Implement machine learning algorithms",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate predictive maintenance into process operations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Machine learning model development and integration into process control strategy",
+            "collaboration_protocol": "Iterative development and validation cycles between control strategy and machine learning implementation"
+        }
+    },
+    "clarification_questions": [
+        "Do you have historical operational data available for training machine learning models?",
+        "What specific types of faults are of most concern in your extraction system?",
+        "Are there constraints on implementation platforms or preferred machine learning frameworks?"
+    ]
+}

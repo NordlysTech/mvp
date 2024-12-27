@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical safety protocols for handling light hydrocarbon fractions during atmospheric distillation shutdown?",
+        "expanded_query": "Identify and elaborate on the critical safety procedures and protocols required for safely handling light hydrocarbon fractions during the shutdown of an atmospheric distillation unit.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety during Distillation Shutdown",
+        "secondary_domains": [
+            "Hazardous Materials Handling",
+            "Refinery Operations",
+            "Emergency Procedures"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead in identifying critical safety protocols",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide technical insights on distillation unit shutdown processes",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Assist with operational context and procedural integration",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Cross-functional collaboration to integrate safety protocols with operational procedures",
+            "collaboration_protocol": "Iterative review and refinement of safety protocols aligned with distillation shutdown processes"
+        }
+    },
+    "clarification_questions": [
+        "What specific light hydrocarbon fractions are being handled during the shutdown?",
+        "Are there existing safety procedures currently in place, and have there been any previous incidents during shutdowns?",
+        "What is the scheduled timeline and sequence of operations for the atmospheric distillation shutdown?"
+    ]
+}

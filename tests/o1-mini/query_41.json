@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re working on pressure swing adsorption (PSA) for hydrogen purification. How can we optimize the adsorption and desorption cycle times?",
+        "expanded_query": "Determine methods to optimize the adsorption and desorption cycle times in pressure swing adsorption processes for hydrogen purification by analyzing process parameters, adsorbent properties, and operational conditions.",
+        "complexity_level": "medium",
+        "primary_domain": "Pressure Swing Adsorption Optimization",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Adsorbent Material Science",
+            "Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead optimization of PSA cycle times",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze cycle dynamics and develop control strategies",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform modeling and simulation for optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated analysis and iterative feedback between modeling, dynamics, and process parameters",
+            "collaboration_protocol": "Collaborative optimization through data sharing and joint simulations"
+        }
+    },
+    "clarification_questions": [
+        "What are your current adsorption and desorption cycle times and operational parameters?",
+        "What type of adsorbent material are you using in the PSA system?",
+        "Are there any constraints on pressure levels, equipment capabilities, or desired purity and recovery specifications?"
+    ]
+}

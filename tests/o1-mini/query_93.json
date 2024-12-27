@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical energy requirements for separating complex hydrocarbon mixtures using advanced distillation techniques.",
+        "expanded_query": "Determine the theoretical minimum energy required to separate a complex hydrocarbon mixture into its individual components using advanced distillation methods, considering the specific composition and thermodynamic properties of the mixture.",
+        "complexity_level": "high",
+        "primary_domain": "Thermodynamic Energy Analysis",
+        "secondary_domains": [
+            "Distillation Process Design",
+            "Separation Technology",
+            "Process Simulation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Lead the calculation of theoretical energy requirements based on thermodynamic principles",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Perform detailed mathematical calculations and simulations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Provide insights on advanced distillation techniques and process parameters",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic analysis informs calculation methods; separation technology inputs define process parameters; results refined through iterative collaboration",
+            "collaboration_protocol": "Collaborative computation with iterative feedback among agents"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific composition and properties of the hydrocarbon mixture?",
+        "Are there particular advanced distillation techniques you want to focus on?",
+        "What are the operating conditions (temperature, pressure) for the separation process?"
+    ]
+}

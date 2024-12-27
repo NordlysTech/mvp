@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "How can we fine-tune the PID controller for maintaining steady pressure in a distillation column's reflux drum?",
+        "expanded_query": "Provide detailed guidance on optimizing the PID controller parameters to maintain steady pressure in the reflux drum of a distillation column, ensuring process stability and performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control in Distillation Columns",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Instrumentation",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "PID controller tuning and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Control system analysis and calculations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Process insight and operational requirements",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Exchange of process data, control parameters, and performance metrics for iterative tuning",
+            "collaboration_protocol": "Iterative analysis and optimization with cross-functional feedback"
+        }
+    },
+    "clarification_questions": [
+        "What are the current PID controller settings and what specific performance issues are being observed?",
+        "Can you provide data on the pressure fluctuations and any disturbances affecting the reflux drum?",
+        "Have there been any recent changes in operating conditions or process disturbances that might impact pressure control?"
+    ]
+}

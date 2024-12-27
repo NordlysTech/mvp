@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "The liquid level in our three-phase separator is fluctuating, causing downstream instability. How can we diagnose and resolve this issue?",
+        "expanded_query": "Investigate the causes of fluctuating liquid levels in our three-phase separator, which are leading to downstream operational instability, and recommend diagnostic and corrective measures to stabilize the process.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis and resolution recommendation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system evaluation and optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator performance assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Synchronized diagnostic and solution development",
+            "collaboration_protocol": "Iterative analysis and feedback among agents"
+        }
+    },
+    "clarification_questions": [
+        "When did the fluctuations in liquid level first start occurring?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide details on the control system for the separator, including level control instrumentation?",
+        "Are there any alarms or trips activated during the fluctuations?",
+        "Is the separator experiencing any foaming or emulsification issues?"
+    ]
+}

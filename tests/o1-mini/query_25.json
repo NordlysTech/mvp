@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help with tray design in a distillation column to maximize liquid-vapor contact and minimize weeping?",
+        "expanded_query": "Provide design recommendations for distillation column trays to maximize liquid-vapor contact efficiency and minimize weeping, enhancing separation performance.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Tray Design",
+            "Mass Transfer",
+            "Equipment Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Tray design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer efficiency analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Design parameter refinement and performance optimization",
+            "collaboration_protocol": "Iterative design and analysis cycles"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (temperature, pressure) and feed composition of the distillation column?",
+        "Do you have any preferences or constraints regarding tray types (e.g., sieve, valve, bubble cap)?",
+        "Are there any limitations on the tray materials or fabrication?"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're looking to optimize the design of our pressure leaf filter. What experimental approaches can we use to characterize the filtration performance across different particle size distributions?",
+        "expanded_query": "Identify and recommend experimental techniques to assess and characterize the filtration performance of pressure leaf filters across varying particle size distributions, to enhance and optimize the filter design.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Experimental Methods",
+            "Particle Characterization",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead the identification of experimental approaches for filtration performance characterization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Assist with data analysis and interpretation from experimental results",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Integrate experimental findings into filter design optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Transfer of experimental approaches and data analysis to optimize filter design",
+            "collaboration_protocol": "Iterative experimental design and performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What is the range of particle sizes you are dealing with?",
+        "Are there any specific materials or properties of the particles that we should consider?",
+        "What are your current filtration performance metrics or targets?",
+        "Do you have any constraints on the experimental methods, such as equipment availability, budget, or time?"
+    ]
+}

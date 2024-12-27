@@ -1,0 +1,44 @@
+{
+    "query_analysis": {
+        "original_query": "I am struggling to understand why the injection of water make-up suddenly decreases the desorption tower by a significant percentage ? is it related to the heat loss or more like an error in the DCS ?",
+        "expanded_query": "Analyze the reasons for the significant decrease in desorption tower performance following the injection of water make-up. Determine whether the issue is due to heat loss, errors in the Distributed Control System (DCS), or other factors.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Thermodynamics",
+            "Instrumentation and Control Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of the desorption tower performance issue",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Assessment of potential DCS errors and control system issues",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Evaluation of heat loss impacts on desorption tower performance",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Collaborative investigation integrating process data, control system analysis, and thermodynamic calculations",
+            "collaboration_protocol": "Integrated diagnostic approach with continuous data sharing and hypothesis testing"
+        }
+    },
+    "clarification_questions": [
+        "When did you first notice the decrease in desorption tower performance?",
+        "Have there been any recent changes in the water make-up rate or composition?",
+        "Are there any alarms or unusual readings in the DCS?",
+        "Can you provide temperature and pressure data from the desorption tower before and after the issue occurred?",
+        "Have any maintenance activities or system modifications been performed recently?"
+    ]
+}

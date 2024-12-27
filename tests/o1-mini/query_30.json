@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "In a solvent recovery system using distillation, how do we ensure compliance with safety standards for handling flammable solvents like ethanol?",
+        "expanded_query": "Identify and detail the safety measures and compliance protocols required to handle flammable solvents like ethanol in a distillation-based solvent recovery system, ensuring adherence to relevant safety standards and regulations.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety and Compliance",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Flammable Solvent Handling",
+            "Regulatory Compliance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Lead assessment of safety standards and compliance requirements",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Advise on distillation design considerations for safe handling of flammable solvents",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Safety Expert provides regulatory guidelines, Separation Technologist integrates safety measures into process design",
+            "collaboration_protocol": "Iterative collaboration to ensure safety measures are effectively incorporated into the distillation system"
+        }
+    },
+    "clarification_questions": [
+        "Are there specific safety standards or regulations (e.g., OSHA, NFPA) you need to comply with?",
+        "What are the operating conditions (temperature, pressure) of your distillation system?",
+        "Do you have existing safety protocols or equipment in place for handling ethanol?"
+    ]
+}

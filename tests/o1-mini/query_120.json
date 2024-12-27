@@ -1,0 +1,17 @@
+{
+    "query_analysis": {
+        "original_query": "nan",
+        "expanded_query": "The query appears to be incomplete or not provided.",
+        "complexity_level": "unknown",
+        "primary_domain": "Unspecified",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [],
+        "communication_strategy": {}
+    },
+    "clarification_questions": [
+        "Could you please provide more details about your request?",
+        "What specific assistance do you need with chemical separation processes?"
+    ]
+}

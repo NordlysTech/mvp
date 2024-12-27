@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We\u2019re working on a cryogenic separation process and experiencing fluctuations in the column's feed temperature. How can we implement an advanced control strategy to stabilize it?",
+        "expanded_query": "Develop and implement an advanced process control strategy to stabilize feed temperature fluctuations in a cryogenic separation column, enhancing process stability and performance.",
+        "complexity_level": "high",
+        "primary_domain": "Process Control and Dynamics",
+        "secondary_domains": [
+            "Cryogenic Separation",
+            "Thermodynamics",
+            "Process Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Design and implement advanced control strategy",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze impact of temperature fluctuations on separation performance",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver (Analytical/Numerical)",
+                "role": "Model process dynamics and simulate control strategies",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Collaboration between control design, thermodynamic analysis, and process modeling to develop and optimize stabilization strategies",
+            "collaboration_protocol": "Integrated iterative approach refining control strategy based on simulation and thermodynamic feedback"
+        }
+    },
+    "clarification_questions": [
+        "What is the range and frequency of the feed temperature fluctuations?",
+        "What control systems are currently in place for the feed temperature?",
+        "Are there specific constraints regarding modifications to the existing control infrastructure?",
+        "Have you identified any specific causes for the temperature fluctuations?"
+    ]
+}

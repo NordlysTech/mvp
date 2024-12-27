@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "What are the functions of the caps on trays in disillation columns ? Are they there to optimize mass transfer or to cap vapor travelling upwards the column ?",
+        "expanded_query": "Provide a detailed explanation of the functions of the caps on trays in distillation columns, including whether they optimize mass transfer or regulate vapor flow upwards through the column.",
+        "complexity_level": "low",
+        "primary_domain": "Distillation Column Internals",
+        "secondary_domains": [
+            "Mass Transfer Optimization",
+            "Vapor-Liquid Contacting",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Explain the functions of tray caps in distillation columns",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct explanation of tray cap functions",
+            "collaboration_protocol": "Independent analysis"
+        }
+    },
+    "clarification_questions": [
+        "Are you referring to bubble cap trays specifically or another type of tray?",
+        "Do you need information on how tray caps affect specific aspects of your process?"
+    ]
+}

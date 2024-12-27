@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a framework for optimizing the residence time in horizontal separators for maximized liquid dropout efficiency in high-pressure systems.",
+        "expanded_query": "Develop a comprehensive framework to optimize the residence time in horizontal separators to maximize liquid dropout efficiency in high-pressure systems, taking into account fluid properties, operating conditions, and separator design parameters.",
+        "complexity_level": "advanced",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Fluid Dynamics",
+            "High-Pressure Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lead development of optimization framework for residence time in horizontal separators",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Perform mathematical modeling and optimization calculations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Provide thermodynamic data and insights on fluid behavior in high-pressure systems",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integration of mathematical models and thermodynamic data for optimization",
+            "collaboration_protocol": "Iterative development with continuous feedback and validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the composition of the fluids entering the separator?",
+        "What are the specific operating conditions (pressure, temperature) of the system?",
+        "Are there any constraints or limitations on separator design or modifications?",
+        "What is the current residence time and separation efficiency being achieved?"
+    ]
+}

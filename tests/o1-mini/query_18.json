@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "I am facing challenges in maintaining a steady pH in the alkaline solvent circulation of a Desulphurization tower. Our controller tuning seems off. Can you guide us on improving the PID settings?",
+        "expanded_query": "Assist in diagnosing and optimizing the PID controller settings to stabilize pH levels in the alkaline solvent circulation system of a Desulphurization tower, as current controller tuning seems ineffective.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Desulphurization Process",
+            "Chemical Process Engineering",
+            "Instrumentation and Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "PID controller tuning optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Identify process disturbances affecting pH control",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Provide process insights and operational requirements",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Collaborative analysis of control system and process factors affecting pH stability",
+            "collaboration_protocol": "Integrated tuning and troubleshooting with continuous feedback"
+        }
+    },
+    "clarification_questions": [
+        "What are the current PID controller settings for the pH control loop?",
+        "Have there been any recent changes in process conditions or solvent composition?",
+        "Can you provide historical data on pH fluctuations and controller responses?"
+    ]
+}

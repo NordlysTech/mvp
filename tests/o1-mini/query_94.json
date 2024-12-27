@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive approach to mitigating corrosion risks in high-temperature, high-pressure distillation environments.",
+        "expanded_query": "Develop a detailed and effective strategy to prevent and mitigate corrosion issues in distillation systems operating under high-temperature and high-pressure conditions, ensuring safe and efficient operation over the long term.",
+        "complexity_level": "advanced",
+        "primary_domain": "Corrosion Mitigation in High-Temperature Distillation Systems",
+        "secondary_domains": [
+            "Materials Engineering",
+            "Process Design",
+            "Safety Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process design modifications to mitigate corrosion in distillation units",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze high-temperature and high-pressure effects on corrosion mechanisms",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety implications assessment and compliance verification",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrate findings from all experts to develop a comprehensive corrosion mitigation plan",
+            "collaboration_protocol": "Iterative design and safety review cycles with multidisciplinary collaboration"
+        }
+    },
+    "clarification_questions": [
+        "What materials are currently used in your distillation equipment?",
+        "Have specific corrosion mechanisms been identified in your system?",
+        "Are there constraints on materials substitution or process modifications?"
+    ]
+}
