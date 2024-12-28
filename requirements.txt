@@ -10,3 +10,4 @@ faiss-cpu
 prometheus_client
 langchain-google-genai
 openpyxl
+pyyaml

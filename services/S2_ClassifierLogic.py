@@ -7,11 +7,19 @@ import re
 from S3_SupportAgents import KnowledgeRetriever, EquationsFormulasRetriever, PhysChemPropertiesRetriever, IndustryStandardsRetriever
 from S4_SolverAgents import SuperSolverAgent
 from llm_utils import instantiate_llm_model, get_json_from_response
+from config_utils import load_config, get_config
 
+config_path = "config.yaml"
+config = load_config(config_path)
 
+print("config : ",config)
+
+    
 load_dotenv()
 
-model_to_use = "gemini20_flash_exp"
+model_to_use = get_config(config, "llms", "llm_name")
+
+print("model_to_use : ",model_to_use)
 
 
 class Classifier:
@@ -19,7 +27,7 @@ class Classifier:
             """
             Initialize the Classifier model.
             """
-            self.model = instantiate_llm_model(model_to_use)
+            self.model = instantiate_llm_model(model_to_use, temperature=0.2, max_tokens=2000)
             
     def classify_query(self, user_query: str):
         """
@@ -368,7 +376,7 @@ class Classifier:
 class PlannerAgent:
     def __init__(self, agent_name, agent_expertise):
 
-        self.model = instantiate_llm_model(model_to_use)   
+        self.model = instantiate_llm_model(model_to_use, temperature=0.2, max_tokens=2500)
         self.agent_name = agent_name
         self.agent_expertise = agent_expertise
         self.knowledge_retriever = KnowledgeRetriever()
@@ -758,7 +766,7 @@ class PlannerAgent:
 
 class OverviewPlanner:
         def __init__(self):
-            self.model = instantiate_llm_model(model_to_use)
+            self.model = instantiate_llm_model(model_to_use, temperature=0.2, max_tokens=2000)
             
         def coordinate_plans(self, list_of_agent_plans, agent_allocation):
             """Coordinates the plans from all planner agents."""
@@ -818,13 +826,7 @@ def main():
     print(response)
     
     """
-    # Clean the JSON string, Remove new lines, spaces and single quotes, and replace with double quotes
-    response = response.strip()
-    response = re.sub(r'\s+', ' ', response)
-    response = response.replace("'", '"')
-    if response.startswith('"') and response.endswith('"'):
-        response = response[1:-1]
-    """
+
     #response = json.dumps(response)
     classification_result = get_json_from_response(response)
     print("type(classification_result) : ",type(classification_result))
@@ -891,6 +893,8 @@ def main():
 
     print("\nFinal Report:\n")
     print(final_report)
+    
+    """
     
 if __name__ == "__main__":
     main()

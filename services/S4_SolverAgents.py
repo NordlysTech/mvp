@@ -7,16 +7,24 @@ import json
 from abc import ABC, abstractmethod
 import re
 
+
+from config_utils import load_config, get_config
+
+config_path = "config.yaml"
+config = load_config(config_path)
+
+
+
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-model_to_use = "gemini20_flash_exp"
+model_to_use = get_config(config, "llms", "llm_name")
 
 class BaseSolverAgent(ABC):
     """Base class for all solver agents."""
 
     def __init__(self, agent_name, agent_expertise):
-        self.model = instantiate_llm_model(model_to_use)
+        self.model = instantiate_llm_model(model_to_use, temperature=0.2, max_tokens=2500)
         self.agent_name = agent_name
         self.agent_expertise = agent_expertise
 

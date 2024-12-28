@@ -43,31 +43,31 @@ def get_answer_from_response(response) :
         answer = ""
     return answer
 
-def instantiate_gemini20_flash_exp():
+def instantiate_gemini20_flash_exp(temperature=0.2, max_tokens=2000):
     model = ChatGoogleGenerativeAI(
         model="gemini-2.0-flash-exp",
-        temperature=0.2,
-        max_tokens=2000
+        temperature=temperature,
+        max_tokens=max_tokens
     )
     return model
 
-def instantiate_gpt35_openai():
+def instantiate_gpt35_openai(temperature=0.2, max_tokens=2000):
     model = ChatOpenAI(
-        temperature=0.2,
+        temperature=temperature,
         model="gpt-3.5-turbo-16k",
-        max_tokens=2000,
+        max_tokens=max_tokens,
         openai_api_key=openai.api_key,
     )
     return model
 
-def instantiate_cohere():
+def instantiate_cohere(temperature=0.2, max_tokens=2000):
     model = ChatCohere(
-        temperature=0.2,
-        max_tokens=2000
+        temperature=temperature,
+        max_tokens=max_tokens
     )
     return model
 
-def instantiate_gpt4_o_mini_azure():
+def instantiate_gpt4_o_mini_azure(temperature=0.2, max_tokens=2000):
     model = AzureChatOpenAI( 
         azure_endpoint = azure_openai_endpoint, 
         openai_api_key = azure_openai_api_key, 
@@ -75,7 +75,7 @@ def instantiate_gpt4_o_mini_azure():
         openai_api_version = "2023-05-15", 
         deployment_name = "o1-preview", 
         model_name = "o1-mini", 
-        temperature = 1, 
+        temperature = temperature, 
         request_timeout = 240, 
         top_p = 1, 
         frequency_penalty = 0, 
@@ -84,60 +84,38 @@ def instantiate_gpt4_o_mini_azure():
     )
     return model
 
-def instantiate_gemini_pro():
-    temperature = 0
-    MODEL_API_KEY = os.getenv("GEMINIPRO_GOOGLE_API_KEY")
-    os.environ["GOOGLE_API_KEY"] = MODEL_API_KEY
-    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature = temperature)
+def instantiate_gemini_pro(temperature=0.2, max_tokens=2000):
+    model = ChatGoogleGenerativeAI(model="gemini-pro", temperature = temperature, max_tokens=max_tokens)
     return model
 
 
-def instantiate_claude_3_opus():
-    temperature = 0
-    MODEL_API_KEY = os.getenv("CLAUDE_MODEL_API_KEY")
-    os.environ["ANTHROPIC_API_KEY"] = MODEL_API_KEY
-    model = ChatAnthropic(model='claude-3-opus-20240229', temperature = temperature)
+def instantiate_claude_3_opus(temperature=0.2, max_tokens=2000):
+    model = ChatAnthropic(model='claude-3-opus-20240229', temperature = temperature, max_tokens=max_tokens)
     return model
 
-def instantiate_codellama_34b():
-    temperature = 0
-    MODEL_API_KEY = os.getenv("ANYSCALE_MODEL_API_KEY")
-    MODEL_API_BASE = os.getenv("ANYSCALE_MODEL_API_BASE")
-    os.environ["ANYSCALE_API_KEY"] = MODEL_API_KEY
-    os.environ["ANYSCALE_API_BASE"] = MODEL_API_BASE
-    model = ChatAnyscale(model_name="codellama/CodeLlama-34b-Instruct-hf", temperature = temperature)
+def instantiate_claude_3_sonnet(temperature=0.2, max_tokens=2000):
+    model = ChatAnthropic(model='claude-3-5-sonnet-20241022', temperature = temperature, max_tokens=max_tokens)
     return model
 
-def instantiate_codellama_70b():
-    temperature = 0
-    MODEL_API_KEY = os.getenv("ANYSCALE_MODEL_API_KEY")
-    MODEL_API_BASE = os.getenv("ANYSCALE_MODEL_API_BASE")
-    os.environ["ANYSCALE_API_KEY"] = MODEL_API_KEY
-    os.environ["ANYSCALE_API_BASE"] = MODEL_API_BASE
-    model = ChatAnyscale(model_name="codellama/CodeLlama-70b-Instruct-hf", temperature = temperature)
+def instantiate_claude_3_haiku(temperature=0.2, max_tokens=2000):
+    model = ChatAnthropic(model='claude-3-5-haiku-20241022', temperature = temperature, max_tokens=max_tokens)
     return model
-def instantiate_codellama_34b():
-    temperature = 0
-    MODEL_API_KEY = os.getenv("ANYSCALE_MODEL_API_KEY")
-    MODEL_API_BASE = os.getenv("ANYSCALE_MODEL_API_BASE")
-    os.environ["ANYSCALE_API_KEY"] = MODEL_API_KEY
-    os.environ["ANYSCALE_API_BASE"] = MODEL_API_BASE
-    model = ChatAnyscale(model_name="codellama/CodeLlama-34b-Instruct-hf", temperature = temperature)
-    return model
-def instantiate_llm_model(model_name):
+
+def instantiate_llm_model(model_name, **kwargs):
     switch_dict = {
+        "cohere" : instantiate_cohere,
         "gemini20_flash_exp" : instantiate_gemini20_flash_exp,
         "gpt4_o_mini_azure": instantiate_gpt4_o_mini_azure,
         "gemini_pro" : instantiate_gemini_pro,
         "gpt35_openai" : instantiate_gpt35_openai,
-        "codellama_70b" : instantiate_codellama_70b,
-        "codellama_34b" : instantiate_codellama_34b,
-        "claude_3_opus" : instantiate_claude_3_opus
+        "claude_3_opus" : instantiate_claude_3_opus,
+        "claude_3_sonnet" : instantiate_claude_3_sonnet,
+        "claude_3_haiku" : instantiate_claude_3_haiku
     }
     # Get the function for the given model_name, or default if not found
     selected_case = switch_dict.get(model_name)
     # Execute the selected function and return the result
-    return selected_case()
+    return selected_case(**kwargs)
 
     
 
