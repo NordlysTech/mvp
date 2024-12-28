@@ -19,9 +19,6 @@ load_dotenv()
 
 model_to_use = get_config(config, "llms", "llm_name")
 
-print("model_to_use : ",model_to_use)
-
-
 class Classifier:
     def __init__(self):
             """
@@ -825,7 +822,6 @@ def main():
     print("\nRaw Classifier Response:\n")
     print(response)
     
-    """
 
     #response = json.dumps(response)
     classification_result = get_json_from_response(response)
@@ -894,7 +890,7 @@ def main():
     print("\nFinal Report:\n")
     print(final_report)
     
-    """
+    
     
 if __name__ == "__main__":
     main()
