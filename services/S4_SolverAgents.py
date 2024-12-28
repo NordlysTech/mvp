@@ -1,9 +1,7 @@
 import openai
 import os
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
-
-from langchain_cohere import ChatCohere
+from llm_utils import instantiate_llm_model
 
 import json
 from abc import ABC, abstractmethod
@@ -12,16 +10,13 @@ import re
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+model_to_use = "gemini20_flash_exp"
+
 class BaseSolverAgent(ABC):
     """Base class for all solver agents."""
 
     def __init__(self, agent_name, agent_expertise):
-        self.model = ChatOpenAI(
-            temperature=0.2,
-            model="gpt-3.5-turbo-16k",
-            max_tokens=7000,
-            openai_api_key=openai.api_key,
-        )
+        self.model = instantiate_llm_model(model_to_use)
         self.agent_name = agent_name
         self.agent_expertise = agent_expertise
 

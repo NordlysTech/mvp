@@ -2,6 +2,7 @@ langchain-openai
 langchain
 langchain-community
 langchain-cohere
+langchain-anthropic
 Flask
 PyMuPDF
 reportlab

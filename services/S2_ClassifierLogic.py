@@ -1,42 +1,26 @@
 import openai
 import os
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
-from langchain_cohere import ChatCohere
-from langchain_google_genai import ChatGoogleGenerativeAI
 
 import json
 import re
-from S4_SolverAgents import KnowledgeRetriever, EquationsFormulasRetriever, PhysChemPropertiesRetriever, IndustryStandardsRetriever
-from S3_SupportAgents import SuperSolverAgent
+from S3_SupportAgents import KnowledgeRetriever, EquationsFormulasRetriever, PhysChemPropertiesRetriever, IndustryStandardsRetriever
+from S4_SolverAgents import SuperSolverAgent
+from llm_utils import instantiate_llm_model, get_json_from_response
 
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
+model_to_use = "gemini20_flash_exp"
+
 
 class Classifier:
     def __init__(self):
             """
             Initialize the Classifier model.
             """
-            self.model = ChatOpenAI(
-                temperature=0.2,
-                model="gpt-3.5-turbo-16k",
-                max_tokens=2000,
-                openai_api_key=openai.api_key,
-            )
-            """
-            self.model = ChatCohere(
-                temperature=0.2,
-                max_tokens=2000
-            )
+            self.model = instantiate_llm_model(model_to_use)
             
-            self.model = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash-exp",
-            temperature=0.2,
-            max_tokens=2000
-            )
-            """
     def classify_query(self, user_query: str):
         """
         Process the user query using the Classifier Agent Prompt with few-shot learning examples.
@@ -378,29 +362,13 @@ class Classifier:
         """
         # Send the prompt to the model
         response = self.model.predict(classifier_agent_prompt)
+        print("response : ",response)
         return response
 
 class PlannerAgent:
     def __init__(self, agent_name, agent_expertise):
-        self.model = ChatOpenAI(
-            temperature=0.2,
-            model="gpt-3.5-turbo-16k",
-            max_tokens=2500,
-            openai_api_key=openai.api_key,
-        )
-        """
-        self.model = ChatCohere(
-            temperature=0.2,
-            max_tokens=2500
-        )
-        
-        self.model = ChatGoogleGenerativeAI(
-            model="gemini-2.0-flash-exp",
-            temperature=0.2,
-            max_tokens=2500
-        )
-        """
-        
+
+        self.model = instantiate_llm_model(model_to_use)   
         self.agent_name = agent_name
         self.agent_expertise = agent_expertise
         self.knowledge_retriever = KnowledgeRetriever()
@@ -790,25 +758,8 @@ class PlannerAgent:
 
 class OverviewPlanner:
         def __init__(self):
-            self.model = ChatOpenAI(
-                temperature=0.2,
-                model="gpt-3.5-turbo-16k",
-                max_tokens=2000,
-                openai_api_key=openai.api_key,
-            )
-            """
-            self.model = ChatCohere(
-                temperature=0.2,
-                max_tokens=2000
-            )
+            self.model = instantiate_llm_model(model_to_use)
             
-            self.model = ChatGoogleGenerativeAI(
-                model="gemini-2.0-flash-exp",
-                temperature=0.2,
-                max_tokens=2000
-            )
-            """
-
         def coordinate_plans(self, list_of_agent_plans, agent_allocation):
             """Coordinates the plans from all planner agents."""
             prompt = self._overview_planner_prompt(list_of_agent_plans, agent_allocation)
@@ -847,6 +798,12 @@ class OverviewPlanner:
             """
 
 
+def normalize_agent_name(agent_name):
+    """Normalize agent names by removing spaces and underscores, and converting to lowercase."""
+    if pd.isna(agent_name):  # Check for NaN or None
+        return None
+    return agent_name.replace(" ", "").replace("_", "").lower()
+
 def main():
     """
     Main function to interact with the agents.
@@ -860,16 +817,20 @@ def main():
     print("\nRaw Classifier Response:\n")
     print(response)
     
+    """
     # Clean the JSON string, Remove new lines, spaces and single quotes, and replace with double quotes
     response = response.strip()
     response = re.sub(r'\s+', ' ', response)
     response = response.replace("'", '"')
     if response.startswith('"') and response.endswith('"'):
         response = response[1:-1]
-
+    """
+    #response = json.dumps(response)
+    classification_result = get_json_from_response(response)
+    print("type(classification_result) : ",type(classification_result))
     # Parse the JSON response from the classifier, handle potential errors if JSON is not returned
     try:
-        classification_result = json.loads(response)
+        # classification_result = json.loads(response)
         print("\nClassification Result:\n")
         print(json.dumps(classification_result, indent=4))
     except json.JSONDecodeError:
@@ -882,9 +843,7 @@ def main():
 
     # Error handling for agent_allocation
     if (
-            isinstance(classification_result, dict) and
             "agent_allocation" in classification_result and
-            isinstance(classification_result["agent_allocation"], dict) and
             "selected_agents" in classification_result["agent_allocation"] and
             isinstance(classification_result["agent_allocation"]["selected_agents"], list)
        ):
