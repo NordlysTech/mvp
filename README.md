@@ -37,3 +37,10 @@ password : admin
 In connections : add a new data source
 
 Set the prometheus server URL : http://prometheus:9090
+
+
+**LLM Config :**
+
+To use a specific LLM go to config.yaml :
+
+Under llms ==> llm_name write the code of the llm you want to use among those available in instantiate_llm_model function at services.llm_utils.py
