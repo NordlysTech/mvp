@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive approach to mitigating corrosion risks in high-temperature, high-pressure distillation environments.",
+        "expanded_query": "Design a holistic corrosion mitigation strategy for complex distillation systems operating under extreme temperature and pressure conditions, focusing on material selection, protective mechanisms, and preventative engineering approaches.",
+        "complexity_level": "advanced",
+        "primary_domain": "Corrosion Engineering",
+        "secondary_domains": [
+            "Process Safety",
+            "Materials Science",
+            "Chemical Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process corrosion vulnerability assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Corrosion risk evaluation and mitigation strategy",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature and pressure impact on material degradation analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated corrosion risk assessment and mitigation framework development",
+            "collaboration_protocol": "Sequential problem decomposition with cross-domain validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific materials are currently used in the distillation environment?",
+        "Can you provide details about the typical temperature and pressure ranges?",
+        "What types of chemical compositions are present in the distillation process?",
+        "Are there any existing corrosion monitoring or prevention methods currently in place?"
+    ]
+}

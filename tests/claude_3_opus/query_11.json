@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Could you provide a checklist to help me draft a industry scale risk assessment for a pressure swing system ?",
+        "expanded_query": "Provide a comprehensive checklist to assist in drafting an industry-scale risk assessment for a pressure swing adsorption system, considering potential hazards, failure modes, and mitigation strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Analysis",
+        "secondary_domains": [
+            "Pressure Swing Adsorption",
+            "Risk Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Pressure swing system hazard identification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Iterative risk assessment refinement",
+            "collaboration_protocol": "Hazard identification and mitigation alignment"
+        }
+    },
+    "clarification_questions": [
+        "What specific components and operating conditions are involved in the pressure swing system?",
+        "Are there any industry-specific standards or regulations that need to be considered in the risk assessment?"
+    ]
+}

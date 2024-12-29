@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive approach to mitigating corrosion risks in high-temperature, high-pressure distillation environments.",
+        "expanded_query": "Design a holistic corrosion management strategy for distillation columns operating under extreme temperature and pressure conditions, considering material selection, process control, and monitoring techniques.",
+        "complexity_level": "advanced",
+        "primary_domain": "Corrosion Engineering",
+        "secondary_domains": [
+            "High-Temperature Materials",
+            "Process Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Extreme condition thermodynamic modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Corrosion risk assessment and mitigation",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Corrosion mechanism identification and prevention strategy development",
+            "collaboration_protocol": "Iterative risk assessment and mitigation design refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific distillation processes are involved?",
+        "What are the typical operating temperature and pressure ranges?",
+        "Are there any known corrosion issues or material incompatibilities in the current setup?"
+    ]
+}

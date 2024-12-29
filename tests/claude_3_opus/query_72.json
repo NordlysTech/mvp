@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the specific viscosity limits for effective hydrocyclone operation from the standard reference guidelines.",
+        "expanded_query": "Obtain the recommended viscosity range for optimal hydrocyclone performance based on industry-standard reference materials.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Mechanics",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone design specifications retrieval",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct data retrieval",
+            "collaboration_protocol": "Single-agent task execution"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific hydrocyclone applications or industries of interest?",
+        "Is there a preferred set of reference guidelines or standards to consult?"
+    ]
+}

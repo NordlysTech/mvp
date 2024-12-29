@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What's the role of interfacial area in enhancing mass transfer during liquid-liquid extraction?",
+        "expanded_query": "Investigate the fundamental mechanisms by which interfacial area influences mass transfer kinetics and efficiency in liquid-liquid extraction processes",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Phenomena",
+        "secondary_domains": [
+            "Separation Technology",
+            "Chemical Engineering Fundamentals"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer mechanism analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Extraction process design insights",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Detailed analysis of interfacial area's impact on mass transfer coefficients",
+            "collaboration_protocol": "Integrated theoretical and practical performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What specific liquid-liquid extraction system are you analyzing?",
+        "Are you interested in theoretical understanding or practical enhancement strategies?",
+        "What are the current interfacial area characteristics in your system?"
+    ]
+}

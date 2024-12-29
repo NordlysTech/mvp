@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're designing a hybrid separation unit combining distillation and membranes. How do we determine the most energy-efficient split between these two stages?",
+        "expanded_query": "Develop an optimization strategy for determining the most energy-efficient configuration and load distribution between distillation and membrane separation stages in a hybrid separation process",
+        "complexity_level": "advanced",
+        "primary_domain": "Hybrid Separation Process Design",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Process Optimization",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid separation process design and configuration",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy efficiency analysis and thermal performance evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Optimization modeling and energy distribution calculations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative energy efficiency optimization and process configuration refinement",
+            "collaboration_protocol": "Sequential modeling, analysis, and integrated performance assessment"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components being separated in this hybrid unit?",
+        "What are the current performance characteristics of each separation stage?",
+        "What are the target energy efficiency goals for the hybrid separation process?",
+        "Are there any constraints on equipment size, capital cost, or operational parameters?"
+    ]
+}

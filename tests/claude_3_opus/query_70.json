@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unpredictable solids discharge in our hydrocyclone. Develop a comprehensive diagnostic framework to identify potential root causes.",
+        "expanded_query": "Investigate the hydrocyclone system to identify and analyze factors contributing to inconsistent solids separation performance, and develop a structured troubleshooting methodology to diagnose the underlying issues.",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocyclone Troubleshooting",
+        "secondary_domains": [
+            "Solids Separation",
+            "Process Diagnostics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis and diagnostic framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone performance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process variability investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Systematic data collection and hypothesis testing",
+            "collaboration_protocol": "Iterative root cause elimination and diagnostic refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the solids being separated?",
+        "Have there been any recent changes in the feed composition or operating conditions?",
+        "Can you provide historical performance data for the hydrocyclone?"
+    ]
+}

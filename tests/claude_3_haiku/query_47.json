@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Please provide the thermodynamic data related to azeotropes existing in natural gas processing columns.",
+        "expanded_query": "Retrieve and analyze thermodynamic properties and characteristics of azeotropic systems encountered during natural gas processing column operations",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Phase Equilibria",
+        "secondary_domains": [
+            "Natural Gas Processing",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Azeotropic data retrieval and analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Contextual interpretation of azeotropic behavior",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Detailed thermodynamic property characterization",
+            "collaboration_protocol": "Sequential data analysis and technical interpretation"
+        }
+    },
+    "clarification_questions": [
+        "What specific components are present in the natural gas processing column?",
+        "Are you interested in azeotropes at specific temperature and pressure conditions?",
+        "Do you need data for binary or multicomponent azeotropic systems?"
+    ]
+}

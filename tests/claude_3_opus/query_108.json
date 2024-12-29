@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Help me draft a risk assessment framework for foam formation in separators during high surfactant contamination events.",
+        "expanded_query": "Develop a comprehensive risk assessment methodology to evaluate and mitigate the potential for excessive foam generation in separation equipment caused by elevated surfactant levels in the process stream.",
+        "complexity_level": "high",
+        "primary_domain": "Process Safety Management",
+        "secondary_domains": [
+            "Separation Technology",
+            "Surfactant Chemistry"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and operation analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Surfactant-foam interaction mechanism investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Iterative risk identification and mitigation strategy development",
+            "collaboration_protocol": "Integrated safety, design, and mechanistic analysis"
+        }
+    },
+    "clarification_questions": [
+        "What types of separators are most susceptible to foam formation issues?",
+        "Are there specific surfactants or contaminants of concern?",
+        "What are the current risk management practices for foam-related incidents?"
+    ]
+}

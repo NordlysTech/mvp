@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "We need to optimize the control system for our continuous crude distillation unit. What advanced process control techniques could improve stability?",
+        "expanded_query": "Investigate and recommend advanced process control strategies to enhance stability and performance of a continuous crude distillation unit through sophisticated control techniques",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control Engineering",
+        "secondary_domains": [
+            "Refinery Operations",
+            "Advanced Control Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process specifics and operational constraints validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative control technique evaluation and performance optimization",
+            "collaboration_protocol": "Sequential technique development and cross-validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the current control system architecture?",
+        "Can you describe the specific stability issues you're experiencing?",
+        "What are the key performance metrics for the distillation unit?",
+        "Are there any known operational constraints or limitations?"
+    ]
+}

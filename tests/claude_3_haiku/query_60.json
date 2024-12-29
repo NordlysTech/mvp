@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're looking to optimize the design of our pressure leaf filter. What experimental approaches can we use to characterize the filtration performance across different particle size distributions?",
+        "expanded_query": "Develop comprehensive experimental methodologies to evaluate and characterize filtration performance of a pressure leaf filter under varying particle size distribution conditions",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation",
+        "secondary_domains": [
+            "Filtration Technology",
+            "Particle Characterization",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Experimental design and filtration performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Particle interaction and transport mechanism investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Statistical analysis and performance modeling",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative experimental design and performance optimization",
+            "collaboration_protocol": "Integrated experimental strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What is the current particle size range in your filtration process?",
+        "Are there specific performance metrics you're aiming to improve?",
+        "What is the nature of the solid and liquid phases being separated?",
+        "Do you have constraints on experimental setup or measurement techniques?"
+    ]
+}

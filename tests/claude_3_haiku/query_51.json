@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our pilot plant is struggling with low-temperature hydrocarbon separation using mixed refrigerant cycles. What advanced exergy analysis techniques could help us optimize the energy efficiency? ",
+        "expanded_query": "Investigate advanced exergy analysis methodologies to enhance energy efficiency in low-temperature hydrocarbon separation processes utilizing mixed refrigerant cycles",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Process Optimization",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Refrigeration Engineering",
+            "Exergy Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Exergy analysis and performance evaluation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical modeling of energy efficiency metrics",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process design optimization recommendations",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative exergy performance assessment and optimization",
+            "collaboration_protocol": "Integrated thermodynamic and mathematical analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operational parameters of your mixed refrigerant cycle?",
+        "Can you provide details about the specific hydrocarbon mixture being separated?",
+        "What is the current energy efficiency of your pilot plant's separation process?",
+        "Are there any specific temperature or pressure constraints in your current system?"
+    ]
+}

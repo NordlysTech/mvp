@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our filter press is experiencing challenges with cake washing and discharge. How can we develop an integrated control strategy to improve operational efficiency and product quality?",
+        "expanded_query": "Design a comprehensive control strategy to optimize filter press performance, focusing on improving cake washing efficiency, discharge mechanisms, and overall operational reliability",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation",
+        "secondary_domains": [
+            "Process Control",
+            "Filtration Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of current challenges",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative process performance analysis and control mechanism refinement",
+            "collaboration_protocol": "Sequential problem decomposition and integrated solution development"
+        }
+    },
+    "clarification_questions": [
+        "What specific challenges are you experiencing during cake washing?",
+        "Can you describe the current discharge mechanism and its limitations?",
+        "What are the current operational parameters of the filter press?",
+        "Are there any specific product quality metrics that are not being met?"
+    ]
+}

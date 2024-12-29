@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "What role do interfacial tension and fluid properties play in the coalescence process within a centrifugal gas-liquid separator?",
+        "expanded_query": "Analyze the influence of interfacial tension and fluid properties on the coalescence mechanism in a centrifugal gas-liquid separator, considering factors such as droplet size distribution, phase density differences, and viscosity effects.",
+        "complexity_level": "medium",
+        "primary_domain": "Multiphase Separation",
+        "secondary_domains": [
+            "Fluid Mechanics",
+            "Interfacial Phenomena"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifugal separator design analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Interfacial tension and fluid property characterization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Fluid property impact on coalescence efficiency",
+            "collaboration_protocol": "Iterative analysis and design optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific gas and liquid phases involved in the separation process?",
+        "Are there any constraints on the centrifugal separator design or operating conditions?"
+    ]
+}

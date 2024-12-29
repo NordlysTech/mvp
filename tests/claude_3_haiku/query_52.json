@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're investigating a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas. How can we develop a multi-scale modeling approach to predict separation performance? ",
+        "expanded_query": "Design a comprehensive multi-scale modeling strategy for predicting separation performance in a hybrid membrane-adsorption system targeting hydrogen sulfide removal from sour gas streams",
+        "complexity_level": "advanced",
+        "primary_domain": "Gas Separation Technology",
+        "secondary_domains": [
+            "Computational Modeling",
+            "Process Simulation",
+            "Materials Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Multi-scale modeling framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane-adsorption process design validation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium and transport mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Iterative model refinement and performance prediction",
+            "collaboration_protocol": "Integrated computational and experimental validation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific membrane and adsorbent materials being considered?",
+        "What are the expected temperature and pressure ranges for the sour gas stream?",
+        "Do you have baseline experimental data for model calibration?",
+        "What are the target hydrogen sulfide removal efficiency and purity requirements?"
+    ]
+}

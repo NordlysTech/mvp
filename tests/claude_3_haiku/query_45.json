@@ -1,0 +1,38 @@
+{
+    "query_analysis": {
+        "original_query": "What safety precautions should we consider when handling cryogenic fluids in an air separation unit?",
+        "expanded_query": "Comprehensive safety assessment and protocol development for handling extremely low-temperature fluids in industrial air separation processes with focus on risk mitigation and personnel protection",
+        "complexity_level": "high",
+        "primary_domain": "Cryogenic Safety Engineering",
+        "secondary_domains": [
+            "Industrial Process Safety",
+            "Fluid Handling",
+            "Thermal Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol design and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal behavior and material compatibility analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Systematic risk identification and mitigation strategy development",
+            "collaboration_protocol": "Integrated safety and technical parameter evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What specific cryogenic fluids are being used in the air separation unit?",
+        "What are the typical operating temperatures and pressures?",
+        "What personal protective equipment (PPE) is currently available?",
+        "Are there existing safety protocols that need to be reviewed or enhanced?"
+    ]
+}

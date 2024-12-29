@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "In our distillation column, there's concern over potential leakage of corrosive materials. What safety protocols should we implement during shutdown maintenance?",
+        "expanded_query": "Develop comprehensive safety protocols for managing potential corrosive material leakage during distillation column shutdown and maintenance procedures",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Management",
+        "secondary_domains": [
+            "Industrial Maintenance",
+            "Chemical Process Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol design and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Leakage scenario analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Systematic risk identification and mitigation strategy development",
+            "collaboration_protocol": "Sequential risk assessment and protocol validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific corrosive materials are present in the distillation column?",
+        "What is the current condition and age of the distillation column equipment?",
+        "Have there been previous incidents of material leakage?",
+        "What are the current maintenance and inspection procedures?"
+    ]
+}

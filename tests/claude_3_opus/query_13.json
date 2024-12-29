@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "The compressor in our refrigeration cycle is showing unexpected surges in discharge pressure. Could it be related to liquid carryover from the separator upstream?",
+        "expanded_query": "Investigate the potential causes of unexpected discharge pressure surges in a refrigeration cycle compressor, focusing on the possibility of liquid carryover from the upstream separator.",
+        "complexity_level": "medium",
+        "primary_domain": "Refrigeration System Troubleshooting",
+        "secondary_domains": [
+            "Compressor Performance",
+            "Separation Efficiency"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Pressure surge dynamics investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic cross-referencing and hypothesis testing",
+            "collaboration_protocol": "Sequential problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "When did the pressure surges first start occurring?",
+        "Have there been any recent changes in the refrigerant composition or operating conditions?",
+        "Can you provide detailed pressure and temperature data from the compressor and separator?"
+    ]
+}

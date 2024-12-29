@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're investigating a novel hybrid membrane-adsorption process for hydrogen sulfide removal from sour gas. How can we develop a multi-scale modeling approach to predict separation performance?",
+        "expanded_query": "Develop a comprehensive multi-scale modeling framework to simulate and predict the performance of a novel hybrid membrane-adsorption system for selective hydrogen sulfide removal from sour gas streams.",
+        "complexity_level": "advanced",
+        "primary_domain": "Hybrid Separation Process Modeling",
+        "secondary_domains": [
+            "Membrane Separation",
+            "Adsorption Technology",
+            "Sour Gas Treatment"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid process configuration and mechanism elucidation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Multi-scale model development and numerical solution",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Membrane permeation and adsorption equilibrium analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model refinement and performance prediction",
+            "collaboration_protocol": "Integrated process understanding and numerical implementation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics and composition of the sour gas stream?",
+        "Are there any constraints on the membrane material selection or adsorption system design?",
+        "What are the desired separation performance metrics and targets?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're working on pressure swing adsorption (PSA) for hydrogen purification. How can we optimize the adsorption and desorption cycle times?",
+        "expanded_query": "Optimize the adsorption and desorption cycle times in a pressure swing adsorption (PSA) process for efficient hydrogen purification.",
+        "complexity_level": "medium",
+        "primary_domain": "Adsorption Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Gas Purification"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "PSA process optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Adsorption equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Cycle time control strategy",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative cycle time optimization",
+            "collaboration_protocol": "Integrated adsorption process refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the current adsorption and desorption cycle times?",
+        "What is the target hydrogen purity and recovery?",
+        "Are there any constraints on the PSA operating conditions?"
+    ]
+}

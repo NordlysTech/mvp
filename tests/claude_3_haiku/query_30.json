@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "In a solvent recovery system using distillation, how do we ensure compliance with safety standards for handling flammable solvents like ethanol?",
+        "expanded_query": "Design a comprehensive safety strategy for managing flammable solvent risks in a distillation-based solvent recovery system, focusing on regulatory compliance and risk mitigation for ethanol handling",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Engineering",
+        "secondary_domains": [
+            "Solvent Recovery",
+            "Industrial Safety",
+            "Distillation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety standards and regulatory compliance assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process safety design",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Safety control system design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integrated safety protocol development and risk assessment",
+            "collaboration_protocol": "Sequential safety requirement validation and technical implementation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific concentration and volume of ethanol in the recovery system?",
+        "What are the current safety measures already in place?",
+        "What temperature and pressure ranges are typical in your distillation process?",
+        "Are there specific industry standards (e.g., OSHA, NFPA) you need to comply with?"
+    ]
+}

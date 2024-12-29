@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What's the impact of feed composition variability on the performance of our crude distillation column?",
+        "expanded_query": "Analyze the effect of variations in crude oil feed composition on the separation efficiency and product quality of the crude distillation unit.",
+        "complexity_level": "medium",
+        "primary_domain": "Crude Oil Distillation",
+        "secondary_domains": [
+            "Process Performance Analysis",
+            "Feed Composition Variability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium impact assessment",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Feed composition variability characterization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Feed composition impact quantification",
+            "collaboration_protocol": "Integrated performance analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the typical ranges of variability in the crude oil feed composition?",
+        "Which specific performance metrics are of primary concern (e.g., product purity, yield, energy efficiency)?",
+        "Are there any historical data or case studies available on similar feed composition variability scenarios?"
+    ]
+}

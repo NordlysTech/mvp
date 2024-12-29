@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We are designing a three-phase separator for oil, water, and gas separation. How can we improve the separation efficiency for high-viscosity oils?",
+        "expanded_query": "Identify design strategies and operational improvements to enhance the separation performance of a three-phase separator specifically for high-viscosity oil applications.",
+        "complexity_level": "medium",
+        "primary_domain": "Multiphase Separation Technology",
+        "secondary_domains": [
+            "Oil & Gas Processing",
+            "Fluid Mechanics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibria analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Process integration assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Design parameter refinement",
+            "collaboration_protocol": "Iterative performance enhancement"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical viscosity range of the high-viscosity oils being processed?",
+        "Are there any constraints on the separator design, such as size or material limitations?",
+        "What are the current separation efficiency metrics for the existing system?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We are looking to develop a more energy-efficient approach to extract ethanol from a 95% azeotropic mixture. Any suggestions on alternative distillation or hybrid methods?",
+        "expanded_query": "Investigate and propose energy-efficient separation techniques, including advanced distillation and hybrid methods, for the extraction of ethanol from a 95% azeotropic mixture.",
+        "complexity_level": "medium",
+        "primary_domain": "Azeotropic Separation",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Hybrid Separation Processes"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Azeotropic separation process design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Vapor-liquid equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Energy efficiency optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative process design and optimization",
+            "collaboration_protocol": "Integrated thermodynamic and energy analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the composition of the azeotropic mixture besides ethanol?",
+        "Are there any constraints on the separation process, such as temperature or pressure limitations?",
+        "What is the desired purity of the extracted ethanol?"
+    ]
+}

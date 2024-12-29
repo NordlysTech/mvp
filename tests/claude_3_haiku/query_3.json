@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "I am working on designing a separation process for a ternary mixture, I would like the equilibrium data of water-MEA-CO2.",
+        "expanded_query": "Obtain the equilibrium data for the system of a ternary mixture consisting of water, monoethanolamine (MEA), and carbon dioxide (CO2) to support separation process design.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Equilibrium Data Retrieval",
+        "secondary_domains": [
+            "Ternary Mixture Thermodynamics",
+            "Phase Equilibrium"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equilibrium data retrieval and analysis",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data compilation and characterization",
+            "collaboration_protocol": "Precise thermodynamic data extraction"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific concentrations of water, MEA, and CO2 in the mixture?",
+        "What are the target operating conditions (temperature and pressure) for the separation process?",
+        "Are you interested in vapor-liquid, liquid-liquid, or solid-liquid equilibrium data?"
+    ]
+}

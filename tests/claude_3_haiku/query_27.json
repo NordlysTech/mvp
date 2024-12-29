@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What's the best way to improve the recovery of valuable hydrocarbons in a three-phase separator without significantly increasing operating costs?",
+        "expanded_query": "Develop an optimized strategy for enhancing hydrocarbon recovery efficiency in a three-phase separator while maintaining cost-effectiveness and minimizing additional operational expenses",
+        "complexity_level": "medium",
+        "primary_domain": "Hydrocarbon Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Economic Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Three-phase separator performance optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Economic feasibility analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium and separation mechanism analysis",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative performance and cost optimization",
+            "collaboration_protocol": "Integrated recovery enhancement strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What is the current hydrocarbon recovery rate in your three-phase separator?",
+        "Can you provide details about the specific types of hydrocarbons being separated?",
+        "What are the current operating conditions of the separator?",
+        "Are there any specific constraints or limitations in the current separation process?"
+    ]
+}

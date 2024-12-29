@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our rotary drum filter is experiencing inconsistent cake formation. How can we develop a robust control strategy to maintain consistent filtration performance across varying slurry characteristics?",
+        "expanded_query": "Design a comprehensive control strategy for a rotary drum filter to stabilize cake formation and ensure consistent filtration performance under variable slurry composition and characteristics",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation",
+        "secondary_domains": [
+            "Process Control",
+            "Filtration Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of cake formation inconsistencies",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative process parameter refinement and performance monitoring",
+            "collaboration_protocol": "Cross-functional analysis of filtration dynamics and control mechanisms"
+        }
+    },
+    "clarification_questions": [
+        "What are the current observed variations in cake formation?",
+        "Can you provide details about the slurry composition and its typical variability?",
+        "What are the current control mechanisms in place for the rotary drum filter?",
+        "Are there specific performance metrics you're trying to achieve with the new control strategy?"
+    ]
+}

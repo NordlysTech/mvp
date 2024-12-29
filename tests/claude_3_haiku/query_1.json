@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We've got these massive geothermal brine pools in Nevada, and our management is pushing hard to monetize the lithium. Current extraction methods are a money pit. Any ideas on a novel approach that doesn't require crazy expensive infrastructure?",
+        "expanded_query": "Investigate and generate a technical benchmark report for a cost-effective lithium isolation process from high-salinity geothermal fluid with minimal capital investment",
+        "complexity_level": "advanced",
+        "primary_domain": "Critical Metal Recovery",
+        "secondary_domains": [
+            "Resource Extraction",
+            "Economic Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Extraction process design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Ionic interaction mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Economic feasibility modeling",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Lithium isolation mechanism development",
+            "collaboration_protocol": "Integrated extraction strategy refinement"
+        }
+    },
+    "clarification_questions": [
+        "What's the current lithium concentration in your brine?",
+        "What extraction methods have you already tried?",
+        "Are there any constraints on the process design or technology?"
+    ]
+}

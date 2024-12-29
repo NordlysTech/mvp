@@ -1,0 +1,20 @@
+{
+    "query_analysis": {
+        "original_query": "nan",
+        "expanded_query": "",
+        "complexity_level": "low",
+        "primary_domain": "Invalid Query",
+        "secondary_domains": []
+    },
+    "agent_allocation": {
+        "selected_agents": [],
+        "communication_strategy": {
+            "primary_communication_agent": "",
+            "information_flow": "",
+            "collaboration_protocol": ""
+        }
+    },
+    "clarification_questions": [
+        "The provided query is invalid. Please provide a valid query related to chemical engineering or process design."
+    ]
+}

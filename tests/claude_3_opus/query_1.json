@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We've got these massive geothermal brine pools in Nevada, and our management is pushing hard to monetize the lithium. Current extraction methods are a money pit. Any ideas on a novel approach that doesn't require crazy expensive infrastructure?",
+        "expanded_query": "Investigate and propose a cost-effective lithium extraction process from geothermal brine pools that minimizes capital expenditure and infrastructure requirements.",
+        "complexity_level": "high",
+        "primary_domain": "Lithium Extraction",
+        "secondary_domains": [
+            "Geothermal Resources",
+            "Process Economics",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Lithium extraction process design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Brine characterization and phase behavior analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Economic feasibility assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative process design and economic evaluation",
+            "collaboration_protocol": "Integrated techno-economic analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the current lithium concentration in the geothermal brine?",
+        "Are there any specific constraints on the extraction process, such as environmental regulations or site-specific limitations?",
+        "What is the target production capacity for the lithium extraction operation?"
+    ]
+}

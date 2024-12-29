@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "The compressor in our refrigeration cycle is showing unexpected surges in discharge pressure. Could it be related to liquid carryover from the separator upstream?",
+        "expanded_query": "Investigate potential causes of compressor discharge pressure surges in a refrigeration cycle, with specific focus on potential liquid carryover from upstream separator as a root cause",
+        "complexity_level": "medium",
+        "primary_domain": "Refrigeration System Diagnostics",
+        "secondary_domains": [
+            "Compressor Performance",
+            "Fluid Dynamics",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of pressure surge mechanism",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Compressor performance and pressure dynamics analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Liquid carryover and phase transition assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic cross-referencing of compressor performance parameters",
+            "collaboration_protocol": "Integrated system behavior analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific discharge pressure surge characteristics (magnitude, frequency)?",
+        "Can you provide details about the upstream separator's design and current operating conditions?",
+        "Have there been any recent modifications to the refrigeration cycle components?"
+    ]
+}

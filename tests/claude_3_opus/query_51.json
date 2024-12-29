@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Our pilot plant is struggling with low-temperature hydrocarbon separation using mixed refrigerant cycles. What advanced exergy analysis techniques could help us optimize the energy efficiency?",
+        "expanded_query": "Identify and recommend advanced exergy analysis techniques to optimize the energy efficiency of a low-temperature hydrocarbon separation process using mixed refrigerant cycles in a pilot plant.",
+        "complexity_level": "high",
+        "primary_domain": "Cryogenic Separation",
+        "secondary_domains": [
+            "Thermodynamic Analysis",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Exergy analysis and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Mixed refrigerant cycle design",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical modeling and simulation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative exergy analysis and process refinement",
+            "collaboration_protocol": "Integrated thermodynamic and separation expertise"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific hydrocarbons being separated and their relative concentrations?",
+        "What are the current operating conditions (temperature, pressure) of the mixed refrigerant cycles?",
+        "Are there any constraints on the modifications that can be made to the existing process?"
+    ]
+}

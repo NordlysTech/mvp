@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key design parameters for vertical gas-liquid knockout drums?",
+        "expanded_query": "Identify and explain the critical design considerations and parameters for vertical gas-liquid separation equipment in industrial process systems",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Equipment Design",
+        "secondary_domains": [
+            "Process Engineering",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Primary design parameter identification and specification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase separation mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Comprehensive design parameter documentation and validation",
+            "collaboration_protocol": "Sequential technical parameter refinement"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific fluid composition being separated?",
+        "What are the expected flow rates and operating pressures?",
+        "Are there any specific performance requirements for the separation process?"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the specific viscosity limits for effective hydrocyclone operation from the standard reference guidelines.",
+        "expanded_query": "Identify and document the precise viscosity range specifications for optimal hydrocyclone performance according to established engineering standards and reference guidelines.",
+        "complexity_level": "low",
+        "primary_domain": "Fluid Separation Technology",
+        "secondary_domains": [
+            "Process Engineering",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone operational parameter retrieval",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid property verification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Technical standard reference data compilation",
+            "collaboration_protocol": "Direct technical parameter validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of fluid are you processing in the hydrocyclone?",
+        "Are you working with a standard industrial application or a specialized process?",
+        "What temperature range will the hydrocyclone be operating under?"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard droplet size cut-off for mist eliminators in demisters.",
+        "expanded_query": "Determine the standard droplet size separation threshold for mist elimination in industrial demisting equipment",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Droplet size cut-off specification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamics validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Technical specification of droplet separation parameters",
+            "collaboration_protocol": "Direct technical consultation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific industrial application or process context for the demister?",
+        "Are there specific fluid properties or operating conditions that might influence droplet size cut-off?",
+        "What is the target efficiency of droplet separation?"
+    ]
+}

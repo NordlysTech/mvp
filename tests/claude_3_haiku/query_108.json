@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Help me draft a risk assessment framework for foam formation in separators during high surfactant contamination events.",
+        "expanded_query": "Develop a comprehensive risk assessment methodology to evaluate and mitigate foam formation risks in industrial separators under conditions of significant surfactant contamination",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Safety Risk Assessment",
+        "secondary_domains": [
+            "Separation Technology",
+            "Fluid Dynamics",
+            "Chemical Contamination Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk framework design and regulatory compliance verification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator-specific foam formation mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Foam mitigation and control strategy development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Integrated risk assessment and mitigation strategy development",
+            "collaboration_protocol": "Sequential risk layer analysis and cross-domain validation"
+        }
+    },
+    "clarification_questions": [
+        "What types of separators are involved in this risk assessment?",
+        "What are the typical surfactant concentrations encountered?",
+        "Are there existing foam control mechanisms currently in place?",
+        "What are the potential operational consequences of foam formation in these separators?"
+    ]
+}

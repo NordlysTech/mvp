@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing complex phase behavior in our supercritical fluid extraction process for pharmaceutical compounds. How can we develop more accurate equation of state models?",
+        "expanded_query": "Investigate advanced methodologies for developing precise equation of state models to characterize complex phase behavior in supercritical fluid extraction of pharmaceutical compounds",
+        "complexity_level": "advanced",
+        "primary_domain": "Supercritical Fluid Extraction",
+        "secondary_domains": [
+            "Thermodynamic Modeling",
+            "Pharmaceutical Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equation of state model development and refinement",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical modeling and algorithmic validation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process-specific model calibration",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative model development and performance validation",
+            "collaboration_protocol": "Sequential refinement of thermodynamic modeling approach"
+        }
+    },
+    "clarification_questions": [
+        "What specific pharmaceutical compounds are you extracting?",
+        "What are the current operating conditions (temperature, pressure) of your supercritical fluid extraction process?",
+        "Have you identified specific limitations in your existing equation of state models?"
+    ]
+}

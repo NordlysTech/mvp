@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Identify and assess the potential hazards of operating a liquid-gas separator near its flooding limit.",
+        "expanded_query": "Analyze the risks and safety concerns associated with running a liquid-gas separator close to its maximum capacity, where liquid entrainment in the gas phase may occur.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Analysis",
+        "secondary_domains": [
+            "Separation Technology",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Hazard identification and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and operating limit analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process instability evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Risk scenario development and mitigation planning",
+            "collaboration_protocol": "Iterative hazard analysis and control strategy refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific operating conditions (pressure, temperature, flow rates) of the separator?",
+        "What is the composition of the liquid and gas phases in the separator?",
+        "Are there any existing safety systems or controls in place to prevent or mitigate flooding?"
+    ]
+}

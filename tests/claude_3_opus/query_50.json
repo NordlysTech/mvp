@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a predictive model for eutectic salt formation in our deep eutectic solvent-based extraction process for rare earth elements. Can you help me characterize the thermodynamic boundaries?",
+        "expanded_query": "Develop a thermodynamic model to predict eutectic salt formation boundaries in a deep eutectic solvent system for rare earth element extraction",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Modeling",
+        "secondary_domains": [
+            "Rare Earth Element Extraction",
+            "Deep Eutectic Solvents"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Eutectic system thermodynamic analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Predictive model development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Thermodynamic boundary condition specification",
+            "collaboration_protocol": "Iterative model refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components of the deep eutectic solvent system?",
+        "What range of operating conditions (temperature, pressure) are you interested in?",
+        "Are there any known experimental data points for the system?"
+    ]
+}

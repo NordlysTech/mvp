@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the standard thermal stability limits for different hydrocarbon fractions during high-temperature distillation.",
+        "expanded_query": "Obtain the standard thermal stability limits for various hydrocarbon fractions under high-temperature distillation conditions.",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Data Retrieval",
+        "secondary_domains": [
+            "Hydrocarbon Processing",
+            "Distillation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal stability data retrieval",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data provision",
+            "collaboration_protocol": "Autonomous execution"
+        }
+    },
+    "clarification_questions": [
+        "What specific hydrocarbon fractions are of interest?",
+        "What is the temperature range for the high-temperature distillation process?"
+    ]
+}

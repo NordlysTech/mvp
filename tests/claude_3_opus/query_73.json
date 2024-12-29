@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We need to optimize the design of a hybrid filtration system combining rotary drum and pressure leaf technologies. What advanced integration strategies could improve overall separation efficiency?",
+        "expanded_query": "Identify and recommend advanced integration strategies for optimizing the design of a hybrid filtration system that combines rotary drum and pressure leaf technologies, with the goal of improving overall separation efficiency.",
+        "complexity_level": "high",
+        "primary_domain": "Hybrid Filtration System Design",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid filtration system design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Integration strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Separation efficiency modeling and analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design refinement and performance evaluation",
+            "collaboration_protocol": "Integrated design optimization and efficiency analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics and properties of the materials being filtered?",
+        "Are there any constraints on the design or operation of the hybrid filtration system?",
+        "What are the current separation efficiency metrics and targets for improvement?"
+    ]
+}

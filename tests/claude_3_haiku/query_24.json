@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "How do we safely handle and dispose of spent adsorbents from a PSA system used for hydrogen purification?",
+        "expanded_query": "Develop a comprehensive safety protocol for handling, characterizing, and environmentally responsible disposal of exhausted pressure swing adsorption (PSA) adsorbents from hydrogen purification processes",
+        "complexity_level": "medium",
+        "primary_domain": "Hazardous Waste Management",
+        "secondary_domains": [
+            "Environmental Compliance",
+            "Industrial Safety",
+            "Hydrogen Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol development and regulatory compliance verification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Waste characterization and disposal strategy assessment",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Adsorbent material analysis and potential regeneration evaluation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Sequential risk assessment and disposal pathway identification",
+            "collaboration_protocol": "Integrated safety and environmental compliance review"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of adsorbent material was used in the PSA system?",
+        "Are the spent adsorbents contaminated with any hazardous substances?",
+        "What are the current local and national regulations for disposing of these materials?",
+        "Have you considered potential regeneration or recycling options for the spent adsorbents?"
+    ]
+}

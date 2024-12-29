@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical safety protocols for handling light hydrocarbon fractions during atmospheric distillation shutdown?",
+        "expanded_query": "Identify and detail comprehensive safety procedures for managing volatile light hydrocarbon components during the shutdown phase of an atmospheric distillation unit, focusing on risk mitigation and operational safety",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Management",
+        "secondary_domains": [
+            "Hydrocarbon Processing",
+            "Industrial Safety",
+            "Shutdown Procedures"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety protocol development and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Technical process shutdown verification",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control system safety integration",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Sequential risk evaluation and safety protocol validation",
+            "collaboration_protocol": "Integrated safety systems review"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific composition of the light hydrocarbon fractions?",
+        "What are the current shutdown procedures currently in place?",
+        "What is the typical operating temperature and pressure of the atmospheric distillation unit?",
+        "Are there any specific environmental or regulatory constraints to consider?"
+    ]
+}

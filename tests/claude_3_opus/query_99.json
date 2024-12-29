@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "How does varying the gas-to-liquid ratio impact separation efficiency in high-flow-rate demisters, and what operational adjustments can mitigate inefficiencies?",
+        "expanded_query": "Investigate the relationship between gas-to-liquid ratio and separation efficiency in high-flow-rate demisters, and identify potential operational adjustments to optimize performance and mitigate inefficiencies.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Multiphase Flow",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational adjustment strategies",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative performance analysis and optimization",
+            "collaboration_protocol": "Integrated multiphase flow and control strategy development"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of gas-to-liquid ratios encountered in your demisters?",
+        "Are there any specific constraints on operational adjustments, such as pressure or temperature limits?",
+        "What are the current separation efficiency levels, and what are the target improvement goals?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help me develop a comprehensive uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing?",
+        "expanded_query": "Develop a robust uncertainty quantification methodology to characterize and mitigate uncertainties in an advanced ceramic membrane separation process for high-temperature gas processing applications.",
+        "complexity_level": "advanced",
+        "primary_domain": "Uncertainty Quantification",
+        "secondary_domains": [
+            "Membrane Separation",
+            "High-Temperature Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane separation process characterization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "High-temperature system analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Uncertainty quantification framework development",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Process data integration and uncertainty propagation",
+            "collaboration_protocol": "Iterative uncertainty assessment and mitigation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific sources of uncertainty in the ceramic membrane separation process?",
+        "Are there any existing uncertainty quantification methods or data available for this process?",
+        "What are the critical process parameters and performance metrics that need to be considered in the uncertainty analysis?"
+    ]
+}

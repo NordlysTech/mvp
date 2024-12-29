@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We're exploring advanced techniques to minimize filter medium blinding in our centrifugal filtration process. What innovative surface modification or control strategies could improve separation performance?",
+        "expanded_query": "Investigate and recommend novel surface modification techniques or advanced process control strategies to mitigate filter medium blinding and enhance separation efficiency in a centrifugal filtration process.",
+        "complexity_level": "high",
+        "primary_domain": "Filtration Process Optimization",
+        "secondary_domains": [
+            "Surface Science",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration mechanism analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control strategy development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative performance enhancement",
+            "collaboration_protocol": "Integrated surface and control optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific nature of the filter medium and the particulates being separated?",
+        "What are the current process conditions (flow rate, pressure, temperature) in the centrifugal filtration unit?",
+        "Are there any constraints on the types of surface modifications or control strategies that can be implemented?"
+    ]
+}

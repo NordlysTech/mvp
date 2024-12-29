@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Please provide the thermodynamic data related to azeotropes existing in natural gas processing columns.",
+        "expanded_query": "Retrieve thermodynamic data and properties for azeotropic mixtures commonly encountered in natural gas processing distillation columns.",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Data Retrieval",
+        "secondary_domains": [
+            "Azeotropic Distillation",
+            "Natural Gas Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Azeotropic data retrieval and analysis",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data provision",
+            "collaboration_protocol": "Independent analysis"
+        }
+    },
+    "clarification_questions": [
+        "What specific natural gas components are of interest?",
+        "Are there any particular operating conditions (temperature, pressure) to consider?"
+    ]
+}

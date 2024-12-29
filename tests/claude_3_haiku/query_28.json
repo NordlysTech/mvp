@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "What are the typical mass transfer coefficients for CO2 absorption in an hot potassium carbonate-based system?",
+        "expanded_query": "Determine and characterize the standard mass transfer coefficients for carbon dioxide absorption using a hot potassium carbonate chemical absorption system",
+        "complexity_level": "medium",
+        "primary_domain": "Mass Transfer Kinetics",
+        "secondary_domains": [
+            "Chemical Absorption",
+            "Gas-Liquid Mass Transfer",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient quantification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical analysis and coefficient calculation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Detailed mass transfer mechanism analysis",
+            "collaboration_protocol": "Iterative coefficient validation and computational verification"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific temperature range for the hot potassium carbonate system?",
+        "What are the typical gas and liquid flow rates in the absorption process?",
+        "Are there any specific system pressure conditions to consider?"
+    ]
+}

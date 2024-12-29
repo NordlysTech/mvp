@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're designing a hybrid separation unit combining distillation and membranes. How do we determine the most energy-efficient split between these two stages?",
+        "expanded_query": "Determine the optimal energy distribution and process configuration for a hybrid distillation-membrane separation system to minimize overall energy consumption.",
+        "complexity_level": "high",
+        "primary_domain": "Hybrid Separation Process Design",
+        "secondary_domains": [
+            "Energy Optimization",
+            "Distillation",
+            "Membrane Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hybrid process configuration",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy distribution analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Optimization modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative energy targeting and configuration refinement",
+            "collaboration_protocol": "Integrated thermodynamic analysis and mathematical optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the feed composition and target product specifications?",
+        "Are there any constraints on the distillation and membrane operating conditions?",
+        "Is there a specific energy source or utility that needs to be considered in the optimization?"
+    ]
+}

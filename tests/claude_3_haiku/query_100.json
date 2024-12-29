@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Derive the expression for the terminal velocity of a liquid droplet in a gas stream based on Stokes' law. Discuss how it applies to separator design for light hydrocarbons.",
+        "expanded_query": "Develop a mathematical derivation of terminal velocity for liquid droplets in gas streams using Stokes' law, with specific focus on implications for separator design in light hydrocarbon processing",
+        "complexity_level": "advanced",
+        "primary_domain": "Fluid Dynamics in Separation Processes",
+        "secondary_domains": [
+            "Particle Mechanics",
+            "Separation Technology",
+            "Fluid Mechanics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamics and droplet velocity mathematical modeling",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Analytical derivation of terminal velocity equation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Practical application of derived principles to separator design",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Sequential mathematical derivation and engineering interpretation",
+            "collaboration_protocol": "Integrated theoretical and practical analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific properties of the gas stream and liquid droplets?",
+        "What is the typical size range of droplets in the hydrocarbon separation process?",
+        "Are there specific temperature and pressure conditions for the separation?"
+    ]
+}

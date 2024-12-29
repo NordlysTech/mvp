@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a comprehensive predictive model for solids discharge in our nozzle discharge solid-bowl centrifuge. What factors should we prioritize to minimize operational instabilities?",
+        "expanded_query": "Develop a predictive model to optimize solids discharge performance and stability in a nozzle discharge solid-bowl centrifuge by identifying and prioritizing key influencing factors.",
+        "complexity_level": "high",
+        "primary_domain": "Centrifugal Separation Modeling",
+        "secondary_domains": [
+            "Process Stability Analysis",
+            "Solid-Liquid Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifuge performance modeling",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Discharge stability analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Model development and optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model refinement and validation",
+            "collaboration_protocol": "Integrated factor analysis and prioritization"
+        }
+    },
+    "clarification_questions": [
+        "What are the current challenges or instabilities observed in the centrifuge operation?",
+        "Are there any known factors or variables that have a significant impact on the solids discharge?",
+        "What data or measurements are available to support the model development and validation?"
+    ]
+}

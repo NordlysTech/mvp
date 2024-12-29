@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Design a comprehensive monitoring strategy for detecting early signs of column internals degradation in our atmospheric distillation unit.",
+        "expanded_query": "Develop a systematic and proactive monitoring approach to identify and assess potential degradation mechanisms in atmospheric distillation column internals, focusing on early detection and preventive maintenance strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Monitoring and Condition Assessment",
+        "secondary_domains": [
+            "Equipment Integrity",
+            "Predictive Maintenance",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Degradation mechanism identification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Monitoring strategy design and sensor placement",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment and mitigation recommendations",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Integrated diagnostic and predictive analysis of column internal condition",
+            "collaboration_protocol": "Sequential problem decomposition with continuous feedback loop"
+        }
+    },
+    "clarification_questions": [
+        "What is the current age and operational history of the atmospheric distillation unit?",
+        "Are there any known historical issues or previous degradation patterns?",
+        "What types of materials are the column internals constructed from?",
+        "What is the typical composition and temperature range of the processed fluid?"
+    ]
+}

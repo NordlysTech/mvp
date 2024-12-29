@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a risk assessment framework for potential solvent carryover in our amine-based gas sweetening distillation process.",
+        "expanded_query": "Design a comprehensive risk assessment methodology to evaluate and mitigate the impact of amine solvent entrainment in the gas sweetening distillation unit, focusing on process safety and product quality implications.",
+        "complexity_level": "high",
+        "primary_domain": "Process Risk Assessment",
+        "secondary_domains": [
+            "Gas Sweetening",
+            "Distillation",
+            "Solvent Carryover"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Amine solvent carryover mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Vapor-liquid equilibrium and entrainment modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Iterative risk identification and mitigation strategy development",
+            "collaboration_protocol": "Integrated process safety and operational performance optimization"
+        }
+    },
+    "clarification_questions": [
+        "What are the current observed levels of amine solvent carryover in the distillation process?",
+        "Are there any existing risk assessment protocols or safety measures in place for this issue?",
+        "What are the specific consequences of solvent carryover on downstream processes and final product quality?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're troubleshooting an amine system in a gas sweetening process. Our H2S levels in the treated gas are spiking intermittently. What could cause this inconsistency?",
+        "expanded_query": "Investigate and identify potential root causes for intermittent H2S spikes in the treated gas stream of an amine-based gas sweetening process.",
+        "complexity_level": "medium",
+        "primary_domain": "Gas Sweetening Troubleshooting",
+        "secondary_domains": [
+            "Amine System Operation",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Amine system performance evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process variability investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic data sharing and hypothesis testing",
+            "collaboration_protocol": "Iterative problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the normal operating conditions and parameters of the amine system?",
+        "How frequently do the H2S spikes occur, and what is the magnitude of the spikes?",
+        "Have there been any recent changes in the feed gas composition or flow rate?"
+    ]
+}

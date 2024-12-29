@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're troubleshooting an amine system in a gas sweetening process. Our H2S levels in the treated gas are spiking intermittently. What could cause this inconsistency?",
+        "expanded_query": "Investigate the root causes of intermittent H2S concentration fluctuations in a gas sweetening amine system, focusing on potential process instabilities and system performance anomalies",
+        "complexity_level": "medium",
+        "primary_domain": "Gas Sweetening Process Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Chemical Engineering Diagnostics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of H2S level inconsistencies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Analyze potential phase equilibrium and chemical interaction issues",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Evaluate process control system and potential regulation problems",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic analysis and cross-domain hypothesis testing",
+            "collaboration_protocol": "Integrated problem decomposition and systematic investigation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific amine solution being used in the gas sweetening process?",
+        "Can you provide details about the frequency and magnitude of these H2S spikes?",
+        "Have there been any recent changes in feed gas composition or process conditions?",
+        "What is the current design and configuration of your amine regeneration system?"
+    ]
+}

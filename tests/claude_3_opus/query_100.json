@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "Derive the expression for the terminal velocity of a liquid droplet in a gas stream based on Stokes' law. Discuss how it applies to separator design for light hydrocarbons.",
+        "expanded_query": "Derive the mathematical expression for the terminal velocity of a liquid droplet in a gas stream using Stokes' law principles. Explain the relevance and application of this expression in designing separators for light hydrocarbon mixtures.",
+        "complexity_level": "medium",
+        "primary_domain": "Fluid Mechanics",
+        "secondary_domains": [
+            "Separation Technology",
+            "Hydrocarbon Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Derivation of terminal velocity expression",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Application to separator design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Mathematical derivation to practical application",
+            "collaboration_protocol": "Sequential problem decomposition"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific properties of the light hydrocarbons in the mixture?",
+        "Are there any constraints on the separator design or operating conditions?"
+    ]
+}

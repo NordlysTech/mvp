@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our liquid-liquid extractor shows oscillations in flow rates between stages. Could this be related to pump controls or system instability?",
+        "expanded_query": "Investigate the root causes of flow rate oscillations in a liquid-liquid extraction system, focusing on potential pump control issues and system dynamic instabilities",
+        "complexity_level": "medium",
+        "primary_domain": "Process Dynamics and Control",
+        "secondary_domains": [
+            "Liquid-Liquid Extraction",
+            "Fluid Mechanics",
+            "Process Instrumentation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Analyze system dynamics and potential control system failures",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Diagnose potential root causes of flow rate oscillations",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Evaluate extraction system performance and potential design impacts",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Systematic investigation of flow rate oscillation mechanisms",
+            "collaboration_protocol": "Iterative problem decomposition and cross-domain analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the frequency and amplitude of the observed flow rate oscillations?",
+        "Have there been any recent changes in pump equipment or control systems?",
+        "Can you provide details about the liquid-liquid extractor's design and operating conditions?",
+        "Are the oscillations consistent across all stages or specific to certain sections?"
+    ]
+}

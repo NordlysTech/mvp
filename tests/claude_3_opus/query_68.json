@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "I need the maximum safe operating parameters for a horizontal plate filter dealing with corrosive chemical slurries.",
+        "expanded_query": "Determine the maximum safe operating conditions, including temperature, pressure, and flow rate, for a horizontal plate filter processing corrosive chemical slurries, considering material compatibility and potential safety hazards.",
+        "complexity_level": "medium",
+        "primary_domain": "Filtration Technology",
+        "secondary_domains": [
+            "Process Safety",
+            "Corrosion Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Corrosion and safety assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative safety and performance optimization",
+            "collaboration_protocol": "Continuous risk assessment and mitigation"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific chemical components and concentrations in the slurry?",
+        "What materials of construction are being considered for the filter plates and housing?",
+        "Are there any temperature or pressure limitations based on upstream or downstream processes?"
+    ]
+}

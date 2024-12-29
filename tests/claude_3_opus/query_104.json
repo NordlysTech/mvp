@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Solve for the critical droplet size distribution in a vertical gas-liquid separator where the velocity profile is non-uniform and governed by a parabolic function.",
+        "expanded_query": "Determine the critical droplet size distribution in a vertical gas-liquid separator considering a non-uniform, parabolic velocity profile. Analyze the impact of the velocity profile on the separation efficiency and droplet size cut-off.",
+        "complexity_level": "advanced",
+        "primary_domain": "Multiphase Separation",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Particle Size Distribution"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separation mechanism analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Droplet size distribution modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Velocity profile characterization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model refinement",
+            "collaboration_protocol": "Integrated problem decomposition"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific dimensions and operating conditions of the vertical gas-liquid separator?",
+        "Can you provide the mathematical expression for the parabolic velocity profile?",
+        "Are there any constraints on the acceptable range of droplet sizes in the separator outlet?"
+    ]
+}

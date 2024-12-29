@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're exploring advanced techniques to minimize filter medium blinding in our centrifugal filtration process. What innovative surface modification or control strategies could improve separation performance?",
+        "expanded_query": "Investigate advanced surface modification techniques and control strategies to mitigate filter medium blinding and enhance separation efficiency in centrifugal filtration processes",
+        "complexity_level": "advanced",
+        "primary_domain": "Filtration Process Optimization",
+        "secondary_domains": [
+            "Surface Engineering",
+            "Process Control",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Surface modification and filtration strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Particle interaction and surface phenomena analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated surface modification and control strategy development",
+            "collaboration_protocol": "Iterative performance optimization and technical validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the current filtration medium material?",
+        "What are the specific characteristics of the particles causing blinding?",
+        "What are the current separation performance metrics?",
+        "Are there any temperature or pressure constraints in your process?"
+    ]
+}

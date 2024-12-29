@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "What are the typical mass transfer coefficients for CO2 absorption in an hot potassium carbonate-based system?",
+        "expanded_query": "Retrieve typical mass transfer coefficient values for carbon dioxide absorption in a hot potassium carbonate solvent system.",
+        "complexity_level": "low",
+        "primary_domain": "Mass Transfer",
+        "secondary_domains": [
+            "Gas Absorption",
+            "Solvent Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient retrieval",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data provision",
+            "collaboration_protocol": "Standalone task execution"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific temperature range for the hot potassium carbonate system?",
+        "Are there any additional solvent components or additives in the system?"
+    ]
+}

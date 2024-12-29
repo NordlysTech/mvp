@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What are the critical factors affecting separation efficiency in hydrocarbon fractionation processes?",
+        "expanded_query": "Identify and explain the key parameters and operating conditions that influence the separation performance and product purity in hydrocarbon fractionation units.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Thermodynamics",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Fractionation process analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operating condition optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Parameter sensitivity analysis",
+            "collaboration_protocol": "Integrated performance evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What specific hydrocarbon mixtures are being fractionated?",
+        "What are the desired product specifications and purities?",
+        "Are there any operational constraints or limitations to consider?"
+    ]
+}

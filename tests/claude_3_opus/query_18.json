@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "I am facing challenges in maintaining a steady pH in the alkaline solvent circulation of a Desulphurization tower. Our controller tuning seems off. Can you guide us on improving the PID settings?",
+        "expanded_query": "Provide guidance on optimizing the PID controller settings to maintain a stable pH in the alkaline solvent circulation loop of a Desulphurization tower.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Desulphurization",
+            "pH Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "PID tuning optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Controller performance data exchange",
+            "collaboration_protocol": "Iterative tuning and testing"
+        }
+    },
+    "clarification_questions": [
+        "What is the current pH setpoint and the observed pH variability?",
+        "Can you provide details on the existing PID settings (Kp, Ki, Kd)?",
+        "Are there any known disturbances or process changes that might be affecting the pH control?"
+    ]
+}

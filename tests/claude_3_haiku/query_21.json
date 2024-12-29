@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "The liquid level in our three-phase separator is fluctuating, causing downstream instability. How can we diagnose and resolve this issue?",
+        "expanded_query": "Investigate and diagnose the root causes of liquid level fluctuations in a three-phase separator, focusing on identifying mechanisms causing downstream process instability and developing targeted resolution strategies",
+        "complexity_level": "medium",
+        "primary_domain": "Process Separation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Equipment Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of liquid level fluctuations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Stability analysis and control strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Three-phase separator performance assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic analysis and system stability evaluation",
+            "collaboration_protocol": "Integrated problem decomposition and solution synthesis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific phases being separated in the three-phase separator?",
+        "Can you describe the frequency and magnitude of the liquid level fluctuations?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "What downstream processes are being impacted by these instabilities?"
+    ]
+}

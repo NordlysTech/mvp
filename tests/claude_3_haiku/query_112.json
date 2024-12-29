@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum energy required to separate a binary gas-liquid mixture under isothermal conditions. The feed stream contains 60 mol% Component A and 40 mol% Component B, entering at a pressure of 5 bar and a temperature of 298 K. The desired products are a gas stream with 95 mol% Component A and a liquid stream with 90 mol% Component B. Assume ideal gas and liquid behavior, and neglect heat losses or inefficiencies in the separation process.",
+        "expanded_query": "Determine the thermodynamic minimum work required for separating a binary gas-liquid mixture with specified initial and final composition using theoretical separation principles",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Separation Analysis",
+        "secondary_domains": [
+            "Separation Processes",
+            "Thermodynamic Calculations"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Theoretical minimum energy calculation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Computational verification and numerical analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Detailed thermodynamic work calculation and verification",
+            "collaboration_protocol": "Sequential analysis and cross-validation"
+        }
+    },
+    "clarification_questions": [
+        "Are the components of the binary mixture specified?",
+        "What are the physical properties of Components A and B?",
+        "Do you require a specific calculation method for the minimum energy (e.g., Gibbs free energy approach)?"
+    ]
+}

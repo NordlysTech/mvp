@@ -1,0 +1,31 @@
+{
+    "query_analysis": {
+        "original_query": "I would like the equilibrium data of the Toluen Xylene binary mixture.",
+        "expanded_query": "Retrieve and provide phase equilibrium data for the binary mixture of Toluene and Xylene",
+        "complexity_level": "low",
+        "primary_domain": "Thermodynamic Equilibrium Data Retrieval",
+        "secondary_domains": [
+            "Phase Equilibrium",
+            "Molecular Interactions"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Equilibrium data retrieval and analysis",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Direct data retrieval and characterization",
+            "collaboration_protocol": "Immediate data provision"
+        }
+    },
+    "clarification_questions": [
+        "What specific temperature and pressure conditions are you interested in for the Toluene-Xylene equilibrium data?",
+        "Do you need vapor-liquid equilibrium (VLE) or liquid-liquid equilibrium (LLE) data?",
+        "Are you looking for experimental data or computational predictions?"
+    ]
+}

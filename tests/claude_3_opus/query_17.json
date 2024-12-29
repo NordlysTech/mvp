@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Our pressure swing adsorption unit experienced a sudden valve failure. How can we assess if this poses a significant safety risk to the surrounding equipment?",
+        "expanded_query": "Evaluate the potential safety hazards and risks posed to nearby equipment due to a sudden valve failure in a pressure swing adsorption unit.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Analysis",
+        "secondary_domains": [
+            "Equipment Failure",
+            "Risk Assessment"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Hazard identification and risk assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Failure mode analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Failure scenario development and consequence evaluation",
+            "collaboration_protocol": "Iterative risk quantification and mitigation planning"
+        }
+    },
+    "clarification_questions": [
+        "What is the operating pressure range of the adsorption unit?",
+        "Are there any flammable or toxic materials involved in the process?",
+        "What is the proximity of the adsorption unit to other critical equipment?"
+    ]
+}

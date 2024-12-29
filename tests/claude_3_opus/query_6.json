@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "I am working with a team of gas processing engineers, we are designing a state of the arte unit for carbon capture trying to achieve optimum levels of energy consumption, at this stage we are looking into the regulations regarding our design, could you help us go through the safety standards ?",
+        "expanded_query": "Assist in reviewing and interpreting relevant safety standards and regulations for the design of an energy-efficient carbon capture unit in a gas processing facility.",
+        "complexity_level": "medium",
+        "primary_domain": "Safety and Regulatory Compliance",
+        "secondary_domains": [
+            "Carbon Capture",
+            "Gas Processing"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Safety standards interpretation and guidance",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Design context and requirements clarification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Iterative safety review and design alignment",
+            "collaboration_protocol": "Continuous safety and design integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific safety standards and regulations are you currently considering?",
+        "Can you provide more details about the carbon capture technology being used in your design?"
+    ]
+}

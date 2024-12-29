@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Could you help me design a monitoring system to predict early fouling in demisters for separators handling heavy hydrocarbon condensates. What sensors and control strategies would you recommend?",
+        "expanded_query": "Design a predictive monitoring system for early detection of fouling in demisters processing heavy hydrocarbon condensates, focusing on advanced sensor technologies and proactive control strategies",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Monitoring and Condition Prediction",
+        "secondary_domains": [
+            "Separation Technology",
+            "Predictive Maintenance",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Sensor selection and control strategy design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister fouling mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Predictive failure mode identification",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Integrated sensor data interpretation and predictive modeling",
+            "collaboration_protocol": "Cross-domain technical parameter validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical composition of the heavy hydrocarbon condensates?",
+        "What are the current operational temperature and pressure ranges?",
+        "Have you experienced specific fouling patterns or failure modes in previous separator operations?"
+    ]
+}

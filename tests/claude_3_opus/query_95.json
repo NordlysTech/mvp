@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard droplet size cut-off for mist eliminators in demisters.",
+        "expanded_query": "Determine the typical droplet size range that mist eliminators in demisters are designed to remove from the gas stream.",
+        "complexity_level": "low",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Gas-Liquid Separation",
+            "Mist Elimination"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Mist eliminator design specifications",
+                "interaction_type": "independent"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Direct response",
+            "collaboration_protocol": "Single-agent resolution"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific operating conditions (pressure, temperature, gas velocity) for the demister?",
+        "What is the composition of the gas stream being treated by the demister?"
+    ]
+}

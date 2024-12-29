@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Outline an advanced process control system to stabilize the liquid discharge rate from a high-capacity separator during fluctuating feed conditions.",
+        "expanded_query": "Design a robust process control strategy to maintain consistent liquid discharge rate in a high-capacity separator under variable feed stream conditions, focusing on dynamic stabilization techniques.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Control Engineering",
+        "secondary_domains": [
+            "Separation Technology",
+            "Dynamic Systems Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control system design and dynamic response modeling",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator-specific performance optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical simulation and control algorithm development",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative control system refinement and performance validation",
+            "collaboration_protocol": "Integrated modeling and simulation-driven design"
+        }
+    },
+    "clarification_questions": [
+        "What is the current range of feed condition variations?",
+        "What are the specific performance metrics for liquid discharge rate stability?",
+        "Are there any existing control mechanisms currently in place?",
+        "What is the typical composition and physical properties of the feed stream?"
+    ]
+}

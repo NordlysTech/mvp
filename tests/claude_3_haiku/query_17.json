@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our pressure swing adsorption unit experienced a sudden valve failure. How can we assess if this poses a significant safety risk to the surrounding equipment?",
+        "expanded_query": "Conduct a comprehensive safety risk assessment following an unexpected valve failure in a pressure swing adsorption unit, focusing on potential equipment and operational hazards",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Assessment",
+        "secondary_domains": [
+            "Equipment Integrity",
+            "Industrial Risk Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Primary safety risk evaluation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause failure analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "System integrity and potential cascading failure assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Sequential risk identification and mitigation strategy development",
+            "collaboration_protocol": "Integrated hazard analysis and recommendation generation"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of valve failed in the pressure swing adsorption unit?",
+        "Can you describe the immediate operational conditions when the valve failure occurred?",
+        "What was the pressure and temperature at the time of the valve failure?",
+        "Are there any immediate signs of damage to surrounding equipment?"
+    ]
+}

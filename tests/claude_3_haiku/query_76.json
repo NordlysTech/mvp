@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What's the typical efficiency range for crude oil distillation columns in petroleum refineries?",
+        "expanded_query": "Determine and analyze the standard operational efficiency ranges for industrial crude oil atmospheric and vacuum distillation columns in petroleum refinery settings",
+        "complexity_level": "low",
+        "primary_domain": "Petroleum Refining",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Performance"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation column efficiency assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Performance parameter validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Technical performance data compilation",
+            "collaboration_protocol": "Direct knowledge exchange"
+        }
+    },
+    "clarification_questions": [
+        "Are you interested in atmospheric or vacuum distillation columns?",
+        "What specific type of crude oil are you considering?",
+        "Do you want efficiency measured by energy consumption or separation quality?"
+    ]
+}

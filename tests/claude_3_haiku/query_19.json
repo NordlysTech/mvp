@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're working on a cryogenic separation process and experiencing fluctuations in the column's feed temperature. How can we implement an advanced control strategy to stabilize it?",
+        "expanded_query": "Design an advanced temperature control strategy to mitigate feed temperature variations in a cryogenic separation column, focusing on stabilization and precision control mechanisms",
+        "complexity_level": "advanced",
+        "primary_domain": "Cryogenic Process Control",
+        "secondary_domains": [
+            "Thermal Dynamics",
+            "Process Stability",
+            "Advanced Control Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced control strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature profile analysis and thermal dynamics assessment",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Cryogenic separation process validation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative control mechanism refinement and thermal stability optimization",
+            "collaboration_protocol": "Integrated feedback loop with continuous performance monitoring"
+        }
+    },
+    "clarification_questions": [
+        "What is the current temperature range and variation magnitude in the feed stream?",
+        "Are there specific temperature stability requirements for your separation process?",
+        "What type of temperature measurement and control instrumentation is currently in place?"
+    ]
+}

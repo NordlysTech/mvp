@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical energy requirements for separating complex hydrocarbon mixtures using advanced distillation techniques.",
+        "expanded_query": "Determine the theoretical energy consumption for the separation of complex hydrocarbon mixtures using advanced distillation methods, considering thermodynamic principles and process efficiency.",
+        "complexity_level": "high",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Thermodynamics",
+            "Process Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Energy requirement calculations and analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Complex mixture thermodynamic modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative energy requirement refinement",
+            "collaboration_protocol": "Integrated thermodynamic and process analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific components and composition of the complex hydrocarbon mixture?",
+        "Are there any constraints on the distillation process, such as operating pressure or temperature?",
+        "What level of separation purity is required for the final products?"
+    ]
+}

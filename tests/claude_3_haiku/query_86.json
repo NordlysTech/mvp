@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "What's the impact of feed composition variability on the performance of our crude distillation column?",
+        "expanded_query": "Analyze and quantify the performance variations in a crude distillation column resulting from fluctuations in feed stream composition",
+        "complexity_level": "medium",
+        "primary_domain": "Process Performance Analysis",
+        "secondary_domains": [
+            "Crude Oil Separation",
+            "Process Dynamics",
+            "Thermodynamic Variability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Composition impact assessment",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Performance variation modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Column design implications evaluation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Systematic performance deviation tracking",
+            "collaboration_protocol": "Integrated compositional sensitivity analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of feed composition variations you're experiencing?",
+        "Are there specific components in the crude oil that seem to cause more significant performance changes?",
+        "What performance metrics are most affected by these compositional fluctuations?"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "Retrieve the standard thermal stability limits for different hydrocarbon fractions during high-temperature distillation.",
+        "expanded_query": "Systematically document and analyze thermal decomposition temperature ranges for various hydrocarbon molecular fractions in high-temperature industrial distillation processes",
+        "complexity_level": "medium",
+        "primary_domain": "Thermodynamic Stability Analysis",
+        "secondary_domains": [
+            "Petroleum Engineering",
+            "Process Safety",
+            "Thermal Characterization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal stability data compilation and analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Safety Expert",
+                "role": "Thermal decomposition risk assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Comprehensive thermal stability data retrieval and risk characterization",
+            "collaboration_protocol": "Sequential data validation and safety parameter cross-referencing"
+        }
+    },
+    "clarification_questions": [
+        "What specific hydrocarbon fractions are you interested in analyzing?",
+        "What is the pressure range for the high-temperature distillation process?",
+        "Are you looking for absolute thermal limits or operational safety thresholds?"
+    ]
+}

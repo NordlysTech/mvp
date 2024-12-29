@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help me develop a comprehensive uncertainty quantification framework for our advanced ceramic membrane separation process used in high-temperature gas processing?",
+        "expanded_query": "Design a systematic uncertainty quantification methodology for advanced ceramic membrane separation technologies in high-temperature gas processing environments, focusing on comprehensive probabilistic and statistical modeling approaches",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Uncertainty Analysis",
+        "secondary_domains": [
+            "Process Reliability Engineering",
+            "High-Temperature Materials Science",
+            "Statistical Process Modeling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Uncertainty quantification framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane process characterization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "High-temperature performance validation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Iterative probabilistic modeling and performance uncertainty mapping",
+            "collaboration_protocol": "Integrated statistical analysis and technical validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of gases are being processed?",
+        "What is the typical temperature range for your high-temperature membrane process?",
+        "Do you have existing performance data or historical measurements for the ceramic membrane?",
+        "Are there specific performance metrics or failure modes you're most concerned about quantifying?"
+    ]
+}

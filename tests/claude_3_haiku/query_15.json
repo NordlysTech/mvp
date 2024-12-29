@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We are looking to develop a more energy-efficient approach to extract ethanol from a 95% azeotropic mixture. Any suggestions on alternative distillation or hybrid methods?",
+        "expanded_query": "Design an advanced, energy-efficient separation strategy for breaking the ethanol-water azeotrope with minimal thermal energy consumption using innovative distillation or hybrid separation techniques",
+        "complexity_level": "advanced",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Intensification",
+            "Energy Efficiency",
+            "Chemical Engineering Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Alternative separation method design",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Azeotrope breaking mechanism analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Energy efficiency modeling",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design of energy-efficient separation techniques",
+            "collaboration_protocol": "Integrated performance and thermodynamic optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the current energy consumption of your existing distillation process?",
+        "Are there any specific constraints on equipment modification or replacement?",
+        "What temperature and pressure ranges are typical in your current separation process?"
+    ]
+}

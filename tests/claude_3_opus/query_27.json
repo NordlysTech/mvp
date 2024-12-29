@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What's the best way to improve the recovery of valuable hydrocarbons in a three-phase separator without significantly increasing operating costs?",
+        "expanded_query": "Identify cost-effective process modifications or optimization strategies to enhance hydrocarbon recovery efficiency in a three-phase separator while minimizing the impact on operating expenses.",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "Economic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Cost-benefit analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative performance enhancement proposals",
+            "collaboration_protocol": "Integrated techno-economic evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What are the current operating conditions and performance metrics of the three-phase separator?",
+        "Are there any constraints on the types of process modifications that can be implemented?",
+        "What is the acceptable range for the increase in operating costs?"
+    ]
+}

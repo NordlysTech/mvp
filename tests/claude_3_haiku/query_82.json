@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical minimum number of stages required for effective kerosene-diesel separation in a petroleum distillation column.",
+        "expanded_query": "Determine the minimum theoretical number of separation stages needed to achieve precise fractionation between kerosene and diesel in a petroleum distillation column using thermodynamic principles",
+        "complexity_level": "medium",
+        "primary_domain": "Petroleum Distillation Design",
+        "secondary_domains": [
+            "Separation Technology",
+            "Thermodynamic Calculations"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation column stage calculation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Vapor-liquid equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Theoretical stage computation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative stage calculation and validation",
+            "collaboration_protocol": "Sequential computational refinement"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific boiling point ranges for kerosene and diesel in your system?",
+        "What is the desired purity specification for each fraction?",
+        "Are there any specific pressure conditions for the distillation column?"
+    ]
+}

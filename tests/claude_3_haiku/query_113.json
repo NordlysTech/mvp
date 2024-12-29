@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Coulsd you provide an energy optimization strategy for reducing pressure drop losses in separators handling viscous liquids.",
+        "expanded_query": "Develop an energy-efficient approach to minimize pressure drop and optimize separation performance for high-viscosity liquid systems",
+        "complexity_level": "medium",
+        "primary_domain": "Separation Process Optimization",
+        "secondary_domains": [
+            "Energy Efficiency",
+            "Fluid Dynamics",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and pressure drop analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Viscosity and energy transfer characterization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Energy optimization strategy development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated analysis of viscosity, pressure dynamics, and energy efficiency",
+            "collaboration_protocol": "Sequential optimization and performance validation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific viscosity range of the liquids being processed?",
+        "What are the current pressure drop characteristics in your separator?",
+        "Are there any specific constraints on separator geometry or modification?"
+    ]
+}

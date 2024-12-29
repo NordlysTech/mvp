@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing persistent fouling in our solvent regeneration system for CO2 capture. What  chemical additives or surface modifications could mitigate this long-term performance degradation? ",
+        "expanded_query": "Investigate potential chemical additives and surface modification strategies to prevent and mitigate fouling mechanisms in a CO2 capture solvent regeneration system, focusing on long-term performance enhancement",
+        "complexity_level": "medium",
+        "primary_domain": "Carbon Capture Process Optimization",
+        "secondary_domains": [
+            "Surface Engineering",
+            "Chemical Modification",
+            "Process Reliability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Solvent regeneration system fouling analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Chemical interaction and surface modification mechanism investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause analysis of performance degradation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Systematic fouling mitigation strategy development",
+            "collaboration_protocol": "Integrated performance enhancement approach"
+        }
+    },
+    "clarification_questions": [
+        "What is the current solvent composition in your regeneration system?",
+        "Can you describe the specific characteristics of the observed fouling?",
+        "What are the typical operating temperature and pressure conditions?",
+        "Have you previously attempted any fouling mitigation strategies?"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key thermodynamic considerations for designing a multistage hydrocarbon separation process in a refinery setting?",
+        "expanded_query": "Analyze and identify critical thermodynamic principles and parameters essential for designing an efficient multistage hydrocarbon separation process within a complex refinery environment",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Separation Engineering",
+        "secondary_domains": [
+            "Process Design",
+            "Hydrocarbon Processing",
+            "Refinery Operations"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium and thermal behavior analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process design and separation mechanism optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Overall process integration and feasibility assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Comprehensive thermodynamic parameter mapping and performance optimization",
+            "collaboration_protocol": "Iterative design refinement and cross-domain knowledge integration"
+        }
+    },
+    "clarification_questions": [
+        "What specific hydrocarbon mixtures are being processed?",
+        "What are the target separation specifications and purity requirements?",
+        "What are the expected temperature and pressure ranges in the refinery process?",
+        "Are there any specific constraints on energy consumption or equipment limitations?"
+    ]
+}

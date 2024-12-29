@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We're looking to optimize the design of our pressure leaf filter. What experimental approaches can we use to characterize the filtration performance across different particle size distributions?",
+        "expanded_query": "Identify experimental methods to evaluate and optimize the performance of a pressure leaf filter for a range of particle size distributions in order to improve the filter design.",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation",
+        "secondary_domains": [
+            "Particle Technology",
+            "Experimental Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration performance characterization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Experimental design and optimization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative experimental design refinement",
+            "collaboration_protocol": "Performance data analysis and design feedback loop"
+        }
+    },
+    "clarification_questions": [
+        "What is the current design of the pressure leaf filter?",
+        "What are the specific particle size distributions of interest?",
+        "Are there any constraints on the experimental methods that can be used?"
+    ]
+}

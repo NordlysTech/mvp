@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a comprehensive energy optimization strategy for reducing heat consumption in our multi-stage crude distillation column.",
+        "expanded_query": "Design an integrated energy efficiency improvement approach for minimizing thermal energy consumption in a multi-stage crude distillation unit, focusing on advanced heat recovery and process optimization techniques.",
+        "complexity_level": "advanced",
+        "primary_domain": "Energy Efficiency in Petroleum Refining",
+        "secondary_domains": [
+            "Process Thermodynamics",
+            "Heat Transfer Optimization",
+            "Industrial Energy Management"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal efficiency analysis and heat transfer optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control strategy development for energy reduction",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Economic feasibility and overall process integration assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative thermal performance optimization and cross-domain integration",
+            "collaboration_protocol": "Sequential analysis with continuous performance feedback"
+        }
+    },
+    "clarification_questions": [
+        "What is the current heat consumption profile of the distillation column?",
+        "Are there specific temperature zones where energy losses are most significant?",
+        "What are the current heat recovery mechanisms in place?",
+        "What are the economic constraints for implementing energy optimization strategies?"
+    ]
+}

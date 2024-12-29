@@ -1,0 +1,30 @@
+{
+    "query_analysis": {
+        "original_query": "Can you provide a detailed breakdown of the particle size limitations for different types of centrifugal separators?",
+        "expanded_query": "Provide a comprehensive analysis of the particle size ranges and limitations for various centrifugal separator designs, including disc-stack, decanter, and tubular bowl centrifuges.",
+        "complexity_level": "medium",
+        "primary_domain": "Centrifugal Separation Technology",
+        "secondary_domains": [
+            "Particle Size Analysis",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifugal separator design analysis",
+                "interaction_type": "lead"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Detailed technical report generation",
+            "collaboration_protocol": "Independent analysis and compilation"
+        }
+    },
+    "clarification_questions": [
+        "Are there any specific process industries or applications of interest?",
+        "Is the focus on liquid-liquid, liquid-solid, or both types of separations?"
+    ]
+}

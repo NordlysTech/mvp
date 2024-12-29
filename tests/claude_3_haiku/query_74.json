@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key factors affecting the cut diameter in a hydrocyclone separation process?",
+        "expanded_query": "Investigate and analyze the critical parameters influencing particle size separation performance in hydrocyclone technology, with specific focus on determining cut diameter determinants",
+        "complexity_level": "medium",
+        "primary_domain": "Particle Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamics and particle motion investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Comprehensive parameter interaction mapping",
+            "collaboration_protocol": "Systematic performance factor evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific fluid and particle composition in your hydrocyclone system?",
+        "What are the current operating conditions (flow rate, pressure, temperature)?",
+        "Are there any specific performance targets for particle separation?"
+    ]
+}

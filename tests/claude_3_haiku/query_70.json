@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unpredictable solids discharge in our hydrocyclone. Develop a comprehensive diagnostic framework to identify potential root causes.",
+        "expanded_query": "Conduct a systematic investigation into the inconsistent solids discharge mechanism in a hydrocyclone, developing a comprehensive diagnostic approach to identify underlying performance variability factors.",
+        "complexity_level": "medium",
+        "primary_domain": "Solid-Liquid Separation Diagnostics",
+        "secondary_domains": [
+            "Process Troubleshooting",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation and diagnostic framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Flow dynamics and performance variability analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone specific performance evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic hypothesis generation and cross-validation",
+            "collaboration_protocol": "Integrated root cause analysis with multidisciplinary perspective"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific characteristics of the solids being discharged?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide historical performance data of the hydrocyclone?",
+        "What is the typical particle size distribution in your process stream?"
+    ]
+}

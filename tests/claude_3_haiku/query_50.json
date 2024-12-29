@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a predictive model for eutectic salt formation in our deep eutectic solvent-based extraction process for rare earth elements. Can you help me characterize the thermodynamic boundaries?",
+        "expanded_query": "Develop a comprehensive thermodynamic predictive model to characterize salt formation mechanisms and phase boundaries in deep eutectic solvent systems for rare earth element extraction",
+        "complexity_level": "advanced",
+        "primary_domain": "Rare Earth Element Extraction",
+        "secondary_domains": [
+            "Thermodynamic Modeling",
+            "Solvent Chemistry",
+            "Phase Equilibria"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermodynamic phase boundary characterization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Predictive model development and numerical simulation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Extraction process insights and solvent system validation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative model refinement and phase boundary mapping",
+            "collaboration_protocol": "Sequential analysis with integrated validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific deep eutectic solvent composition are you currently using?",
+        "What temperature and pressure ranges are relevant for your extraction process?",
+        "Do you have existing experimental data on salt formation conditions?",
+        "What are the specific rare earth elements you're targeting in this extraction process?"
+    ]
+}

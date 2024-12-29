@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing challenges with particle separation in our hydrocyclone. Can you help me optimize the cut diameter by analyzing the impact of inlet velocity and density differentials?",
+        "expanded_query": "Investigate and optimize hydrocyclone particle separation performance by analyzing the quantitative relationship between inlet velocity, density differentials, and resulting cut diameter",
+        "complexity_level": "medium",
+        "primary_domain": "Particle Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone design and performance optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid dynamics and density differential analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Quantitative modeling of cut diameter parameters",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative performance parameter refinement",
+            "collaboration_protocol": "Sequential analysis and optimization"
+        }
+    },
+    "clarification_questions": [
+        "What is the current cut diameter of your hydrocyclone?",
+        "What are the specific particle size ranges you're trying to separate?",
+        "Can you provide the current inlet velocity and fluid density characteristics?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unexpected performance degradation in our continuous distillation column for petrochemical processing. The column efficiency has dropped by 15%, and we're seeing unusual temperature profiles.",
+        "expanded_query": "Investigate and diagnose the root causes of performance decline in a petrochemical continuous distillation column, focusing on efficiency loss and abnormal temperature distributions.",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "System dynamics analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Temperature profile investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic cross-referencing and hypothesis testing",
+            "collaboration_protocol": "Sequential problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "When did the performance degradation first become noticeable?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Can you provide detailed temperature profiles from before and after the performance drop?"
+    ]
+}

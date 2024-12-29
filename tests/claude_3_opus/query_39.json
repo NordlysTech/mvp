@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "In a vacuum distillation column, the overhead condenser is struggling to maintain pressure. Could this be due to non-condensables in the system?",
+        "expanded_query": "Investigate the potential impact of non-condensable gases on the performance of an overhead condenser in a vacuum distillation column, focusing on pressure control issues.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Non-condensable gas impact analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Pressure control system evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic data sharing and hypothesis testing",
+            "collaboration_protocol": "Iterative problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical operating pressure range for the vacuum distillation column?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "Are there any available measurements of non-condensable gas concentrations in the system?"
+    ]
+}

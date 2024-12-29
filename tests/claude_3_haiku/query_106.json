@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "What are the allowable material stresses for stainless steel separators operating at cryogenic temperatures?",
+        "expanded_query": "Determine the acceptable material stress limits for stainless steel pressure vessels and separators designed for operation under extreme low-temperature conditions",
+        "complexity_level": "medium",
+        "primary_domain": "Materials Engineering",
+        "secondary_domains": [
+            "Pressure Vessel Design",
+            "Cryogenic Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Material behavior analysis at low temperatures",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Pressure vessel design considerations",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Detailed material stress characterization at cryogenic temperatures",
+            "collaboration_protocol": "Integrated material performance assessment"
+        }
+    },
+    "clarification_questions": [
+        "What specific grade of stainless steel is being considered?",
+        "What is the exact temperature range of cryogenic operation?",
+        "What is the expected pressure range for the separator?"
+    ]
+}

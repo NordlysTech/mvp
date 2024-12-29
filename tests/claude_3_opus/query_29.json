@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "How can we implement model predictive control (MPC) for energy optimization in a multi-column distillation train?",
+        "expanded_query": "Design and implement a model predictive control strategy for optimizing energy consumption in a multi-column distillation process, considering process dynamics, constraints, and control objectives.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Control",
+        "secondary_domains": [
+            "Distillation Technology",
+            "Energy Optimization"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "MPC strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Distillation process characterization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Optimization problem formulation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative model refinement and control parameter tuning",
+            "collaboration_protocol": "Integrated process dynamics and control design"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific control objectives and constraints for the distillation process?",
+        "Are there any existing process models or historical data available for the distillation columns?",
+        "What are the current energy consumption levels and targets for optimization?"
+    ]
+}

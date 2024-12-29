@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We need to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system. What machine learning approaches could enhance our predictive maintenance?",
+        "expanded_query": "Develop a machine learning based fault detection and diagnostic strategy to enhance predictive maintenance capabilities for a continuous countercurrent extraction system.",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Fault Detection and Diagnosis",
+        "secondary_domains": [
+            "Machine Learning",
+            "Predictive Maintenance",
+            "Extraction Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Fault detection and diagnosis strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Machine learning algorithm development and optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process dynamics analysis and control strategy integration",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Iterative fault detection strategy refinement",
+            "collaboration_protocol": "Integrated machine learning model development"
+        }
+    },
+    "clarification_questions": [
+        "What are the most common faults observed in the countercurrent extraction system?",
+        "Are there any existing fault detection methods or sensors in place?",
+        "What are the key process variables and parameters to be monitored for fault detection?"
+    ]
+}

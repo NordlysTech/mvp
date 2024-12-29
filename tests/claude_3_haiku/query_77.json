@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "We're experiencing unexpected temperature profile variations in our atmospheric distillation unit. Can you help diagnose potential root causes?",
+        "expanded_query": "Investigate and diagnose the underlying causes of temperature profile anomalies in an atmospheric distillation unit, focusing on identifying potential sources of thermal instability",
+        "complexity_level": "medium",
+        "primary_domain": "Industrial Distillation Troubleshooting",
+        "secondary_domains": [
+            "Process Control",
+            "Thermodynamic Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of temperature variations",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal profile analysis and mechanism identification",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control system diagnostic review",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic cross-referencing and hypothesis testing",
+            "collaboration_protocol": "Integrated thermal anomaly investigation"
+        }
+    },
+    "clarification_questions": [
+        "When did these temperature profile variations first become noticeable?",
+        "Can you provide specific details about the observed temperature deviations?",
+        "Have there been any recent changes in feed composition or operating conditions?",
+        "What are the current temperature ranges at different stages of the distillation unit?"
+    ]
+}

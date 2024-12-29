@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "Can you provide a detailed breakdown of the particle size limitations for different types of centrifugal separators?",
+        "expanded_query": "Analyze and document the precise particle size separation capabilities across various centrifugal separator technologies, focusing on performance boundaries and classification criteria",
+        "complexity_level": "medium",
+        "primary_domain": "Particle Separation Technology",
+        "secondary_domains": [
+            "Mechanical Separation",
+            "Particle Size Analysis"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifugal separator performance characterization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Particle dynamics and separation mechanism analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Comprehensive particle size limitation mapping",
+            "collaboration_protocol": "Technical parameter cross-validation"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of centrifugal separators are you most interested in analyzing?",
+        "Are you focusing on industrial, laboratory, or specific sector applications?",
+        "What is the target particle size range of primary interest?"
+    ]
+}

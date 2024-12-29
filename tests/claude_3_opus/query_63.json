@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "We need to improve the solids discharge mechanism in our helical conveyor centrifuge. What advanced monitoring techniques can help us optimize the separation process?",
+        "expanded_query": "Identify and recommend advanced monitoring techniques to optimize the solids discharge mechanism and overall separation performance of a helical conveyor centrifuge.",
+        "complexity_level": "medium",
+        "primary_domain": "Centrifugal Separation Technology",
+        "secondary_domains": [
+            "Process Monitoring",
+            "Solids Handling"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifuge performance optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Advanced monitoring system design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative monitoring technique evaluation",
+            "collaboration_protocol": "Integrated performance enhancement strategy"
+        }
+    },
+    "clarification_questions": [
+        "What are the current limitations or issues with the solids discharge mechanism?",
+        "Are there any specific process variables or parameters that need to be monitored?",
+        "What are the desired separation performance targets or improvements?"
+    ]
+}

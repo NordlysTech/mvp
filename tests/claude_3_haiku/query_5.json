@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I am struggling to understand why the injection of water make-up suddenly decreases the desorption tower by a significant percentage ? is it related to the heat loss or more like an error in the DCS ?",
+        "expanded_query": "Investigate the root cause of performance reduction in a desorption tower following water make-up injection, exploring potential factors including heat transfer dynamics and distributed control system (DCS) functionality",
+        "complexity_level": "medium",
+        "primary_domain": "Process Troubleshooting",
+        "secondary_domains": [
+            "Thermal Engineering",
+            "Process Control",
+            "Industrial Instrumentation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of performance decline",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Heat transfer and thermal performance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "DCS functionality and potential system error verification",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Cross-domain diagnostic investigation and hypothesis testing",
+            "collaboration_protocol": "Sequential problem decomposition and integrated systems analysis"
+        }
+    },
+    "clarification_questions": [
+        "What was the exact percentage decrease in the desorption tower's performance?",
+        "Can you provide the specific temperature and pressure conditions before and after the water make-up injection?",
+        "Are there any recent maintenance records or changes in the DCS configuration?",
+        "What is the typical water make-up composition and temperature?"
+    ]
+}

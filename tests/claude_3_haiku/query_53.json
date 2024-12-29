@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a compact intensified separation unit for biorefinery applications. What innovative process intensification strategies could help us achieve higher mass transfer coefficients?",
+        "expanded_query": "Investigate advanced process intensification techniques to enhance mass transfer efficiency in a compact separation unit specifically designed for biorefinery processing environments",
+        "complexity_level": "advanced",
+        "primary_domain": "Process Intensification",
+        "secondary_domains": [
+            "Bioprocess Engineering",
+            "Separation Technology",
+            "Mass Transfer Enhancement"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Process intensification strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer coefficient optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "General Process Engineer",
+                "role": "Biorefinery application feasibility assessment",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design optimization and performance enhancement",
+            "collaboration_protocol": "Integrated strategy development with multi-dimensional performance analysis"
+        }
+    },
+    "clarification_questions": [
+        "What specific biomass or biochemical streams are you targeting in the separation process?",
+        "What are the current mass transfer coefficient limitations in your existing design?",
+        "Are there any specific temperature, pressure, or material constraints for the separation unit?",
+        "What is the desired scale and throughput of the biorefinery separation unit?"
+    ]
+}

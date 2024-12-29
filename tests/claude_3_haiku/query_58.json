@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I need to develop a comprehensive predictive model for solids discharge in our nozzle discharge solid-bowl centrifuge. What factors should we prioritize to minimize operational instabilities?",
+        "expanded_query": "Design a comprehensive predictive modeling approach for solids discharge mechanism in a nozzle discharge solid-bowl centrifuge, focusing on identifying and mitigating key operational instability factors",
+        "complexity_level": "advanced",
+        "primary_domain": "Centrifugal Separation Process Modeling",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Solid-Liquid Separation",
+            "Operational Stability"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Centrifuge discharge mechanism analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational instability predictive modeling",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Quantitative model development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative model refinement and performance characterization",
+            "collaboration_protocol": "Sequential analysis and integrated modeling approach"
+        }
+    },
+    "clarification_questions": [
+        "What is the current composition of solids being processed?",
+        "What are the existing operational parameters of the centrifuge?",
+        "Have you observed specific patterns of discharge instability?",
+        "What is the typical feed rate and solid concentration?"
+    ]
+}

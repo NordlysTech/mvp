@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a risk assessment framework for potential solvent carryover in our amine-based gas sweetening distillation process.",
+        "expanded_query": "Design a comprehensive risk assessment methodology to identify, quantify, and mitigate potential solvent carryover risks in an amine-based gas sweetening distillation system, focusing on process safety and operational integrity.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Safety Risk Assessment",
+        "secondary_domains": [
+            "Chemical Process Engineering",
+            "Gas Sweetening Technology",
+            "Distillation Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Safety Expert",
+                "role": "Risk assessment framework development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Amine process and distillation system analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Process control mechanism evaluation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Safety Expert",
+            "information_flow": "Systematic risk identification, quantification, and mitigation strategy development",
+            "collaboration_protocol": "Integrated risk assessment with technical process insights"
+        }
+    },
+    "clarification_questions": [
+        "What is the current solvent composition in the gas sweetening process?",
+        "Have there been any previous incidents of solvent carryover?",
+        "What are the specific operational parameters of the distillation column?",
+        "What are the environmental and safety regulations governing this process?"
+    ]
+}

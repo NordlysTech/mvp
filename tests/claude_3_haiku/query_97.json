@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "Our gas-liquid separator is showing inconsistent liquid levels. Could this indicate a control valve issue or demister malfunction? Explain the likely causes and remedies.",
+        "expanded_query": "Diagnose the root causes of inconsistent liquid levels in a gas-liquid separator, investigating potential control valve and demister performance issues, and develop targeted remediation strategies.",
+        "complexity_level": "medium",
+        "primary_domain": "Process Equipment Troubleshooting",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Control"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation of liquid level inconsistencies",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control valve performance analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister functionality assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Sequential diagnostic analysis and cross-verification of potential failure modes",
+            "collaboration_protocol": "Integrated problem decomposition and systematic evaluation"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical operating range for liquid levels in this separator?",
+        "Have there been any recent modifications or maintenance activities on the control valve or demister?",
+        "Can you provide specific details about the observed liquid level inconsistencies (frequency, magnitude)?",
+        "What are the current process conditions (temperature, pressure, flow rates) during these inconsistencies?"
+    ]
+}

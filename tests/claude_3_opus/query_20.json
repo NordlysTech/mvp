@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "What's the maximum safe operating temperature for zeolite adsorbents in hydrocarbon drying applications to avoid structural degradation?",
+        "expanded_query": "Determine the highest temperature at which zeolite adsorbents can be safely used in hydrocarbon drying processes without compromising their structural integrity.",
+        "complexity_level": "medium",
+        "primary_domain": "Adsorption Technology",
+        "secondary_domains": [
+            "Zeolite Materials",
+            "Process Safety"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Adsorption process analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Thermal stability assessment",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Zeolite property and performance data exchange",
+            "collaboration_protocol": "Iterative temperature limit refinement"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of zeolites are being considered for this application?",
+        "Are there any additional process conditions or constraints that need to be taken into account?"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What's the best control approach for optimizing split ratios in a membrane separation system when feed composition fluctuates?",
+        "expanded_query": "Develop an adaptive control strategy for membrane separation systems to dynamically optimize split ratios under variable feed composition conditions",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Process Control",
+        "secondary_domains": [
+            "Process Dynamics",
+            "Advanced Control Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Control strategy design and implementation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane system performance optimization",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Feed composition impact analysis",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Real-time adaptive control parameter refinement",
+            "collaboration_protocol": "Iterative performance feedback and dynamic model adjustment"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical range of feed composition variations?",
+        "What are the current membrane system's baseline performance metrics?",
+        "Are there specific constraints or performance targets for the split ratio optimization?"
+    ]
+}

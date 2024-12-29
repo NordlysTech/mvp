@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "I'm designing a membrane filtration system for challenging liquid-solid separations. What multi-scale modeling approaches could help us predict performance across different operating conditions?",
+        "expanded_query": "Investigate advanced multi-scale computational modeling techniques for predicting membrane filtration performance in complex liquid-solid separation systems under varying operational parameters",
+        "complexity_level": "advanced",
+        "primary_domain": "Membrane Separation Technology",
+        "secondary_domains": [
+            "Computational Modeling",
+            "Process Simulation",
+            "Materials Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane system design and performance analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Multi-scale modeling strategy development",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Molecular-level interaction modeling",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated multi-scale modeling approach development",
+            "collaboration_protocol": "Iterative model refinement and performance prediction"
+        }
+    },
+    "clarification_questions": [
+        "What specific liquid-solid system are you targeting?",
+        "What are the key performance metrics you want to predict?",
+        "Do you have existing experimental data to validate the multi-scale models?",
+        "What computational resources are available for these modeling approaches?"
+    ]
+}

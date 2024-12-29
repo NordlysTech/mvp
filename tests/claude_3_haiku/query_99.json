@@ -1,0 +1,42 @@
+{
+    "query_analysis": {
+        "original_query": "How does varying the gas-to-liquid ratio impact separation efficiency in high-flow-rate demisters, and what operational adjustments can mitigate inefficiencies?",
+        "expanded_query": "Investigate the relationship between gas-to-liquid ratio variations and separation performance in high-flow-rate demister systems, with a focus on identifying operational strategies to optimize efficiency and mitigate performance limitations",
+        "complexity_level": "advanced",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Process Optimization",
+            "Industrial Separation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Demister performance analysis and efficiency optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Gas-liquid interaction mechanism investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational parameter adjustment strategies",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated performance analysis and optimization recommendations",
+            "collaboration_protocol": "Sequential mechanism understanding and parameter refinement"
+        }
+    },
+    "clarification_questions": [
+        "What is the current gas-to-liquid ratio range in your demister system?",
+        "What are the specific flow rates and operating conditions of the current system?",
+        "Are there any specific performance metrics or constraints for the separation process?"
+    ]
+}

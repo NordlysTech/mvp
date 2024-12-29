@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Our filtration process is struggling with cake resistance. How can we develop an advanced mathematical model to predict filtration rate considering varying cake resistance and medium properties?",
+        "expanded_query": "Develop a comprehensive mathematical modeling approach to predict filtration rate dynamics by incorporating complex interactions between cake resistance, filtration medium characteristics, and process parameters",
+        "complexity_level": "advanced",
+        "primary_domain": "Filtration Process Modeling",
+        "secondary_domains": [
+            "Mathematical Modeling",
+            "Process Engineering",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Advanced mathematical model development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Filtration process expertise and validation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Medium properties and resistance mechanism analysis",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Mathematical Solver",
+            "information_flow": "Iterative model refinement and parameter validation",
+            "collaboration_protocol": "Integrated modeling approach with cross-domain verification"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of filtration medium are you currently using?",
+        "Can you provide details about the current observed cake resistance characteristics?",
+        "What are the typical operating conditions (temperature, pressure, flow rate) for your filtration process?",
+        "Are there any specific performance metrics or constraints for the filtration rate prediction?"
+    ]
+}

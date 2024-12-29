@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "We need to develop a robust fault detection and diagnostic strategy for our continuous countercurrent extraction system. What machine learning approaches could enhance our predictive maintenance? ",
+        "expanded_query": "Design an advanced machine learning-based predictive maintenance strategy for a continuous countercurrent extraction system, focusing on intelligent fault detection and diagnostic capabilities",
+        "complexity_level": "advanced",
+        "primary_domain": "Predictive Maintenance",
+        "secondary_domains": [
+            "Machine Learning",
+            "Process Control",
+            "Fault Diagnostics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Machine learning strategy development",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Fault detection mechanism design",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Algorithmic model development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Dynamics & Control Expert",
+            "information_flow": "Iterative machine learning model refinement and validation",
+            "collaboration_protocol": "Cross-disciplinary algorithmic development and performance optimization"
+        }
+    },
+    "clarification_questions": [
+        "What specific types of faults are most common in your countercurrent extraction system?",
+        "Do you have historical fault and performance data available for model training?",
+        "What are the current maintenance practices and key performance indicators?",
+        "What computational resources are available for implementing machine learning solutions?"
+    ]
+}

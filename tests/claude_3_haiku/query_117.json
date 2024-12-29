@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "How does varying the operating pressure influence mass transfer rates in a cryogenic distillation process? Explain the implications on separation efficiency.",
+        "expanded_query": "Investigate the relationship between operating pressure variations and mass transfer kinetics in cryogenic distillation, with a comprehensive analysis of separation performance implications",
+        "complexity_level": "advanced",
+        "primary_domain": "Cryogenic Separation Thermodynamics",
+        "secondary_domains": [
+            "Mass Transfer Phenomena",
+            "Process Optimization",
+            "Thermodynamic Engineering"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Mass transfer rate and pressure correlation analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separation efficiency evaluation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Quantitative modeling of pressure-transfer relationships",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative thermodynamic parameter analysis and performance mapping",
+            "collaboration_protocol": "Integrated modeling and performance interpretation"
+        }
+    },
+    "clarification_questions": [
+        "What specific components are being separated in the cryogenic distillation process?",
+        "What is the current operating pressure range?",
+        "Are there any specific temperature constraints in the process?",
+        "What is the desired separation purity or performance target?"
+    ]
+}

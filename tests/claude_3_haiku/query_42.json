@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "What is the most effective way to prevent weeping in sieve trays used in crude oil fractionation towers?",
+        "expanded_query": "Investigate and develop comprehensive strategies to mitigate weeping phenomenon in sieve trays during crude oil fractionation, focusing on optimal design and operational parameters",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Column Design",
+        "secondary_domains": [
+            "Process Equipment Optimization",
+            "Fluid Dynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Sieve tray design and weeping mechanism analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Fluid flow and phase behavior investigation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Operational parameter optimization",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Integrated analysis of tray hydraulics and performance mitigation",
+            "collaboration_protocol": "Sequential problem decomposition and technical solution development"
+        }
+    },
+    "clarification_questions": [
+        "What is the current liquid loading rate in the fractionation tower?",
+        "Can you provide details about the existing sieve tray design and configuration?",
+        "What are the typical temperature and pressure conditions in the tower?"
+    ]
+}

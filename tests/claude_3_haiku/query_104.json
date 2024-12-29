@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Solve for the critical droplet size distribution in a vertical gas-liquid separator where the velocity profile is non-uniform and governed by a parabolic function.",
+        "expanded_query": "Develop a comprehensive mathematical model to determine droplet size distribution in a vertical gas-liquid separator with a complex, non-uniform velocity profile characterized by a parabolic velocity function.",
+        "complexity_level": "advanced",
+        "primary_domain": "Multiphase Flow Separation",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Particle Characterization",
+            "Separation Technology"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Velocity profile and droplet dynamics analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical modeling of droplet size distribution",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and performance validation",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative numerical modeling and velocity profile characterization",
+            "collaboration_protocol": "Integrated mathematical and physical modeling approach"
+        }
+    },
+    "clarification_questions": [
+        "What are the specific fluid properties of the gas and liquid phases?",
+        "Can you provide the exact mathematical description of the parabolic velocity profile?",
+        "What are the geometric dimensions of the vertical separator?",
+        "What are the inlet conditions and operating pressures?"
+    ]
+}

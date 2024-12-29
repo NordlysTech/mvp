@@ -1,0 +1,35 @@
+{
+    "query_analysis": {
+        "original_query": "What are the key factors affecting the cut diameter in a hydrocyclone separation process?",
+        "expanded_query": "Identify and explain the primary variables and design parameters that influence the particle cut size in a hydrocyclone used for solid-liquid separation.",
+        "complexity_level": "medium",
+        "primary_domain": "Particle Separation Technology",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Hydrocyclone design analysis",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Flow pattern investigation",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Design parameter impact assessment",
+            "collaboration_protocol": "Integrated performance analysis"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific application and material system for the hydrocyclone?",
+        "Are there any constraints on the acceptable cut diameter range?"
+    ]
+}

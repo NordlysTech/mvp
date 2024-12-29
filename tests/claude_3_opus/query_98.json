@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Develop a framework for optimizing the residence time in horizontal separators for maximized liquid dropout efficiency in high-pressure systems.",
+        "expanded_query": "Design a comprehensive methodology to determine the optimal residence time in horizontal separators operating under high-pressure conditions, with the primary objective of maximizing liquid separation efficiency.",
+        "complexity_level": "high",
+        "primary_domain": "Separation Technology",
+        "secondary_domains": [
+            "Process Optimization",
+            "High-Pressure Systems"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Separator design and optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Phase equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Optimization model development",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative design refinement and performance evaluation",
+            "collaboration_protocol": "Integrated modeling and simulation"
+        }
+    },
+    "clarification_questions": [
+        "What is the typical operating pressure range for the high-pressure systems?",
+        "Are there any constraints on the separator geometry or dimensions?",
+        "What are the key fluid properties and flow rates for the system?"
+    ]
+}

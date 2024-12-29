@@ -1,0 +1,36 @@
+{
+    "query_analysis": {
+        "original_query": "I have an issue with a membrane separation system for desalination. The fouling rate of our membranes has drastically increased. What operational factors should we check?",
+        "expanded_query": "Investigate and identify the key operational factors contributing to the increased fouling rate in a desalination membrane separation system.",
+        "complexity_level": "medium",
+        "primary_domain": "Membrane Separation Troubleshooting",
+        "secondary_domains": [
+            "Desalination",
+            "Fouling Mitigation"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Troubleshooter",
+                "role": "Root cause investigation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Membrane performance analysis",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Troubleshooter",
+            "information_flow": "Diagnostic data sharing and hypothesis testing",
+            "collaboration_protocol": "Iterative problem decomposition and integrated analysis"
+        }
+    },
+    "clarification_questions": [
+        "What type of membranes are being used in the desalination system?",
+        "Have there been any recent changes in feed water composition or pretreatment?",
+        "What are the current operating conditions (pressure, temperature, flow rates)?"
+    ]
+}

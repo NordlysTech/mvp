@@ -1,0 +1,43 @@
+{
+    "query_analysis": {
+        "original_query": "Calculate the theoretical energy requirements for separating complex hydrocarbon mixtures using advanced distillation techniques.",
+        "expanded_query": "Perform a comprehensive thermodynamic analysis to determine the minimum energy consumption for advanced distillation processes targeting complex hydrocarbon mixture separation",
+        "complexity_level": "advanced",
+        "primary_domain": "Thermodynamic Energy Analysis",
+        "secondary_domains": [
+            "Separation Technology",
+            "Process Efficiency",
+            "Chemical Engineering Thermodynamics"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Theoretical energy requirement calculation",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Advanced distillation technique validation",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Mathematical Solver",
+                "role": "Numerical energy calculation and verification",
+                "interaction_type": "advisory"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Thermodynamics Expert",
+            "information_flow": "Iterative energy consumption modeling and optimization",
+            "collaboration_protocol": "Sequential analysis and cross-validation of theoretical energy requirements"
+        }
+    },
+    "clarification_questions": [
+        "What is the specific composition of the hydrocarbon mixture?",
+        "What are the target separation specifications?",
+        "What temperature and pressure ranges are being considered?",
+        "Are there any specific advanced distillation techniques of interest?"
+    ]
+}

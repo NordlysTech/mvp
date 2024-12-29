@@ -1,0 +1,41 @@
+{
+    "query_analysis": {
+        "original_query": "Can you help with tray design in a distillation column to maximize liquid-vapor contact and minimize weeping?",
+        "expanded_query": "Design distillation column trays to optimize liquid-vapor contact efficiency while preventing weeping and entrainment issues.",
+        "complexity_level": "medium",
+        "primary_domain": "Distillation Tray Design",
+        "secondary_domains": [
+            "Fluid Dynamics",
+            "Mass Transfer"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Tray design optimization",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Vapor-liquid equilibrium analysis",
+                "interaction_type": "collaborative"
+            },
+            {
+                "agent_name": "Dynamics & Control Expert",
+                "role": "Flow regime characterization",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Iterative tray performance enhancement",
+            "collaboration_protocol": "Integrated hydrodynamic and mass transfer analysis"
+        }
+    },
+    "clarification_questions": [
+        "What are the feed composition and flow rate for the distillation column?",
+        "Are there any specific tray types or configurations you want to consider?",
+        "What are the desired product purities and recovery targets?"
+    ]
+}

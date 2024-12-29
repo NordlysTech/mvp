@@ -1,0 +1,37 @@
+{
+    "query_analysis": {
+        "original_query": "Provide the standard height of a mass transfer unit (HTU) for a random packing system.",
+        "expanded_query": "Determine the standard height of a mass transfer unit (HTU) for a typical random packing system in mass transfer operations",
+        "complexity_level": "low",
+        "primary_domain": "Mass Transfer Unit Design",
+        "secondary_domains": [
+            "Chemical Engineering",
+            "Mass Transfer Operations",
+            "Process Equipment Design"
+        ]
+    },
+    "agent_allocation": {
+        "selected_agents": [
+            {
+                "agent_name": "Separation Technologist",
+                "role": "Mass transfer unit height calculation and specification",
+                "interaction_type": "lead"
+            },
+            {
+                "agent_name": "Thermodynamics Expert",
+                "role": "Validate theoretical aspects of mass transfer unit design",
+                "interaction_type": "collaborative"
+            }
+        ],
+        "communication_strategy": {
+            "primary_communication_agent": "Separation Technologist",
+            "information_flow": "Technical specification and design parameter verification",
+            "collaboration_protocol": "Direct technical consultation"
+        }
+    },
+    "clarification_questions": [
+        "What specific type of random packing material are you considering?",
+        "What are the operating conditions (temperature, pressure, fluid properties)?",
+        "Are you looking for a theoretical or practical HTU value?"
+    ]
+}
