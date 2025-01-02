@@ -11,3 +11,5 @@ prometheus_client
 langchain-google-genai
 openpyxl
 pyyaml
+flask-mysqldb
+flask-bcrypt

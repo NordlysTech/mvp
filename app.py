@@ -15,7 +15,21 @@ from utils.U1_FilesUtils import U1_FilesUtils
 from services.S1_PromptLogic import S1_PromptLogic
 from services.S2_ClassifierLogic import Classifier
 
+from flask_mysqldb import MySQL
+from flask import Flask, render_template, request, flash, redirect, url_for
+from flask_bcrypt import Bcrypt
+from MySQLdb.cursors import DictCursor  # Ensure this import is added
+from flask import session
+
+from itsdangerous import URLSafeTimedSerializer
+from services.users_utils import insert_user, get_user_by_username, update_user_password
+from services.email_utils import send_email
+from services.llm_utils import instantiate_llm_model, get_json_from_response
+from services.config_utils import load_config, get_config
+
+
 load_dotenv()
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Set the path to the FAISS index
@@ -29,6 +43,25 @@ SOLVER_PROMPT = U1_FilesUtils.load_prompt("prompts/solver_prompt.txt")
 prompt_logic = S1_PromptLogic(planner_prompt=PLANNER_PROMPT, solver_prompt=SOLVER_PROMPT, faiss_path=FAISS_PATH)
 
 app = Flask(__name__)
+
+
+bcrypt = Bcrypt(app)
+
+
+app.config['MYSQL_USER'] = os.getenv("MYSQL_USER")  
+app.config['MYSQL_PASSWORD'] = os.getenv("MYSQL_PASSWORD") 
+app.config['MYSQL_DB'] = os.getenv("MYSQL_DB") 
+app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST")  # Docker service name
+
+
+
+# Token serializer for secure password recovery links
+serializer = URLSafeTimedSerializer(app.secret_key)
+
+
+# Create MySQL instance
+mysql = MySQL(app)
+
 
 
 # Example metrics
@@ -179,6 +212,117 @@ def upload_file():
 def clear_file_data():
     prompt_logic.clear_file_data()
     return jsonify({'message': 'File data cleared'})
+
+
+# Route for login page
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        
+        # Check user credentials using the utility function
+        user = get_user_by_username(mysql, username)
+        
+        if user and bcrypt.check_password_hash(user['password'], password):
+            session['loggedin'] = True
+            session['username'] = user['username']
+            flash('Login successful!', 'success')
+            return redirect('/')
+        else:
+            flash('Invalid username or password', 'danger')
+    
+    return render_template('login.html')
+
+
+# Route for sign-up page
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+        
+        try:
+            # Insert user using the utility function
+            insert_user(mysql, username, hashed_password)
+            flash('Account created successfully! You can now log in.', 'success')
+            return redirect(url_for('login'))
+        except Exception as e:
+            flash(f'Error: {str(e)}', 'danger')
+    
+    return render_template('signup.html')
+
+
+@app.route('/logout', methods=['POST'])
+def logout():
+    session.pop('loggedin', None)
+    session.pop('username', None)
+    
+    flash('You have been logged out.', 'success')
+    
+    return redirect(url_for('login'))
+
+
+# Route for password recovery
+@app.route('/recover', methods=['GET', 'POST'])
+def recover():
+    if request.method == 'POST':
+        email = request.form['email']
+        print("email : ",email)
+        # Get user by email
+        user = get_user_by_username(mysql, email)
+        print("len(user) : ",len(user))
+        print("user : ",user)
+        if user:
+            user_id = user['id']
+            username = user['username']
+
+            token = serializer.dumps(email, salt='password-recovery-salt')
+            reset_link = f"{request.host_url}reset_password/{token}"
+
+            subject = "Password Reset Request"
+            message = f"""Hi {username},
+            
+Click the link below to reset your password:
+{reset_link}
+
+This link will expire in 30 minutes. If you did not request this, please ignore this email.
+"""
+
+
+
+            if send_email(subject, message, email):
+                flash('A password reset link has been sent to your email.', 'success')
+            else:
+                flash('There was an error sending the email. Please try again later.', 'danger')
+        else:
+            flash('This email is not registered in our system.', 'danger')
+
+        return redirect(url_for('recover'))
+    return render_template('recover.html')
+
+
+# Route for resetting the password
+@app.route('/reset_password/<token>', methods=['GET', 'POST'])
+def reset_password(token):
+    try:
+        email = serializer.loads(token, salt='password-recovery-salt', max_age=3600)
+    except Exception:
+        flash('The password reset link is invalid or has expired.', 'danger')
+        return redirect(url_for('recover'))
+    
+    if request.method == 'POST':
+        new_password = request.form['password']
+        hashed_password = bcrypt.generate_password_hash(new_password).decode('utf-8')
+        
+        # Update password using the utility function
+        update_user_password(mysql, email, hashed_password)
+        
+        flash('Your password has been updated successfully!', 'success')
+        return redirect(url_for('login'))
+    
+    return render_template('reset_password.html')
 
 
 # Expose metrics to Prometheus

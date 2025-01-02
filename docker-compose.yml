@@ -6,7 +6,18 @@ services:
       - mvp_network
     ports:
       - "5008:5000"
-
+  mysql-container:
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: your_database
+      MYSQL_USER: flask_user
+      MYSQL_PASSWORD: your_password
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - mvp_network
   prometheus:
     container_name: prometheus
     image: prom/prometheus
@@ -16,7 +27,6 @@ services:
       - "9090:9090"
     volumes:
       - ${PROMETHEUS_CONFIG_PATH}:/etc/prometheus/prometheus.yml
-
   grafana:
     container_name: grafana
     image: grafana/grafana
