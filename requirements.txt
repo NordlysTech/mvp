@@ -3,12 +3,12 @@ langchain
 langchain-community
 langchain-cohere
 langchain-anthropic
+langchain-google-genai
 Flask
 PyMuPDF
 reportlab
 faiss-cpu
 prometheus_client
-langchain-google-genai
 openpyxl
 pyyaml
 flask-mysqldb

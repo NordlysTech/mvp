@@ -1,14 +1,14 @@
 import openai
 import os
 from dotenv import load_dotenv
-from llm_utils import instantiate_llm_model
+from services.llm_utils import instantiate_llm_model
 
 import json
 from abc import ABC, abstractmethod
 import re
 
 
-from config_utils import load_config, get_config
+from services.config_utils import load_config, get_config
 
 config_path = "config.yaml"
 config = load_config(config_path)

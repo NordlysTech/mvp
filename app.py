@@ -54,6 +54,8 @@ app.config['MYSQL_DB'] = os.getenv("MYSQL_DB")
 app.config['MYSQL_HOST'] = os.getenv("MYSQL_HOST")  # Docker service name
 
 
+app.secret_key = os.getenv("secret_key")  # Use a long, random string
+
 
 # Token serializer for secure password recovery links
 serializer = URLSafeTimedSerializer(app.secret_key)

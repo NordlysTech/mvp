@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 import json
 import re
-from S3_SupportAgents import KnowledgeRetriever, EquationsFormulasRetriever, PhysChemPropertiesRetriever, IndustryStandardsRetriever
-from S4_SolverAgents import SuperSolverAgent
-from llm_utils import instantiate_llm_model, get_json_from_response
-from config_utils import load_config, get_config
+from services.S3_SupportAgents import KnowledgeRetriever, EquationsFormulasRetriever, PhysChemPropertiesRetriever, IndustryStandardsRetriever
+from services.S4_SolverAgents import SuperSolverAgent
+from services.llm_utils import instantiate_llm_model, get_json_from_response
+from services.config_utils import load_config, get_config
 
 config_path = "config.yaml"
 config = load_config(config_path)
