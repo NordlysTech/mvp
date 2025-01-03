@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+
 azure_openai_api_key = os.getenv("AZURE_OPENAI_API_KEY")
 azure_openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 
@@ -52,6 +52,7 @@ def instantiate_gemini20_flash_exp(temperature=0.2, max_tokens=2000):
     return model
 
 def instantiate_gpt35_openai(temperature=0.2, max_tokens=2000):
+    openai.api_key = os.getenv("OPENAI_API_KEY")
     model = ChatOpenAI(
         temperature=temperature,
         model="gpt-3.5-turbo-16k",
@@ -101,6 +102,15 @@ def instantiate_claude_3_haiku(temperature=0.2, max_tokens=2000):
     model = ChatAnthropic(model='claude-3-5-haiku-20241022', temperature = temperature, max_tokens=max_tokens)
     return model
 
+def instantiate_llm_studio(temperature=0.2, max_tokens=2000):
+    openai.api_base = "http://host.docker.internal:1234/v1"
+    model = ChatOpenAI(
+        temperature=temperature,
+        max_tokens=max_tokens,
+        openai_api_base = "http://host.docker.internal:1234/v1"
+    )
+    return model
+
 def instantiate_llm_model(model_name, **kwargs):
     switch_dict = {
         "cohere" : instantiate_cohere,
@@ -110,7 +120,8 @@ def instantiate_llm_model(model_name, **kwargs):
         "gpt35_openai" : instantiate_gpt35_openai,
         "claude_3_opus" : instantiate_claude_3_opus,
         "claude_3_sonnet" : instantiate_claude_3_sonnet,
-        "claude_3_haiku" : instantiate_claude_3_haiku
+        "claude_3_haiku" : instantiate_claude_3_haiku,
+        "llm_studio" : instantiate_llm_studio
     }
     # Get the function for the given model_name, or default if not found
     selected_case = switch_dict.get(model_name)
