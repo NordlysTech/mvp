@@ -171,15 +171,15 @@ def query():
     is_detailed = data['isDetailed']
 
     # Classify query
-    print(query_text)
     classifier_result = Classifier().classify_query(query_text)
-    print(classifier_result)
-    
+    print("classifier_result ***: ",classifier_result)
+    print("is_detailed : ",is_detailed)
     if is_detailed:
         response, title = prompt_logic.generate_detailed_report(query_text)
     else:
         response, title = prompt_logic.generate_express_info(query_text)
     
+    print("response ***:", response)
     if title == "No Information Available":
         return jsonify({
             'error': True,
@@ -189,7 +189,7 @@ def query():
     
     return jsonify({
         'error': False,
-        'response': classifier_result,
+        'response': response,
         'title': title
     })
 

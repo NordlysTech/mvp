@@ -1,5 +1,4 @@
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain_cohere import ChatCohere
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
 from langchain_community.vectorstores import FAISS
@@ -13,6 +12,14 @@ import fitz  # PyMuPDF for PDF processing
 
 #Import S2_ClassifierLogic
 from services.S2_ClassifierLogic import Classifier
+from services.config_utils import load_config, get_config
+from services.llm_utils import instantiate_llm_model
+
+config_path = "config.yaml"
+config = load_config(config_path)
+
+model_to_use = get_config(config, "llms", "llm_name")
+
 
 class S1_PromptLogic:
     def __init__(self, planner_prompt: str, solver_prompt: str, faiss_path: str):
@@ -41,18 +48,9 @@ class S1_PromptLogic:
             self.db = FAISS.from_texts(["placeholder"], self.embedding_function)
             self.db.save_local(self.faiss_path)
         # To use Cohere model uncomment the following :    
-        self.planner_model = ChatCohere(
-            temperature=0.7,
-            max_tokens=800,
-        )
-        self.solver_model = ChatCohere(
-            temperature=0.2,
-            max_tokens=3500,
-        )
-        self.express_model = ChatCohere(
-            temperature=0.3,
-            max_tokens=1000,
-        )
+        self.planner_model = instantiate_llm_model(model_to_use, temperature=0.7, max_tokens=800)
+        self.solver_model = instantiate_llm_model(model_to_use, temperature=0.2, max_tokens=3500)
+        self.express_model = instantiate_llm_model(model_to_use, temperature=0.3, max_tokens=1000)
         
         ''' 
         # To use Gemini models uncomment the following
