@@ -3,3 +3,8 @@
 faiss_db_opt/index.faiss
 faiss_db_opt/index.pkl
 __pycache__/
+
+
+app/backend/faiss_db_opt
+app/frontend/node_modules
+app/frontend/.next
