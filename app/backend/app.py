@@ -26,6 +26,7 @@ from services.users_utils import insert_user, get_user_by_username, update_user_
 from services.email_utils import send_email
 from services.llm_utils import instantiate_llm_model, get_json_from_response
 from services.config_utils import load_config, get_config
+from flask_cors import CORS
 
 
 load_dotenv()
@@ -43,6 +44,7 @@ SOLVER_PROMPT = U1_FilesUtils.load_prompt("prompts/solver_prompt.txt")
 prompt_logic = S1_PromptLogic(planner_prompt=PLANNER_PROMPT, solver_prompt=SOLVER_PROMPT, faiss_path=FAISS_PATH)
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 
 bcrypt = Bcrypt(app)
@@ -181,17 +183,18 @@ def query():
     
     print("response ***:", response)
     if title == "No Information Available":
-        return jsonify({
+        return jsonify([{
             'error': True,
-            'message': 'No relevant information found in the database.',
+            'content': 'No relevant information found in the database.',
             'title': 'No Information Available'
-        }), 200  # Return 200 OK, but with an error flag
+        }]), 200  # Return 200 OK, but with an error flag
     
-    return jsonify({
+    return jsonify([{
         'error': False,
-        'response': response,
-        'title': title
-    })
+        'content': response,
+        'title': title,
+        'type': 'technical'
+    }])
 
 @app.route('/upload', methods=['POST'])
 def upload_file():

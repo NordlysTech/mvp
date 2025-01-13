@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { getMessages } from '../src/api'
 
 interface Message {
   id: string;
@@ -33,85 +34,7 @@ interface ProjectWorkspaceProps {
   updateConversation: (updatedConversation: Conversation) => void;
 }
 
-const mockResponses = [
-  {
-    content: `Let's analyze the heat exchanger optimization in detail:
 
-| Parameter | Current | Optimized | Improvement |
-|-----------|---------|-----------|-------------|
-| Efficiency | 75% | 92% | +17% |
-| Heat Transfer Coefficient | 580 W/m²K | 850 W/m²K | +47% |
-| Pressure Drop | 0.8 bar | 0.6 bar | -25% |
-| Operating Cost | $12,000/yr | $8,400/yr | -30% |
-
-The optimization can be achieved through:
-1. Enhanced tube inserts (twisted tape, ω = 3.5)
-2. Optimized baffle spacing (L_b = 0.4D_s)
-3. Improved flow distribution
-
-The heat transfer rate can be calculated using:
-Q = UA∆T_lm where:
-- U = 850 W/m²K (enhanced)
-- A = 120 m²
-- ∆T_lm = 45°C (log mean temperature difference)
-
-This gives us Q = 4.59 MW, a significant improvement over the current 3.2 MW.`,
-    type: 'technical'
-  },
-  {
-    content: `Safety Analysis Report for the Distillation Unit:
-
-🔴 Critical Issues Identified:
-1. Pressure Relief System
-   - Current capacity: 2,500 kg/h
-   - Required capacity: 3,800 kg/h
-   - Recommendation: Install additional PRV with 1,500 kg/h capacity
-
-2. Emergency Shutdown System
-   • Response time: 3.5s (industry standard: 2.0s)
-   • Valve closure rate: 85% (required: 98%)
-   • Control logic: Requires updating
-
-| Risk Category | Likelihood | Severity | Risk Level |
-|--------------|------------|----------|------------|
-| Overpressure | Medium | High | Critical |
-| Fire         | Low    | High | Moderate |
-| Leakage      | High   | Low  | Moderate |
-
-Immediate actions required:
-- Update emergency response procedures
-- Install redundant pressure monitoring
-- Implement automated shutdown protocols
-- Conduct operator training sessions`,
-    type: 'safety'
-  },
-  {
-    content: `Process Integration Analysis:
-
-Energy Balance Optimization:
-The system's energy efficiency can be improved using pinch analysis. Current minimum approach temperature ΔT_min = 20°C.
-
-Heat Integration Network:
-Hot Stream (H1): 180°C → 60°C, CP = 2.5 kW/°C
-Cold Stream (C1): 30°C → 160°C, CP = 1.8 kW/°C
-
-Energy Targets:
-Q_Hmin = 85 kW (minimum hot utility)
-Q_Cmin = 45 kW (minimum cold utility)
-
-| Metric | Current | Target | Improvement |
-|--------|---------|--------|-------------|
-| Energy Recovery | 65% | 85% | +20% |
-| CO2 Emissions | 1200 t/yr | 800 t/yr | -33% |
-| Operating Cost | $450k/yr | $320k/yr | -29% |
-
-Implementation Strategy:
-Phase 1: Heat exchanger network retrofit
-Phase 2: Heat pump installation
-Phase 3: Control system upgrade`,
-    type: 'process'
-  }
-];
 
 const getInitials = (name: string) => {
   return name
@@ -158,11 +81,14 @@ const renderContent = (content: string) => {
   let isTable = false;
 
   lines.forEach((line, index) => {
+    line = line.trim();
+    console.log(line)
     if (line.startsWith('|')) {
       if (!isTable) {
         isTable = true;
       }
       tableContent.push(line);
+      console.log(isTable)
     } else {
       if (isTable) {
         result.push(
@@ -231,6 +157,7 @@ const ProjectWorkspace = ({
   onNewConversation,
   updateConversation,
 }: ProjectWorkspaceProps) => {
+  const [mockResponses, setMessages] = useState<Message[]>([])
   const [query, setQuery] = useState('');
   const [userName] = useState('Alex Smith');
   const chatContainerRef = useRef<HTMLDivElement>(null);
@@ -243,6 +170,16 @@ const ProjectWorkspace = ({
     name: 'New Conversation',
     messages: []
   };
+
+  useEffect(() => {
+    const fetchMessages = async () => {
+      const query = "What are the key metrics for energy optimization?";
+      const isDetailed = true;
+      const data = await getMessages(query, isDetailed)
+      setMessages(data)
+    }
+    fetchMessages()
+  }, [])
 
   useEffect(() => {
     const chatContainer = chatContainerRef.current;
@@ -281,8 +218,8 @@ const ProjectWorkspace = ({
     setTimeout(() => {
       const agentMessage: Message = {
         id: (Date.now() + 1).toString(),
-        content: mockResponses[Math.floor(Math.random() * mockResponses.length)].content,
-        type: mockResponses[Math.floor(Math.random() * mockResponses.length)].type,
+        content: mockResponses[0].content,
+        type: mockResponses[0].type,
         timestamp: new Date(),
         agentName: activeAgent
       };

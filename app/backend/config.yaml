@@ -1,2 +1,2 @@
 llms:
-  llm_name: claude_3_opus
+  llm_name: gemini20_flash_exp
