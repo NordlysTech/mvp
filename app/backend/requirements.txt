@@ -14,3 +14,4 @@ pyyaml
 flask-mysqldb
 flask-bcrypt
 flask-cors
+pymongo

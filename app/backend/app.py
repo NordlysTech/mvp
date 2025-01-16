@@ -14,6 +14,9 @@ from utils.U1_FilesUtils import U1_FilesUtils
 #Importing services
 from services.S1_PromptLogic import S1_PromptLogic
 from services.S2_ClassifierLogic import Classifier
+from services.S2_ClassifierLogic import PlannerAgent
+from services.S4_SolverAgents import SuperSolverAgent
+from services.mongo_db_utils import start_new_conversation, handle_user_message
 
 from flask_mysqldb import MySQL
 from flask import Flask, render_template, request, flash, redirect, url_for
@@ -27,6 +30,7 @@ from services.email_utils import send_email
 from services.llm_utils import instantiate_llm_model, get_json_from_response
 from services.config_utils import load_config, get_config
 from flask_cors import CORS
+import json
 
 
 load_dotenv()
@@ -168,30 +172,109 @@ def index():
 
 @app.route('/query', methods=['POST'])
 def query():
+    
+    
     data = request.json
-    query_text = data['query']
+    user_input = data['query']
     is_detailed = data['isDetailed']
 
-    # Classify query
-    classifier_result = Classifier().classify_query(query_text)
-    print("classifier_result ***: ",classifier_result)
-    print("is_detailed : ",is_detailed)
-    if is_detailed:
-        response, title = prompt_logic.generate_detailed_report(query_text)
-    else:
-        response, title = prompt_logic.generate_express_info(query_text)
+    # Initialize the classifier and classify the query
+    classifier_model = Classifier()
+    response = classifier_model.classify_query(user_input)
+    print("\nRaw Classifier Response:\n")
+    print(response)
     
-    print("response ***:", response)
+
+    #response = json.dumps(response)
+    classification_result = get_json_from_response(response)
+    print("type(classification_result) : ",type(classification_result))
+    # Parse the JSON response from the classifier, handle potential errors if JSON is not returned
+    try:
+        # classification_result = json.loads(response)
+        print("\nClassification Result:\n")
+        print(json.dumps(classification_result, indent=4))
+    except json.JSONDecodeError:
+        print("Error: The classifier returned an invalid JSON string. Please check the prompt or LLM output")
+        return
+
+
+    # Initialize planner agents based on the classification result
+    planner_agents = []
+
+    # Error handling for agent_allocation
+    if (
+            "agent_allocation" in classification_result and
+            "selected_agents" in classification_result["agent_allocation"] and
+            isinstance(classification_result["agent_allocation"]["selected_agents"], list)
+       ):
+         for agent_data in classification_result["agent_allocation"]["selected_agents"]:
+            planner_agents.append(PlannerAgent(agent_data["agent_name"],agent_data["role"]))
+    else:
+        print("Error: The 'agent_allocation' structure or 'selected_agents' is missing or has incorrect type in the classification result. Check LLM output or your classifier prompt")
+        return
+
+    # Generate plans for each selected agent
+    agent_plans = {}
+    for planner in planner_agents:
+        agent_plans[planner.agent_name] = planner.create_plan(
+            classification_result["query_analysis"],
+            classification_result["agent_allocation"]
+        )
+    print("\nIndividual Agent Plans:\n")
+    for agent, plan in agent_plans.items():
+         print(f"Agent: {agent}\nPlan:\n {plan}\n")
+
+
+    # Execute the plans and retrieve evidence
+    retrieved_evidence = {}
+    for planner in planner_agents:
+        retrieved_evidence[planner.agent_name] = planner.execute_plan(agent_plans[planner.agent_name])
+    
+    print("\nRetrieved Evidence:\n")
+    for agent, evidence in retrieved_evidence.items():
+          print(f"Agent: {agent}\nEvidence:\n {json.dumps(evidence, indent=4)}\n")
+    
+    # Initialize and execute the Super Solver agent
+    super_solver = SuperSolverAgent("Super Solver", "Comprehensive Engineering Analysis")
+    
+    # Collect all the plans and retrieved evidence
+    all_plans = agent_plans
+    all_evidence = retrieved_evidence
+
+    # Execute the super solver agent to generate the final report
+    final_report = super_solver.execute_plan(
+        "", # No plan is needed for the SuperSolver
+        all_evidence, # Pass all the retrieved evidence
+        user_input,  # Pass the original user input query
+        classification_result["agent_allocation"], # Pass the classification for the solver to extract the other agents
+    )
+
+    print("\nFinal Report:\n")
+    print(final_report)
+    title = "test"
+    
+    
+    user_id = "user123"  # Unique identifier for the user
+    conversation_id = start_new_conversation(user_id)  # Start a new conversation
+    print("conversation_id : ",conversation_id)
+    
+    assistant_answer = final_report['report']
+    
+    # Update the conversation history
+    handle_user_message(user_id, conversation_id, user_input, assistant_answer)
+    
+    
     if title == "No Information Available":
         return jsonify([{
             'error': True,
             'content': 'No relevant information found in the database.',
             'title': 'No Information Available'
         }]), 200  # Return 200 OK, but with an error flag
+        
     
     return jsonify([{
         'error': False,
-        'content': response,
+        'content': assistant_answer,
         'title': title,
         'type': 'technical'
     }])
