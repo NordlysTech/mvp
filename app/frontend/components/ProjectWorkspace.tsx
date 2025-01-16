@@ -174,8 +174,7 @@ const ProjectWorkspace = ({
   useEffect(() => {
     const fetchMessages = async () => {
       const query = "What are the key metrics for energy optimization?";
-      const isDetailed = true;
-      const data = await getMessages(query, isDetailed)
+      const data = await getMessages(query)
       setMessages(data)
     }
     fetchMessages()

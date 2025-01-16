@@ -13,15 +13,12 @@ from utils.U1_FilesUtils import U1_FilesUtils
 
 #Importing services
 from services.S1_PromptLogic import S1_PromptLogic
-from services.S2_ClassifierLogic import Classifier
-from services.S2_ClassifierLogic import PlannerAgent
-from services.S4_SolverAgents import SuperSolverAgent
 from services.mongo_db_utils import start_new_conversation, handle_user_message
+from services.chat_pipeline import get_answer
 
 from flask_mysqldb import MySQL
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_bcrypt import Bcrypt
-from MySQLdb.cursors import DictCursor  # Ensure this import is added
 from flask import session
 
 from itsdangerous import URLSafeTimedSerializer
@@ -172,97 +169,17 @@ def index():
 
 @app.route('/query', methods=['POST'])
 def query():
-    
-    
     data = request.json
     user_input = data['query']
-    is_detailed = data['isDetailed']
-
-    # Initialize the classifier and classify the query
-    classifier_model = Classifier()
-    response = classifier_model.classify_query(user_input)
-    print("\nRaw Classifier Response:\n")
-    print(response)
     
-
-    #response = json.dumps(response)
-    classification_result = get_json_from_response(response)
-    print("type(classification_result) : ",type(classification_result))
-    # Parse the JSON response from the classifier, handle potential errors if JSON is not returned
-    try:
-        # classification_result = json.loads(response)
-        print("\nClassification Result:\n")
-        print(json.dumps(classification_result, indent=4))
-    except json.JSONDecodeError:
-        print("Error: The classifier returned an invalid JSON string. Please check the prompt or LLM output")
-        return
-
-
-    # Initialize planner agents based on the classification result
-    planner_agents = []
-
-    # Error handling for agent_allocation
-    if (
-            "agent_allocation" in classification_result and
-            "selected_agents" in classification_result["agent_allocation"] and
-            isinstance(classification_result["agent_allocation"]["selected_agents"], list)
-       ):
-         for agent_data in classification_result["agent_allocation"]["selected_agents"]:
-            planner_agents.append(PlannerAgent(agent_data["agent_name"],agent_data["role"]))
-    else:
-        print("Error: The 'agent_allocation' structure or 'selected_agents' is missing or has incorrect type in the classification result. Check LLM output or your classifier prompt")
-        return
-
-    # Generate plans for each selected agent
-    agent_plans = {}
-    for planner in planner_agents:
-        agent_plans[planner.agent_name] = planner.create_plan(
-            classification_result["query_analysis"],
-            classification_result["agent_allocation"]
-        )
-    print("\nIndividual Agent Plans:\n")
-    for agent, plan in agent_plans.items():
-         print(f"Agent: {agent}\nPlan:\n {plan}\n")
-
-
-    # Execute the plans and retrieve evidence
-    retrieved_evidence = {}
-    for planner in planner_agents:
-        retrieved_evidence[planner.agent_name] = planner.execute_plan(agent_plans[planner.agent_name])
-    
-    print("\nRetrieved Evidence:\n")
-    for agent, evidence in retrieved_evidence.items():
-          print(f"Agent: {agent}\nEvidence:\n {json.dumps(evidence, indent=4)}\n")
-    
-    # Initialize and execute the Super Solver agent
-    super_solver = SuperSolverAgent("Super Solver", "Comprehensive Engineering Analysis")
-    
-    # Collect all the plans and retrieved evidence
-    all_plans = agent_plans
-    all_evidence = retrieved_evidence
-
-    # Execute the super solver agent to generate the final report
-    final_report = super_solver.execute_plan(
-        "", # No plan is needed for the SuperSolver
-        all_evidence, # Pass all the retrieved evidence
-        user_input,  # Pass the original user input query
-        classification_result["agent_allocation"], # Pass the classification for the solver to extract the other agents
-    )
-
-    print("\nFinal Report:\n")
-    print(final_report)
-    title = "test"
-    
-    
+    title, assistant_answer = get_answer(user_input)
+    print("\nassistant_answer :\n")
+    print(assistant_answer)
     user_id = "user123"  # Unique identifier for the user
     conversation_id = start_new_conversation(user_id)  # Start a new conversation
     print("conversation_id : ",conversation_id)
-    
-    assistant_answer = final_report['report']
-    
     # Update the conversation history
     handle_user_message(user_id, conversation_id, user_input, assistant_answer)
-    
     
     if title == "No Information Available":
         return jsonify([{
@@ -271,7 +188,6 @@ def query():
             'title': 'No Information Available'
         }]), 200  # Return 200 OK, but with an error flag
         
-    
     return jsonify([{
         'error': False,
         'content': assistant_answer,
