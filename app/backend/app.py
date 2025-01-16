@@ -28,6 +28,7 @@ from services.llm_utils import instantiate_llm_model, get_json_from_response
 from services.config_utils import load_config, get_config
 from flask_cors import CORS
 
+from flask_pymongo import PyMongo
 
 load_dotenv()
 
@@ -67,6 +68,9 @@ serializer = URLSafeTimedSerializer(app.secret_key)
 mysql = MySQL(app)
 
 
+# MongoDB configuration
+app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/solvi")
+mongo = PyMongo(app)
 
 # Example metrics
 REQUEST_COUNT = Counter('flask_requests_total', 'Total number of requests', ['method', 'endpoint'])
@@ -289,11 +293,11 @@ def recover():
             subject = "Password Reset Request"
             message = f"""Hi {username},
             
-Click the link below to reset your password:
-{reset_link}
+            Click the link below to reset your password:
+            {reset_link}
 
-This link will expire in 30 minutes. If you did not request this, please ignore this email.
-"""
+            This link will expire in 30 minutes. If you did not request this, please ignore this email.
+            """
 
 
 
@@ -334,6 +338,63 @@ def reset_password(token):
 @app.route("/metrics")
 def metrics():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
+
+@app.route("/projects", methods=['POST'])
+def create_project():
+    try:
+        project_data = request.json
+        # Add any additional fields like timestamp, user_id, etc.
+        result = mongo.db.projects.insert_one(project_data)
+        
+        return jsonify({
+            "success": True,
+            "message": "Project created successfully",
+            "project_id": str(result.inserted_id)
+        }), 201
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "message": str(e)
+        }), 500
+    
+@app.route("/projects", methods=['GET'])
+def get_projects():
+    try:
+        # Fake data to simulate database results
+        fake_projects = [
+            {
+                "_id": "63c9f83e8f9a4d5b9c2b42a1",
+                "name": "AI Chatbot Project",
+                "description": "A chatbot using NLP and ML techniques",
+                "created_at": "2025-01-01T10:00:00Z",
+                "updated_at": "2025-01-05T15:30:00Z",
+                "status": "completed"
+            },
+            {
+                "_id": "63c9f83e8f9a4d5b9c2b42a2",
+                "name": "E-commerce Recommendation System",
+                "description": "A system recommending products based on user preferences",
+                "created_at": "2025-01-03T12:00:00Z",
+                "updated_at": "2025-01-07T18:00:00Z",
+                "status": "in_progress"
+            },
+            {
+                "_id": "63c9f83e8f9a4d5b9c2b42a3",
+                "name": "Sentiment Analysis Tool",
+                "description": "A tool analyzing customer reviews for sentiment",
+                "created_at": "2025-01-04T09:30:00Z",
+                "updated_at": "2025-01-08T13:45:00Z",
+                "status": "pending"
+            }
+        ]
+
+        # Convert fake data to JSON and return
+        return json.loads(json.dumps(fake_projects)), 200
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "message": str(e)
+        }), 500   
 
 if __name__ == '__main__':
     app.run(debug=True)

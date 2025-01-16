@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { toast } from "@/components/ui/use-toast"
+import { ProjectService } from '@/src/api/UI_ProjectService'
 
 const agents = [
   {
@@ -118,7 +119,8 @@ export default function NewProject({ onAgentSelection, onProjectNameChange, onPr
 
   const handleFinishProjectCreation = () => {
     if (selectedAgents.length > 0) {
-      onProjectCreation(projectName, selectedAgents);
+      ProjectService.createProject({ name:projectName, agents: selectedAgents });
+      onProjectCreation(projectName, selectedAgents)
     } else {
       toast({
         title: "No Agents Selected",
