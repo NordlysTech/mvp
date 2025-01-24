@@ -3,8 +3,8 @@
 import { FileText, Bot, BarChart2, Database, User, Settings, LogOut, History, Star, Bookmark, MessageSquare, Clock, Folder, PlusCircle, GitBranch, NetworkIcon } from 'lucide-react'
 
 interface SidebarProps {
-  onViewChange: (view: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession') => void
-  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession'
+  onViewChange: (view: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account') => void
+  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account'
   projects: string[]
   setCurrentProject: (projectName: string) => void
 }
@@ -15,8 +15,8 @@ const sidebarSections = [
     items: [
       { icon: Bot, label: 'AI Engineers Hub', color: 'text-green-400', action: 'agents' },
       { icon: FileText, label: 'PDF Draft', color: 'text-blue-400', badge: '3' },
-      { icon: BarChart2, label: 'Data Insights', color: 'text-purple-400' },
-      { icon: NetworkIcon, label: 'DiagDigitize', color: 'text-orange-400' },
+      { icon: BarChart2, label: 'Data Insights', color: 'text-purple-400', comingSoon: true },
+      { icon: NetworkIcon, label: 'DiagDigitize', color: 'text-orange-400', comingSoon: true },
     ]
   },
   {
@@ -38,7 +38,7 @@ const sidebarSections = [
 ]
 
 const bottomItems = [
-  { icon: User, label: 'Account', color: 'text-gray-400' },
+  { icon: User, label: 'Account', color: 'text-gray-400', action: 'account' },
   { icon: Settings, label: 'Settings', color: 'text-gray-400' },
   { icon: LogOut, label: 'Log Out', color: 'text-gray-400' },
 ]
@@ -62,12 +62,13 @@ export default function Sidebar({ onViewChange, currentView, projects, setCurren
                       currentView === item.action
                         ? 'bg-white/20 dark:bg-white/20 text-gray-900 dark:text-white'
                         : 'hover:bg-gray-200 dark:hover:bg-white/10 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white'
-                    }`}
+                    } ${item.comingSoon ? 'opacity-50 cursor-not-allowed' : ''}`}
                     onClick={() => {
-                      if (item.action) {
-                        onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession')
+                      if (item.action && !item.comingSoon) {
+                        onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account')
                       }
                     }}
+                    disabled={item.comingSoon}
                   >
                     <div className="flex items-center">
                       <item.icon className={`w-5 h-5 mr-3 ${item.color}`} />
@@ -79,6 +80,9 @@ export default function Sidebar({ onViewChange, currentView, projects, setCurren
                       <span className="bg-gray-200 dark:bg-white/20 text-xs px-2 py-1 rounded-full text-gray-700 dark:text-gray-200">
                         {item.badge}
                       </span>
+                    )}
+                    {item.comingSoon && (
+                      <span className="text-xs text-gray-500 dark:text-gray-400 ml-2">Coming Soon</span>
                     )}
                   </button>
                 ))}
@@ -123,6 +127,7 @@ export default function Sidebar({ onViewChange, currentView, projects, setCurren
             <button
               key={item.label}
               className="flex items-center w-full p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-white/10 transition-colors group"
+              onClick={() => item.action && onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account')}
             >
               <item.icon className={`w-5 h-5 mr-3 ${item.color}`} />
               <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">
