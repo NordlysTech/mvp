@@ -130,3 +130,25 @@ def instantiate_llm_model(model_name, **kwargs):
 
     
 
+def make_llm_inference(invoke_parameters_dict, prompt_path, model) :
+
+    with open(prompt_path, 'r') as file:
+        prompt_json = json.load(file)
+
+    prompt_list = []
+    for item in prompt_json:
+        for role, message in item.items():
+            prompt_list.append((role, message))
+
+    prompt   = ChatPromptTemplate.from_messages(prompt_list)
+
+    chain = (
+        prompt
+        | model
+    )
+    try :
+        response = chain.invoke(invoke_parameters_dict)
+        return response
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
