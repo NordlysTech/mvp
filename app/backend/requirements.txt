@@ -15,3 +15,5 @@ flask-mysqldb
 flask-bcrypt
 flask-cors
 pymongo
+altair[all]
+matplotlib
