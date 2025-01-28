@@ -35,7 +35,15 @@ answer = ""
 if response is not None :
     print("response : ",response)
     vega_json = response.content
-    answer = re.search(r"```json(.*?)```", vega_json, re.DOTALL).group(1).strip()
+    
+    if "```json" in vega_json:
+        match = re.search(r"```json(.*?)```", vega_json, re.DOTALL)
+        if match:
+            answer = match.group(1).strip()
+        else:
+            raise ValueError("Les balises ```json``` sont présentes, mais aucun contenu n'a été trouvé.")
+    else:
+        answer = vega_json.strip()
 print("answer : ",answer)
 
 
