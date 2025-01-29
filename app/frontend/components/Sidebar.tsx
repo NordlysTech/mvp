@@ -1,10 +1,10 @@
 'use client'
 
-import { FileText, Bot, BarChart2, Database, User, Settings, LogOut, History, Star, Bookmark, MessageSquare, Clock, Folder, PlusCircle, GitBranch, NetworkIcon } from 'lucide-react'
+import { FileText, Bot, BarChart2, Database, User, Settings, LogOut, History, Star, Bookmark, MessageSquare, Clock, Folder, PlusCircle, GitBranch, NetworkIcon, FileCheck } from 'lucide-react'
 
 interface SidebarProps {
-  onViewChange: (view: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account') => void
-  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account'
+  onViewChange: (view: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account' | 'actionAgents') => void
+  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account' | 'actionAgents'
   projects: string[]
   setCurrentProject: (projectName: string) => void
 }
@@ -25,6 +25,12 @@ const sidebarSections = [
       { icon: GitBranch, label: 'Workflow+', color: 'text-purple-400', action: 'workflow' },
       { icon: Star, label: 'Favorite Agents', color: 'text-yellow-400' },
       { icon: Bookmark, label: 'Saved Responses', color: 'text-pink-400' },
+    ]
+  },
+  {
+    title: 'Action Agents',
+    items: [
+      { icon: FileCheck, label: 'Action Agents', color: 'text-violet-400', action: 'actionAgents' },
     ]
   },
   {
@@ -65,7 +71,7 @@ export default function Sidebar({ onViewChange, currentView, projects, setCurren
                     } ${item.comingSoon ? 'opacity-50 cursor-not-allowed' : ''}`}
                     onClick={() => {
                       if (item.action && !item.comingSoon) {
-                        onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account')
+                        onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account' | 'actionAgents')
                       }
                     }}
                     disabled={item.comingSoon}
@@ -127,7 +133,7 @@ export default function Sidebar({ onViewChange, currentView, projects, setCurren
             <button
               key={item.label}
               className="flex items-center w-full p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-white/10 transition-colors group"
-              onClick={() => item.action && onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account')}
+              onClick={() => item.action && onViewChange(item.action as 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account' | 'actionAgents')}
             >
               <item.icon className={`w-5 h-5 mr-3 ${item.color}`} />
               <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white">

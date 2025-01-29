@@ -7,6 +7,7 @@ import RecentProjects from './RecentProjects'
 import NewProject from './NewProject'
 import ProjectWorkspace from './ProjectWorkspace'
 import WorkflowPlus from './WorkflowPlus'
+import ActionAgents from './action-agents'
 
 interface Conversation {
   id: number;
@@ -15,6 +16,7 @@ interface Conversation {
 }
 
 interface Project {
+  id: string;
   name: string;
   agents: string[];
   conversations: Conversation[];
@@ -175,7 +177,7 @@ const agents = [
 interface MainContentProps {
   selectedCategory: string
   onCategoryChange: (category: string) => void
-  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession'
+  currentView: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'actionAgents'
   onAgentSelection: (agents: string[]) => void
   onProjectNameChange: (name: string) => void
   onNextStep: () => void
@@ -302,6 +304,7 @@ export default function MainContent({
         />
       )}
       {currentView === 'workflow' && <WorkflowPlus />}
+      {currentView === 'actionAgents' && <ActionAgents recentProjects={projects} />}
       {currentView === 'activeSession' && currentProject && (
         <ProjectWorkspace
           projectName={currentProject.name}
@@ -317,4 +320,3 @@ export default function MainContent({
     </div>
   )
 }
-
