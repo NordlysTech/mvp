@@ -6,13 +6,15 @@ import Sidebar from './Sidebar'
 import MainContent from './MainContent'
 import SelectedAgentsSidebar from './SelectedAgentsSidebar'
 import Settings from './Settings'
+import {createProjectFront} from '../src/api'
 
-interface Message {
+export interface Message {
   id: string;
   content: string;
   type: 'user' | 'agent';
   timestamp: Date;
   agentName?: string;
+  answer:string;
 }
 
 interface Conversation {
@@ -21,7 +23,8 @@ interface Conversation {
   messages: Message[];
 }
 
-interface Project {
+export interface Project {
+  project_id: string;
   name: string;
   agents: string[];
   conversations: Conversation[];
@@ -61,25 +64,23 @@ export default function DesktopInterface() {
     setProjectStep(2)
   }
 
-  const handleProjectCreation = (name: string, agents: string[]) => {
-    const newProject: Project = {
-      name,
-      agents,
-      conversations: [{
-        id: 1,
-        name: 'Conversation 1',
-        messages: []
-      }],
-      date: new Date().toISOString().split('T')[0],
-      status: 'active'
-    };
-    setProjects(prev => [...prev, newProject]);
-    setCurrentProject(newProject);
-    setActiveConversation(1);
-    setCurrentView('activeSession');
-    setProjectStep(1);
-    setProjectName('');
-    setSelectedAgents([]);
+  const handleProjectCreation = async (name: string, agents: string[]) => {
+
+    const userId = "user123"; // Replace with dynamic user ID if available
+    const newProject = await createProjectFront(userId, name, agents);
+
+    if (newProject) {
+      setProjects(prev => [...prev, newProject]);
+      setCurrentProject(newProject);
+      setActiveConversation(1);
+      setCurrentView('activeSession');
+      setProjectStep(1);
+      setProjectName('');
+      setSelectedAgents([]);
+    } else {
+      // Handle error (e.g., show toast notification)
+      console.error("Failed to create project");
+    }
   }
 
   const switchToProject = (projectName: string) => {

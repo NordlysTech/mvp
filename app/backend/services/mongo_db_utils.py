@@ -4,8 +4,9 @@ from uuid import uuid4
 
 # MongoDB connection
 client = MongoClient("mongodb://mongodb:27017/")
-db = client["conversation_db"]  # Create database if it doesn't exist
-collection_name = "conversations"
+db = client["SolviDB"]  # Create database if it doesn't exist
+
+#collection_name = "conversations"
 
 # Ensure collection exists (MongoDB creates it on the first insertion)
 def get_or_create_collection(db, collection_name):
@@ -15,6 +16,10 @@ def get_or_create_collection(db, collection_name):
 
 # Get or create the 'history' collection
 collection = get_or_create_collection(db, 'history')
+
+# Collections
+projects_collection = get_or_create_collection(db, 'projects')
+conversations_collection = get_or_create_collection(db, 'conversations')
 
 def handle_user_message(user_id, conversation_id, user_message, assistant_answer):
     """
@@ -71,3 +76,62 @@ def get_conversation_by_id(conversation_id):
     
     # Return the conversation as a list of messages (user and assistant messages in order)
     return list(conversation)
+
+def persist_new_project(user_id, new_project):
+    """
+    Persists a new project into the MongoDB database.
+    
+    Args:
+        user_id (str): The ID of the user creating the project.
+        new_project (dict): The project data to save.
+        
+    Returns:
+        dict: The saved project including the generated project_id.
+    """
+    # Add additional fields to the project object
+    project_id = str(uuid4())
+    new_project["project_id"] = project_id
+    new_project["user_id"] = user_id
+
+    # Save the project in MongoDB
+    projects_collection.insert_one(new_project)
+    
+    return new_project
+
+
+def add_message_to_conversation(project_id, conversation_id, user_message, assistant_response):
+    """
+    Adds a message to a specific conversation in a project.
+
+    Args:
+        project_id (str): The UUID of the project.
+        conversation_id (int): The ID of the conversation.
+        user_message (str): The user's message.
+        assistant_response (str): The assistant's response.
+
+    Returns:
+        dict: The updated project document.
+    """
+    # Find the project and update the conversation
+    result = projects_collection.update_one(
+        {
+            "project_id": project_id,
+            "conversations.id": conversation_id
+        },
+        {
+            "$push": {
+                "conversations.$.messages": {
+                    "timestamp": datetime.utcnow(),
+                    "user_message": user_message,
+                    "assistant_response": assistant_response
+                }
+            }
+        }
+    )
+
+    if result.matched_count == 0:
+        raise ValueError("Project or conversation not found.")
+
+    # Return the updated project for confirmation (optional)
+    updated_project = projects_collection.find_one({"project_id": project_id})
+    return updated_project

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -25,7 +25,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { getMessages } from "../src/api";
+import { addMessageToCurrentConversation } from "../src/api";
 
 interface Message {
   id: string;
@@ -43,6 +43,7 @@ interface Conversation {
 
 interface ProjectWorkspaceProps {
   projectName: string;
+  projectId: string;
   selectedAgents: string[];
   activeAgent: string | null;
   setActiveAgent: (agent: string | null) => void;
@@ -193,6 +194,7 @@ const getAgentInitials = (agentName: string) => {
 
 const ProjectWorkspace = ({
   projectName,
+  projectId,
   selectedAgents,
   activeAgent,
   setActiveAgent,
@@ -219,6 +221,10 @@ const ProjectWorkspace = ({
   };
 
 
+  useEffect(() => {
+    console.log("Project ID:", projectId);
+    console.log("Active conversation ID:", currentConversation.id);
+  })
   useEffect(() => {
     const chatContainer = chatContainerRef.current;
     if (chatContainer && isAtBottom) {
@@ -259,7 +265,8 @@ const ProjectWorkspace = ({
 
     try {
       // Fetch response from backend
-      const data = await getMessages(query);
+
+      const data = await addMessageToCurrentConversation(query, projectId, currentConversation.id);
       setMockResponses(Array.isArray(data) ? data : [data]);
 
       // Create agent message with the response

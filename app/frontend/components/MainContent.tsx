@@ -9,19 +9,29 @@ import ProjectWorkspace from './ProjectWorkspace'
 import WorkflowPlus from './WorkflowPlus'
 import ActionAgents from './action-agents'
 
+
+export interface Message {
+  id: string;
+  content: string;
+  type: 'user' | 'agent';
+  timestamp: Date;
+  agentName?: string;
+  answer:string;
+}
 interface Conversation {
   id: number;
   name: string;
-  messages: any[];
+  messages: Message[];
 }
 
-interface Project {
-  id: string;
+export interface Project {
+  project_id: string;
   name: string;
   agents: string[];
   conversations: Conversation[];
+  date: string;
+  status: 'active' | 'completed' | 'pending';
 }
-
 const categories = [
   'Featured',
   'Engineering',
@@ -308,6 +318,7 @@ export default function MainContent({
       {currentView === 'activeSession' && currentProject && (
         <ProjectWorkspace
           projectName={currentProject.name}
+          projectId={currentProject.project_id}
           selectedAgents={currentProject.agents}
           activeAgent={activeAgent}
           setActiveAgent={setActiveAgent}

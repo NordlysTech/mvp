@@ -1,11 +1,14 @@
+import { Project } from '@/components/DesktopInterface';
 import axios from 'axios';
 
 const API_URL = 'http://localhost:5000';
 
-export const getMessages = async (queryText: any) => {
+export const addMessageToCurrentConversation = async (queryText: any, projectId: string,  conversationId: number) => {
     try {
         const response = await axios.post(`${API_URL}/query`, {
             query: queryText, // Pass query data
+            projectId: projectId,
+            conversationId: conversationId
         });
         console.log("Response of user query: ",response)
         return response.data;
@@ -17,3 +20,38 @@ export const getMessages = async (queryText: any) => {
 
 }
 
+export const createProjectFront = async (
+  userId: string,
+  name: string,
+  agents: string[]
+): Promise<Project | null> => {
+  const newProject: Project = {
+    project_id: '',
+    name,
+    agents,
+    conversations: [
+      {
+        id: 1,
+        name: 'Conversation 1',
+        messages: []
+      }
+    ],
+    date: new Date().toISOString().split('T')[0],
+    status: 'active'
+  };
+
+  try {
+    const response = await axios.post(`${API_URL}/projects`, {
+      user_id: userId,
+      newProject
+    });
+
+    const { project_id } = response.data;
+    newProject.project_id = project_id; // Assign returned ID to the project
+
+    return newProject;
+  } catch (error) {
+    console.error("Error creating project:", error);
+    return null;
+  }
+};

@@ -13,7 +13,7 @@ from utils.U1_FilesUtils import U1_FilesUtils
 
 #Importing services
 from services.S1_PromptLogic import S1_PromptLogic
-from services.mongo_db_utils import start_new_conversation, handle_user_message
+from services.mongo_db_utils import start_new_conversation, handle_user_message, persist_new_project, add_message_to_conversation
 from services.chat_pipeline import get_answer
 
 from flask_mysqldb import MySQL
@@ -169,17 +169,17 @@ def index():
 
 @app.route('/query', methods=['POST'])
 def query():
+
+    # Get the query from the request
     data = request.json
     user_input = data['query']
+    project_id = data['projectId']
+    conversation_id=data['conversationId']
     
+    # Get the answer
     title, assistant_answer = get_answer(user_input)
-    print("\nassistant_answer :\n")
-    print(assistant_answer)
-    user_id = "user123"  # Unique identifier for the user
-    conversation_id = start_new_conversation(user_id)  # Start a new conversation
-    print("conversation_id : ",conversation_id)
-    # Update the conversation history
-    handle_user_message(user_id, conversation_id, user_input, assistant_answer)
+
+    add_message_to_conversation(project_id, conversation_id, user_input, assistant_answer)
     
     if title == "No Information Available":
         return jsonify([{
@@ -333,6 +333,27 @@ def reset_password(token):
 @app.route("/metrics")
 def metrics():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
+
+
+@app.route('/projects', methods=['POST'])
+def create_new_project():
+    """
+    Handles the creation of a new project.
+    """
+    data = request.json
+    user_id = data.get("user_id")
+    new_project = data.get("newProject")
+
+    if not user_id or not new_project:
+        return jsonify({"error": "user_id and newProject are required"}), 400
+
+    # Persist the new project
+    saved_project = persist_new_project(user_id, new_project)
+
+    return jsonify({
+        "project_id": saved_project["project_id"]
+    }), 201
+
 
 if __name__ == '__main__':
     app.run(debug=True)
