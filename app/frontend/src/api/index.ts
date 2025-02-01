@@ -55,3 +55,13 @@ export const createProjectFront = async (
     return null;
   }
 };
+
+export const getProjectsOfUserByIdFront = async(userId: string):Promise<Project[]> => {
+  try{
+    const response = await axios.get(`${API_URL}/users/${userId}/projects`);
+    return response.data.projects;
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+    return [];
+  }
+}

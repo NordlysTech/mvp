@@ -13,7 +13,7 @@ from utils.U1_FilesUtils import U1_FilesUtils
 
 #Importing services
 from services.S1_PromptLogic import S1_PromptLogic
-from services.mongo_db_utils import start_new_conversation, handle_user_message, persist_new_project, add_message_to_conversation
+from services.mongo_db_utils import persist_new_project, add_message_to_conversation, get_projects_by_user_id
 from services.chat_pipeline import get_answer
 
 from flask_mysqldb import MySQL
@@ -179,7 +179,7 @@ def query():
     # Get the answer
     title, assistant_answer = get_answer(user_input)
 
-    add_message_to_conversation(project_id, conversation_id, user_input, assistant_answer)
+    add_message_to_conversation(project_id, conversation_id, user_input, assistant_answer, user_input)
     
     if title == "No Information Available":
         return jsonify([{
@@ -353,6 +353,24 @@ def create_new_project():
     return jsonify({
         "project_id": saved_project["project_id"]
     }), 201
+
+
+@app.route('/users/<user_id>/projects', methods=['GET'])
+def get_projects_of_user(user_id):
+    """
+    Retrieves all projects for a specific user by user_id.
+    """
+    try:
+        # Call the utility function
+        user_projects = get_projects_by_user_id(user_id)
+
+        if not user_projects:
+            return jsonify({"message": "No projects found for the given user"}), 404
+
+        return jsonify({"projects": user_projects}), 200
+
+    except Exception as e:
+        return jsonify({"error": "An unexpected error occurred", "details": str(e)}), 500
 
 
 if __name__ == '__main__':

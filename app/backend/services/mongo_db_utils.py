@@ -99,7 +99,7 @@ def persist_new_project(user_id, new_project):
     return new_project
 
 
-def add_message_to_conversation(project_id, conversation_id, user_message, assistant_response):
+def add_message_to_conversation(project_id, conversation_id, user_message, assistant_response, user_input):
     """
     Adds a message to a specific conversation in a project.
 
@@ -123,7 +123,8 @@ def add_message_to_conversation(project_id, conversation_id, user_message, assis
                 "conversations.$.messages": {
                     "timestamp": datetime.utcnow(),
                     "user_message": user_message,
-                    "assistant_response": assistant_response
+                    "assistant_response": assistant_response,
+                    "user_input": user_input
                 }
             }
         }
@@ -135,3 +136,8 @@ def add_message_to_conversation(project_id, conversation_id, user_message, assis
     # Return the updated project for confirmation (optional)
     updated_project = projects_collection.find_one({"project_id": project_id})
     return updated_project
+
+
+def get_projects_by_user_id(user_id):
+    projects = projects_collection.find({"user_id": user_id}, {"_id": 0})  # Exclude MongoDB ObjectId
+    return list(projects)
