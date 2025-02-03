@@ -203,6 +203,8 @@ interface MainContentProps {
   onNewConversation: () => void;
   conversations: Conversation[];
   updateConversation: (updatedConversation: Conversation) => void;
+  onViewChange: (view: 'agents' | 'recentProjects' | 'newProject' | 'workflow' | 'activeSession' | 'account' | 'actionAgents') => void;  
+  setCurrentProject : (projectName: string) => void
 }
 
 export default function MainContent({
@@ -223,7 +225,9 @@ export default function MainContent({
   activeConversation,
   onNewConversation,
   conversations,
-  updateConversation
+  updateConversation,
+  onViewChange,
+  setCurrentProject
 }: MainContentProps) {
   const [expandedAgent, setExpandedAgent] = useState<string | null>(null);
 
@@ -305,7 +309,7 @@ export default function MainContent({
           </AnimatePresence>
         </div>
       )}
-      {currentView === 'recentProjects' && <RecentProjects projects={projects} />}
+      {currentView === 'recentProjects' && <RecentProjects projects={projects} onViewChange={onViewChange} setCurrentProject={setCurrentProject} />}
       {currentView === 'newProject' && (
         <NewProject
           onAgentSelection={onAgentSelection}

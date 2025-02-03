@@ -122,8 +122,7 @@ def add_message_to_conversation(project_id, conversation_id, user_message, assis
             "$push": {
                 "conversations.$.messages": {
                     "timestamp": datetime.utcnow(),
-                    "user_message": user_message,
-                    "assistant_response": assistant_response,
+                    "content": assistant_response,
                     "user_input": user_input
                 }
             }

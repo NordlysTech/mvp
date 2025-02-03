@@ -233,6 +233,8 @@ export default function DesktopInterface() {
             onNewConversation={handleNewConversation}
             conversations={currentProject?.conversations || []}
             updateConversation={updateConversation}
+            onViewChange={handleViewChange}
+            setCurrentProject={switchToProject}
           />
           {currentView === "activeSession" && currentProject && (
             <SelectedAgentsSidebar

@@ -33,6 +33,7 @@ interface Message {
   type: "user" | "agent" | "technical" | "safety" | "process";
   timestamp: Date;
   agentName?: string;
+  user_input: string;
 }
 
 interface Conversation {
@@ -99,13 +100,13 @@ const renderContent = (content: string) => {
 
   lines.forEach((line, index) => {
     line = line.trim();
-    console.log(line);
+    //console.log(line);
     if (line.startsWith("|")) {
       if (!isTable) {
         isTable = true;
       }
       tableContent.push(line);
-      console.log(isTable);
+      //console.log(isTable);
     } else {
       if (isTable) {
         result.push(
@@ -220,11 +221,10 @@ const ProjectWorkspace = ({
     messages: [],
   };
 
-
   useEffect(() => {
     console.log("Project ID:", projectId);
     console.log("Active conversation ID:", currentConversation.id);
-  })
+  });
   useEffect(() => {
     const chatContainer = chatContainerRef.current;
     if (chatContainer && isAtBottom) {
@@ -266,7 +266,11 @@ const ProjectWorkspace = ({
     try {
       // Fetch response from backend
 
-      const data = await addMessageToCurrentConversation(query, projectId, currentConversation.id);
+      const data = await addMessageToCurrentConversation(
+        query,
+        projectId,
+        currentConversation.id
+      );
       setMockResponses(Array.isArray(data) ? data : [data]);
 
       // Create agent message with the response
@@ -334,6 +338,7 @@ const ProjectWorkspace = ({
   };
 
   const renderFormattedQuery = (text: string) => {
+    console.log("text", text);
     const parts = text.split(/(@[\w\s]+)/);
     return parts.map((part, index) => {
       if (part.startsWith("@") && part.trim().length > 1) {
@@ -391,52 +396,50 @@ const ProjectWorkspace = ({
                   transition={{ duration: 0.3 }}
                   className="w-full"
                 >
-                  {message.type === "user" ? (
-                    <div className="bg-gray-100 dark:bg-[#1C2B3A] rounded-lg p-6 shadow-lg mb-4">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          <Avatar className="h-8 w-8">
-                            <AvatarFallback className="bg-blue-500 text-white">
-                              {getInitials(userName)}
-                            </AvatarFallback>
-                          </Avatar>
-                          <span className="text-sm theme-aware-text">You</span>
-                        </div>
-                        <span className="text-sm theme-aware-text">
-                          {message.timestamp.toLocaleTimeString()}
-                        </span>
+                  <div className="bg-gray-100 dark:bg-[#1C2B3A] rounded-lg p-6 shadow-lg mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <Avatar className="h-8 w-8">
+                          <AvatarFallback className="bg-blue-500 text-white">
+                            {getInitials(userName)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <span className="text-sm theme-aware-text">You</span>
                       </div>
-                      <div className="theme-aware-text">
-                        {renderFormattedQuery(message.content)}
-                      </div>
+                      <span className="text-sm theme-aware-text">
+                        {message.timestamp.toLocaleTimeString()}
+                      </span>
                     </div>
-                  ) : (
-                    <div className="bg-white dark:bg-[#0A192F] rounded-lg p-6 shadow-lg mb-4">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          <div
-                            className={`w-10 h-10 ${getAgentColor(
-                              message.agentName || ""
-                            )} rounded-lg flex items-center justify-center`}
-                          >
-                            {React.createElement(
-                              getAgentIcon(message.agentName || ""),
-                              { className: "w-6 h-6 text-white" }
-                            )}
-                          </div>
-                          <span className="text-sm text-gray-600 dark:text-gray-400">
-                            {message.agentName}
-                          </span>
+                    <div className="theme-aware-text">
+                      {renderFormattedQuery(message.user_input)}
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-[#0A192F] rounded-lg p-6 shadow-lg mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <div
+                          className={`w-10 h-10 ${getAgentColor(
+                            message.agentName || ""
+                          )} rounded-lg flex items-center justify-center`}
+                        >
+                          {React.createElement(
+                            getAgentIcon(message.agentName || ""),
+                            { className: "w-6 h-6 text-white" }
+                          )}
                         </div>
                         <span className="text-sm text-gray-600 dark:text-gray-400">
-                          {message.timestamp.toLocaleTimeString()}
+                          {message.agentName}
                         </span>
                       </div>
-                      <div className="text-gray-900 dark:text-gray-200 prose dark:prose-invert max-w-none">
-                        {renderContent(message.content)}
-                      </div>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">
+                        {message.timestamp.toLocaleTimeString()}
+                      </span>
                     </div>
-                  )}
+                    <div className="text-gray-900 dark:text-gray-200 prose dark:prose-invert max-w-none">
+                      {renderContent(message.content)}
+                    </div>
+                  </div>
                 </motion.div>
               ))
             )}
